@@ -1,0 +1,106 @@
+<ion-view view-title="Scope of Work" name="vendor-info" style="margin-top: 35px;">
+    <ion-content class="padding" style="padding:10px;">
+        <br>
+        <div class="row" style="background-color: #eaeaea;font-weight: 500;text-align: center;">
+            <div class="col col-25">ITEM</div>
+            <div class="col col-33">DESCRIPTION</div>
+            <div class="col">RATE</div>
+            <div class="col">TOTAL</div>
+        </div>
+        <div class="row" style="margin-top:20px;text-align: center;">
+            <div class="col col-25" style="text-align:left;">Hours</div>
+            <div class="col col-33">
+                <div class="list list-inset" style="margin-top: -15px;">
+                    <label class="item item-input" style="padding: 5px;">
+                        <input type="text" placeholder="# of hours" ng-model="data.username" style="padding: 5px;">
+                    </label>
+                </div>
+            </div>
+            <div class="col">$ 45</div>
+            <div class="col">$ 45</div>
+        </div>
+        <div class="row" style="margin-top:5px;text-align: center;">
+            <div class="col col-25" style="text-align:left;">Travel Fee</div>
+            <div class="col col-33">
+                <div class="list list-inset" style="margin-top: -15px;">
+                    <label class="item item-input" style="padding: 5px;">
+                        <input type="text" placeholder="distance" ng-model="data.username" style="padding: 5px;">
+                    </label>
+                </div>
+            </div>
+            <div class="col col-20">
+                <div class="list list-inset" style="margin-top: -15px;">
+                    <label class="item item-input" style="padding: 5px;">
+                        <input type="text" placeholder="$" ng-model="data.username" style="padding: 5px;">
+                    </label>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <small style="font-style:italic;padding:10px;">(We pay a standard fee of 45AUD in metro area.)</small>
+        <div class="row" style="margin-top:25px;text-align: center;">
+            <div class="col col-25" style="text-align:left;">Parking Fee</div>
+            <div class="col col-33">
+                <div class="list list-inset" style="margin-top: -15px;">
+                    <label class="item item-input" style="padding: 5px;">
+                        <input type="text" placeholder="distance" ng-model="data.username" style="padding: 5px;">
+                    </label>
+                </div>
+            </div>
+            <div class="col col-20">
+                <div class="list list-inset" style="margin-top: -15px;">
+                    <label class="item item-input" style="padding: 5px;">
+                        <input type="text" placeholder="$" ng-model="data.username" style="padding: 5px;">
+                    </label>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row" ng-repeat="contact in contacts" style="margin-top:5px;text-align: center;">
+            <div class="col col-25" style="text-align:left;">Materials{{contact.name}}</div>
+            <div class="col col-33">
+                <div class="list list-inset" style="margin-top: -15px;">
+                    <label class="item item-input" style="padding: 5px;">
+                        <input type="text" placeholder="distance" ng-model="data.username" style="padding: 5px;">
+                    </label>
+                </div>
+            </div>
+            <div class="col col-20">
+                <div class="list list-inset" style="margin-top: -15px;">
+                    <label class="item item-input" style="padding: 5px;">
+                        <input type="text" placeholder="$" ng-model="data.username" style="padding: 5px;">
+                    </label>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div>
+        </div>
+        <div class="row">
+            <div class="col col-50"><small style="font-style:italic;">Write NA in the description if not applicable</small></div>
+            <div class="col col-50">
+                <button class="button add-button" ng-click="openModal()" style="margin-top: 5px;margin-right: 0px;">ADD ITEM</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row" style="font-size: 18px;font-weight: 600;">
+            <div class="col col-50" style="text-align:center;">Total</div>
+            <div class="col col-50">
+                <div style="float: right;margin-right:10%;">$ 45
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <button class="button add-button" ng-click="" style="margin-top: 40px;margin-right: 10px;background-color:#0f6ab5;">preview</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <div class="list form" style="padding: 10px;margin-top:-80px;">
+            <button class="button button-block button-positive" style="margin-top:80px;">
+                Submit Quote
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

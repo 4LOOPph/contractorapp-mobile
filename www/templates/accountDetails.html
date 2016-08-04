@@ -1,0 +1,36 @@
+<!-- <ion-view view-title="Account Details" name="vendor-info"> -->
+    <ion-content class="padding">
+    <div class="account-det">All requests for payment to bank accounts must be signed by the vendor or accompanied by documentary evidence of bank account details from the vendor(e.g. Email, Fax, Invoice)</div>
+        <label class="new-label">BANK ACCOUNT</label>
+        <div class="list logform" style="margin-top:10px;">
+            <label class="item item-input bortop">
+                <input type="text" placeholder="Name of Bank" ng-model="data.username">
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="Branch of Bank" ng-model="data.username">
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="Account Name" ng-model="data.username">
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="BSB" ng-model="data.username">
+            </label>
+            <label class="item item-input bordbot">
+                <input type="text" placeholder="Account Number" ng-model="data.username">
+            </label>
+        </div>
+        <label class="new-label" style="color:#0271b6;">VIEW TERMS AND CONDITION</label>
+        <div class="row" style="margin-top: 20px;">
+            <div class="col col-50">
+                <button ui-sref="vendorRate" class="button can-button">
+                    Cancel
+                </button>
+            </div>
+            <div class="col col-50">
+                <button ui-sref="qualification" class="button next-button">
+                    Next
+                </button>
+            </div>
+        </div>
+    </ion-content>
+<!-- </ion-view> -->

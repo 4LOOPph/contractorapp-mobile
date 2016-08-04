@@ -1,0 +1,35 @@
+<!-- <ion-popover-view class="dropbody" >
+    <ion-content>
+        <img src="img/no-avatar.jpg" class="img-circle dropaccout" alt="User Image">
+        <p>
+            <div>Vendor Vendor</div>
+            <small>Member since July. 2016</small>
+        </p>
+        <li class="user-footer" style="background-color: #f3f3f3;padding: 10px;">
+            <div class="pull-left">
+                <a ui-sref="admindash" class="btn btn-default btn-flat">Profile</a>
+            </div>
+            <div class="pull-right">
+                <a href="#" class="btn btn-default btn-flat">Sign out</a>
+            </div>
+        </li>
+    </ion-content>
+</ion-popover-view>
+ -->
+<ion-popover-view style="background-color:transparent;">
+    <ion-content>
+        <div class="list">
+            <div class="item droplist">
+                <img src="img/no-avatar.jpg" class="img-circle center dropaccout" alt="User Image">
+                <div>Vendor Vendor</div>
+                <small>Member since July. 2016</small>
+            </div>
+            <div ng-click="gotToProfile($event)" class="item" style="text-align:center;">
+                Profile
+            </div>
+            <div ng-click="signOut($event)" class="item" style="text-align:center;">
+                Signout
+            </div>
+        </div>
+    </ion-content>
+</ion-popover-view>

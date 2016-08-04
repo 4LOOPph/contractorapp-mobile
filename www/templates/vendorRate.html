@@ -1,0 +1,120 @@
+<ion-view view-title="Payment" name="vendor-info" ng-init="filter.direct = true;" style="margin-top: 45px;">
+    <ion-content class="padding has-tabs-bottom">
+        <label class="new-label"><i class="icon ion-ios-clock-outline"></i> RATE</label>
+        <div class="list">
+            <ion-checkbox ng-click="rate.standard = true; rate.other= false; disabled = true" class="item-new" ng-model="rate.standard">
+                <p>Standard Rate
+                    <div style="font-style: italic;font-size: 11px;">(please specify your rate)</div>
+                </p>
+            </ion-checkbox>
+            <div class="list list-inset" style="margin-left: 210px;margin-right: 3%;margin-top: -58px;margin-bottom: 10px;">
+                <label class="item item-input bortop bordbot time-lab">
+                    <i class="icon ion-social-usd"></i>
+                    <input type="number" ng-model="rate.stanDard" ng-show="rate.standard == true" ng-disabled="rate.other" placeholder="00.00" style="padding-right: 0;height: 44px;">
+                </label>
+            </div>
+            <ion-checkbox ng-click="rate.standard = false; rate.other= true;" class="item-new" ng-model="rate.other">
+                <p>Other Rate <small style="font-style: italic;font-size: 11px;">(tick to specify other rate)</small></p>
+            </ion-checkbox>
+        </div>
+        <div class="list form" ng-show="rate.other == true" style="margin-top: -30px;">
+            <div class="row">
+                <div class="col col-50">Weekdays
+                    <div style="color: blue;font-size:13px;font-style: italic;">Base Hours:</div>
+                    <label class="item item-input bortop bordbot time-lab">
+                        <i class="icon ion-social-usd"></i>
+                        <input type="number" ng-model="rate.psrrate" placeholder="00.00" style="padding-right: 0;">
+                    </label>
+                    <br>
+                    <div style="color: red;font-size:13px;font-style: italic;">After Hours:</div>
+                    <label class="item item-input bortop bordbot time-lab">
+                        <i class="icon ion-social-usd"></i>
+                        <input type="number" ng-model="rate.psrrate"  placeholder="00.00" style="padding-right: 0;">
+                    </label>
+                </div>
+                <div class="col col-50">Weekends
+                    <div style="color: blue;font-size:13px;font-style: italic;">Base Hours:</div>
+                    <label class="item item-input bortop bordbot time-lab">
+                        <i class="icon ion-social-usd"></i>
+                        <input type="number" ng-model="rate.psrrate"  placeholder="00.00" style="padding-right: 0;">
+                    </label>
+                    <br>
+                    <div style="color: red;font-size:13px;font-style: italic;">After Hours:</div>
+                    <label class="item item-input bortop bordbot time-lab">
+                        <i class="icon ion-social-usd"></i>
+                        <input type="number" ng-model="rate.psrrate" placeholder="00.00" style="padding-right: 0;">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top:30px;">
+            <hr>
+            <label class="new-label"><i class="icon ion-social-usd"></i> CURRENCY</label>
+            <div class="list" class="padding-top" style="margin-top: 10px;">
+                <label class="item item-input item-select curr bortop bordbot">
+                    <select style="padding: 10px;">
+                        <option selected>Australia Dollar</option>
+                        <option>NZ Dollar</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <label class="new-label"><i class="icon ion-card"></i> PAYMENT METHOD</label>
+        <div class="list">
+            <ion-checkbox ng-click="filter.direct = true; filter.check= false" class="item-new" ng-model="filter.direct">Direct Deposit</ion-checkbox>
+            <ion-checkbox ng-click="filter.direct = false; filter.check= true" class="item-new" ng-model="filter.check">Check</ion-checkbox>
+        </div>
+        <div class="list form" ng-show="filter.direct == true">
+            <hr>
+            <p class="account-det">All requests for payment to bank accounts must be signed by the vendor or accompanied by documentary evidence of bank account details from the vendor(e.g. Email, Fax, Invoice)</p>
+            <h4 class="new-label padding-top">BANK ACCOUNT</h4>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="text" placeholder="Name of Bank" ng-model="data.username">
+                </label>
+            </div>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="text" placeholder="Branch of Bank" ng-model="data.username">
+                </label>
+            </div>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="text" placeholder="Account Name" ng-model="data.username">
+                </label>
+            </div>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="text" placeholder="BSB" ng-model="data.username">
+                </label>
+            </div>
+            <div class="list list-inset">
+                <label class="item item-input bordbot">
+                    <input type="text" placeholder="Account Number" ng-model="data.username">
+                </label>
+            </div>
+        </div>
+        <div class="list" ng-show="filter.check == true">
+            <hr>
+            <p class="account-det">Cheque will forwarded to the address provided.</p>
+        </div>
+        <div class="list">
+            <ion-checkbox class="checkbox-square checkboxList" style="    width: 5px;
+    padding-left: 40px;">
+            </ion-checkbox>
+            <div class="new-label positive" ng-click="openModal()" style="margin-top: -25px;margin-left: 65px;">VIEW TERMS AND CONDITION</div>
+        </div>
+        <div class="row padding-top">
+            <div class="col col-50">
+                <button ng-click="showCancel()" class="button button-block button-stable">
+                    Cancel
+                </button>
+            </div>
+            <div class="col col-50">
+                <button ng-click="showConfirm()" class="button button-block button-positive">
+                    Next
+                </button>
+            </div>
+        </div><br><br>
+    </ion-content>
+</ion-view>

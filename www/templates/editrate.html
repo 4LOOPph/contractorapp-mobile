@@ -1,0 +1,64 @@
+<ion-view view-title="User Profile" name="vendor-info" style="margin-top: 35px;">
+    <ion-content class="padding">
+        <br>
+        <div class="list form" style="padding: 10px;">
+            <div class="list">
+                <p>Standard Rate
+                </p>
+                <div class=" profilerate">
+                    <label class="item item-input bortop bordbot time-lab">
+                        <i class="icon ion-social-usd"></i>
+                        <input type="number" ng-model="rate.stanDard" placeholder="00.00" style="padding-right: 0;height: 44px;">
+                    </label>
+                </div>
+            </div>
+            <div class="list form" style="margin-top: -30px;">
+                <div class="row">
+                    <div class="col col-50">Weekdays
+                        <div style="color: blue;font-size:13px;font-style: italic;">Base Hours:</div>
+                        <label class="item item-input bortop bordbot time-lab">
+                            <i class="icon ion-social-usd"></i>
+                            <input type="number" ng-model="rate.psrrate" placeholder="00.00" style="padding-right: 0;">
+                        </label>
+                        <br>
+                        <div style="color: red;font-size:13px;font-style: italic;">After Hours:</div>
+                        <label class="item item-input bortop bordbot time-lab">
+                            <i class="icon ion-social-usd"></i>
+                            <input type="number" ng-model="rate.psrrate" placeholder="00.00" style="padding-right: 0;">
+                        </label>
+                    </div>
+                    <div class="col col-50">Weekends
+                        <div style="color: blue;font-size:13px;font-style: italic;">Base Hours:</div>
+                        <label class="item item-input bortop bordbot time-lab">
+                            <i class="icon ion-social-usd"></i>
+                            <input type="number" ng-model="rate.psrrate" placeholder="00.00" style="padding-right: 0;">
+                        </label>
+                        <br>
+                        <div style="color: red;font-size:13px;font-style: italic;">After Hours:</div>
+                        <label class="item item-input bortop bordbot time-lab">
+                            <i class="icon ion-social-usd"></i>
+                            <input type="number" ng-model="rate.psrrate" placeholder="00.00" style="padding-right: 0;">
+                        </label>
+                    </div>
+                </div>
+                <!-- <a style="float:right;">EDIT</a> -->
+            </div>
+            <!--  <button class="button add-button" ng-click="addArea(rates)" style="margin-top:40px;">view PSD</button>
+            <button class="button button-block button-positive" style="margin-top:30px;">
+                Start
+            </button> -->
+        </div>
+        <div class="row" style="margin-top:20px;">
+            <div class="col col-50">
+                <button ng-click="clickDecline()" class="button button-block button-stable">
+                    Cancel
+                </button>
+            </div>
+            <div class="col col-50">
+                <button class="button button-block button-positive">
+                    Save Changes
+                </button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

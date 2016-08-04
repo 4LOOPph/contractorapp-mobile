@@ -1,0 +1,33 @@
+<ion-view view-title="" class="login-view">
+    <ion-content>
+        <div class="list back padding-top">
+            <div class="item item-image back">
+                <img src="./img/logo.png" style="width: 23%;margin-top: 50px;">
+            </div>
+            <div class="item login-header back">
+                <h2 class="login-font">CONTRACTOR APP</h2>
+                <h3 class="energized">Always take the lead!</h3>
+                <small class="l-font">Apply as one of our certified contractor</small>
+            </div>
+        </div>
+        <div class="list list-inset padding-left padding-right">
+            <label class="item item-input bortop">
+                <span class="i-con ion-android-person"></span>
+                <input type="text" placeholder="Username" ng-model="data.username">
+            </label>
+            <label class="item item-input bordbot">
+                <span class="i-con ion-android-lock"></span>
+                <input type="password" placeholder="Password" ng-model="data.password">
+                <span class="item-n">
+                    hide
+                    </span>
+            </label>
+        </div>
+        <div class="padding-left padding-right">
+            <div class="forg" >Forgot Password?</div>
+            <a class="button button-block button-positive" ng-click="login()">Login</a>
+            <h4 ui-sref="vendorInfo" class="loglink positive">Apply as contractor</h4>
+            <p class="loglink" style="font-size: 11px;color: #d8d8d8">© 2016 Engagis Pty Ltd</p>
+        </div>
+    </ion-content>
+</ion-view>

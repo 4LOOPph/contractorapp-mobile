@@ -1,0 +1,58 @@
+<ion-view view-title="Contact" class="vendor-contact">
+    <ion-content class="padding form">
+        <div class="list padding-top">
+            <label class="new-label">PRIMARY CONTACT</label>
+        </div>
+        <div class="list list-inset">
+            <label class="item item-input">
+                <span class="i-con ion-android-person"></span>
+                <input type="number" placeholder="Primary Contact" ng-model="data.primarycontact">
+            </label>
+        </div>
+        <div class="list list-inset">
+            <label class="item item-input">
+                <span class="i-con ion-android-call"></span>
+                <input type="number" placeholder="Phone" ng-model="data.phone">
+            </label>
+        </div>
+        <div class="list list-inset">
+            <label class="item item-input bordbot">
+                <span class="i-con ion-android-mail"></span>
+                <input type="email" placeholder="Email" ng-model="data.email">
+            </label>
+        </div>
+        <div class="list padding-top">
+            <label class="new-label">SECONDARY CONTACT</label>
+        </div>
+        <div class="list list-inset">
+            <label class="item item-input">
+                <span class="i-con ion-android-person"></span>
+                <input type="number" placeholder="Secondary Contact" ng-model="data.secondarycontact">
+            </label>
+        </div>
+        <div class="list list-inset">
+            <label class="item item-input">
+                <span class="i-con ion-android-call"></span>
+                <input type="number" placeholder="Phone" ng-model="data.phone2">
+            </label>
+        </div>
+        <div class="list list-inset">
+            <label class="item item-input">
+                <span class="i-con ion-android-mail"></span>
+                <input type="email" placeholder="Email" ng-model="data.email2">
+            </label>
+        </div>
+        <div class="row" class="paddding-top">
+            <div class="col col-50">
+                <button ui-sref="login" class="button button-block button-stable">
+                    Cancel
+                </button>
+            </div>
+            <div class="col col-50">
+                <button ui-sref="vendorRate" class="button button-block button-positive">
+                    Next
+                </button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,100 @@
+<ion-view view-title="Qualifications" name="vendor-info" style="margin-top: 35px;">
+    <ion-content class="padding">
+        <h4 class="new-label padding-top"><i class="icon ion-ios-list-outline"></i> QUALIFICATION CHECKLIST</h4>
+        <div class="list padding-right padding-left">
+            <ion-checkbox class="checkbox-square checkboxList" ng-model="filter.one">
+                <small>Hardware Installations</small>
+            </ion-checkbox>
+            <ion-checkbox class="checkbox-square checkboxList" ng-model="filter.two">
+                <small>Site-D Installations</small>
+            </ion-checkbox>
+            <ion-checkbox class="checkbox-square checkboxList" ng-model="filter.three">
+                <small>Preventive Maintenance</small>
+            </ion-checkbox>
+            <ion-checkbox class="checkbox-square checkboxList" ng-model="filter.four">
+                <small>Digital Media and Digital Points of Purchase Rollouts</small>
+            </ion-checkbox>
+            <ion-checkbox class="checkbox-square checkboxList" ng-model="filter.five">
+                <small>Basic Networking Experience</small>
+            </ion-checkbox>
+            <ion-checkbox class="checkbox-square checkboxList" ng-model="filter.size">
+                <small>Testing and Servicing Equipment</small>
+            </ion-checkbox>
+            <div ng-repeat="group in groups">
+                <div class="item-stable" ng-click="toggleGroup(group)">
+                    <ion-checkbox class="checkbox-square checkboxList">
+                        <small>Others</small>
+                    </ion-checkbox>
+                </div>
+                <div class="aitem " ng-repeat="other in othersList" style="position: relative;">
+                    {{other.task}}
+                    <button class="button-small icon ion-close-round boo" ng-click="removeOther($index)"></button>
+                </div>
+                <ion-item class="item-accordion" ng-show="isGroupShown(group)" style="padding: 0px;">
+                    <div class="item-input-inset">
+                        <label class="item-input-wrapper">
+                            <input type="text" placeholder="Add other Qualification" ng-model="others.task">
+                        </label>
+                        <button ng-click="addOthers(others)" class="button button-small button-stab icon ion-plus" style="border-radius: 0px;"></button>
+                    </div>
+                </ion-item>
+            </div>
+        </div>
+        <label class="new-label"><i class="icon ion-document"></i> ATTACH RESUME</label>
+        <div class="list padding-top padding-right padding-left">
+            <label class="item item-input bortop bordbot my-drop-zone">
+                <p class="stable"></p>
+                <input type="file" name="">
+            </label>
+        </div>
+        <div class="list padding-top">
+            <label class="new-label"><i class="icon ion-document"></i> ATTACH CERTIFICATE</label>
+        </div>
+        <div class="list list-inset padding-right padding-left" style="margin-top: 0;margin-bottom: 15px;">
+            <label class="item item-input bortop bordbot my-drop-zone">
+                <p class="stable"></p>
+                <input type="file" name="">
+            </label>
+            <button class="button button-block button-energized icon-left ion-camera">
+                Scan Certificate
+            </button>
+        </div>
+        <label class="new-label">REFERENCE</label>
+        <div class="form">
+            <div class="list list-inset">
+                <label class="item item-input item-icon-left">
+                    <span class="i-con ion-ios-person-outline"></span>
+                    <input type="text" ng-model="data.lname" placeholder="Last Name">
+                </label>
+                <label class="item item-input item-icon-left">
+                    <span class="i-con"></span>
+                    <input type="text" ng-model="data.fname" placeholder="First Name">
+                </label>
+            </div>
+            <div class="list list-inset">
+            <label class="item item-input item-icon-left">
+                <span class="i-con ion-ios-telephone-outline"></span>
+                <input type="text" placeholder="Contact Number" ng-model="data.phone" mask="(999) 999-9999" clean="true">
+            </label>
+        </div>
+        <div class="list list-inset">
+            <label class="item item-input bordbot item-icon-left">
+                <span class="i-con ion-ios-email-outline"></span>
+                <input type="email" placeholder="Email Address" ng-model="data.email">
+            </label>
+        </div>
+        </div>
+        <div class="row padding-top">
+            <div class="col col-50">
+                <button ng-click="showCancel()" class="button button-block button-stable">
+                    Cancel
+                </button>
+            </div>
+            <div class="col col-50">
+                <button ui-sref="vendorRate" class="button button-block button-positive">
+                    Next
+                </button>
+            </div>
+        </div><br>
+    </ion-content>
+</ion-view>

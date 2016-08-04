@@ -1,0 +1,131 @@
+<ion-view view-title="Dashboard" style="background-color: #efefef;">
+    <ion-nav-buttons side="secondary">
+        <button class="button button-icon ion-ios-gear-outline"  ng-click="showPopover($event)"></button>
+    </ion-nav-buttons>
+    <ion-content style="top: 55px;background-color: #efefef;">
+        <label class="new-label" style="margin-top:20px;"><i class="icon ion-ios-pie-outline"></i> TASK IN PROGRESS</label>
+        <div class="card newcard" style="margin-top: 10px;background-color: #efefef;margin-bottom: 20px;">
+            <!-- card start -->
+            <div class="taskcardgreen" ng-class="{active:filter.direct == true}"  ng-click="showModerate()">
+                <div class="card-sidepad"></div>
+                <div class="cardin">
+                    <div class="card-lbl">Digital Ticket Testing</div>
+                    <p class="card-lblp">Telstra</p>
+                    <p class="card-lblp" style="margin-top: -5px;">27 June 2016</p>
+                    <button class="btn-flat btn-done" ng-click="clickToCheckout()">DONE</button>
+                </div>
+            </div>
+            <div class="taskcardred" ng-class="{active:filter.check == true}" ng-click="showHigh()">
+                <div class="card-sidepad" style="background-color: red;"></div>
+                <div class="cardin">
+                    <div class="card-lbl">Network Setup</div>
+                    <p class="card-lblp">7-Eleven</p>
+                    <p class="card-lblp" style="margin-top: -5px;">7 July 2016</p>
+                    <button class="btn-flat btn-done" ng-click="clickToCheckout2()">DONE</button>
+                </div>
+            </div>
+            <div class=" taskcardyellow" ng-class="{active:filter.check1 == true}" ng-click="showLow()">
+                <div class="card-sidepad" style="background-color: yellow;"></div>
+                <div class="cardin">
+                    <div class="card-lbl">Hardware Installation</div>
+                    <p class="card-lblp">Telstra</p>
+                    <p class="card-lblp" style="margin-top: -5px;">17 July 2016</p>
+                    <button class="btn-flat btn-done" ng-click="clickToCheckout3()">DONE</button>
+                </div>
+            </div>
+        </div>
+        <div ng-show="filter.direct == true">
+            <label class="new-label"><i class="icon ion-ios-pie-outline"></i> PRIORITY TASK</label>
+            <div class="card" style="margin-top: 10px;background-color: #efefef;">
+                <div class="carding">
+                    <label class="cardlabel">DIGITAL TICKET TESTING</label>
+                    <p style="color: rgb(115, 115, 115);">Install Network cabling</p>
+                    <div>
+                        <div class="cl1">Location
+                            <div class="cl2">:</div>
+                            <div class="cl3">Sydney CBD</div>
+                        </div>
+                        <div class="cl1">Deadline
+                            <div class="cl2">:</div>
+                            <div class="cl3">27 June 2016</div>
+                        </div>
+                        <div class="cl1">Client
+                            <div class="cl2">:</div>
+                            <div class="cl3">Telstra</div>
+                        </div>
+                        <div class="cl1">Status
+                            <div class="cl2">:</div>
+                            <div class="cl3" style="color:#0f6ab5;">In progress</div>
+                        </div>
+                        <div class="cl1">Priority
+                            <div class="cl2">:</div>
+                            <div class="cl3" style="color:green;">Moderate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-show="filter.check == true">
+            <label class="new-label"><i class="icon ion-ios-pie-outline"></i> PRIORITY TASK</label>
+            <div class="card" style="margin-top: 10px;background-color: #efefef;">
+                <div class="carding">
+                    <label class="cardlabel">NETWORK SETUP</label>
+                    <p style="color: rgb(115, 115, 115);">Eat Network cabling</p>
+                    <div>
+                        <div class="cl1">Location
+                            <div class="cl2">:</div>
+                            <div class="cl3">Sydney CBD</div>
+                        </div>
+                        <div class="cl1">Deadline
+                            <div class="cl2">:</div>
+                            <div class="cl3">7 July 2016</div>
+                        </div>
+                        <div class="cl1">Client
+                            <div class="cl2">:</div>
+                            <div class="cl3">7-Eleven</div>
+                        </div>
+                        <div class="cl1">Status
+                            <div class="cl2">:</div>
+                            <div class="cl3" style="color:#0f6ab5;">In progress</div>
+                        </div>
+                        <div class="cl1">Priority
+                            <div class="cl2">:</div>
+                            <div class="cl3" style="color:red;">High</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-show="filter.check1 == true">
+            <label class="new-label"><i class="icon ion-ios-pie-outline"></i> PRIORITY TASK</label>
+            <div class="card" style="margin-top: 10px;background-color: #efefef;">
+                <div class="carding">
+                    <label class="cardlabel">HARDWARE INSTALLATION</label>
+                    <p style="color: rgb(115, 115, 115);">Install hardware</p>
+                    <div>
+                        <div class="cl1">Location
+                            <div class="cl2">:</div>
+                            <div class="cl3">Sydney CBD</div>
+                        </div>
+                        <div class="cl1">Deadline
+                            <div class="cl2">:</div>
+                            <div class="cl3">17 July 2016</div>
+                        </div>
+                        <div class="cl1">Client
+                            <div class="cl2">:</div>
+                            <div class="cl3">Telstra</div>
+                        </div>
+                        <div class="cl1">Status
+                            <div class="cl2">:</div>
+                            <div class="cl3" style="color:#0f6ab5;">In progress</div>
+                        </div>
+                        <div class="cl1">Priority
+                            <div class="cl2">:</div>
+                            <div class="cl3" style="color:yellow;">Low</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

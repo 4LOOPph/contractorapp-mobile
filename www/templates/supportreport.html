@@ -1,0 +1,105 @@
+<ion-view view-title="Create Report" name="vendor-info" style="margin-top: 35px;">
+    <ion-nav-buttons side="primary">
+        <button class="button button-icon ion-ios-arrow-left"  ng-click="myGoBack()"></button>
+    </ion-nav-buttons>
+    <ion-content class="padding">
+        <br>
+        <div class="list form" style="padding: 10px;">
+            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-paper-outline"></i> ASSIGNEE<a style="color:red;float:right;">17 July, 2016</a></label>
+            <div><small>Lorem Impatsu</small></div>
+            <br>
+            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-list-outline"></i> TASK NAME</label>
+            <div><small>Network Cabling</small></div>
+            <br>
+            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-android-clipboard"></i> DESCRIPTION</label>
+            <div><small>Lorem Impatsu si dolor amet.</small></div>
+            <hr>
+            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-home-outline"></i> STORE NAME & LOCATION</label>
+            <div><small>Telstra</small></div>
+            <br>
+            <div class="row">
+                <div class="col col-50">
+                    <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-alarm-outline"></i> DEADLINE</label>
+                    <div><small style="color:blue;">27 June 2016</small></div>
+                    <div><small style="color:red;">5 pm</small></div>
+                </div>
+                <div class="col col-50">
+                    <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-clock-outline"></i> ESTIMATE TASK COMPLETION</label>
+                    <!-- <div><small style="color:blue;">Day/s: 1 day</small></div> -->
+                    <div><small style="color:red;">Hour/s: 5 hours</small></div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col col-75">
+                    <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-clock-outline"></i> TOTAL # OF HOURS SPENT:</label>
+                    <br>
+                    <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-clock-outline"></i> DURING BASE HOURS:</label>
+                    <br>
+                    <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-clock-outline"></i> DURING AFTER HOURS:</label>
+                </div>
+                <div class="col">
+                    <small style="color:red;">7 Hours</small>
+                    <br> <small style="color:blue;">4 Hours</small>
+                    <br> <small style="color:blue;">3 Hours</small>
+                </div>
+                <hr>
+            </div>
+            <hr>
+            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-copy-outline"></i> JOB SUMMARY <small style="font-style:italic;">(To be filled-up by contractor)</small></label>
+            <br>
+            <br>
+            <label class="new-label" style="margin-left: 0px;"> ROOT CAUSE IDENTIFIED <small style="font-style:italic;">(mandatory)</small></label>
+            <textarea class="reptxtarea" placeholder="If unknown, otherwise write 'unknown'" rows="4">
+            </textarea>
+            <br>
+            <label class="new-label" style="margin-left: 0px;"> STEPS TAKEN TO RESOLVE <small style="font-style:italic;">(mandatory)</small></label>
+            <textarea class="reptxtarea" placeholder="If unknown, otherwise write 'unknown'" rows="4">
+            </textarea>
+            <br>
+            <label class="new-label" style="margin-left: 0px;"> PREVENTIVE RECOMMENDATIONS <small style="font-style:italic;">(mandatory)</small></label>
+            <textarea class="reptxtarea" placeholder="If unknown, otherwise write 'unknown'" rows="4">
+            </textarea>
+            <br>
+            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-photos-outline"></i> PHOTOS/IMAGES <small style="font-style:italic;">(mandatory)</small>
+                <br><small style="font-style:italic;">(photos of the solution (including player and/or screens))</small></label>
+            <br>
+            <button class="addp2"><i class="icon ion-android-add"></i></button>
+            <hr>
+            <label class="new-label" style="margin-left: 0px;"> CUSTOMER SIGN-OFF <small style="font-style:italic;">(mandatory)</small></label>
+            <div class="form" style="margin-left: -10px;margin-right: -10px;">
+                <div class="list list-inset">
+                    <label class="item item-input item-icon-left">
+                        <span class="i-con ion-ios-person-outline"></span>
+                        <input type="text" ng-model="data.lname" placeholder="Last Name">
+                    </label>
+                    <label class="item item-input item-icon-left">
+                        <span class="i-con"></span>
+                        <input type="text" ng-model="data.fname" placeholder="First Name">
+                    </label>
+                </div>
+                <div class="list list-inset">
+                    <label class="item item-input item-icon-left">
+                        <span class="i-con ion-ios-telephone-outline"></span>
+                        <input type="text" placeholder="Contact Number" ng-model="data.phone" mask="(999) 999-9999" clean="true">
+                    </label>
+                </div>
+                <div class="list list-inset">
+                    <label class="item item-input bordbot item-icon-left">
+                        <span class="i-con ion-ios-email-outline"></span>
+                        <input type="email" placeholder="Email Address" ng-model="data.email">
+                    </label>
+                </div>
+            </div>
+            <button class="button button-block button-energized icon-left ion-camera">
+                Get Signature
+            </button>
+            <hr>
+            <br>
+            <button class="button button-block button-positive">
+                Submit Report
+            </button>
+        </div>
+        <br>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,326 @@
+<ion-view view-title="Create Report" name="vendor-info" style="margin-top: 35px;">
+<ion-nav-buttons side="primary">
+        <button class="button button-icon ion-ios-arrow-left"  ng-click="myGoBack()"></button>
+    </ion-nav-buttons>
+    <ion-content class="padding">
+        <br>
+        <div class="list form" style="padding: 10px;">
+            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-paper-outline"></i> ASSIGNEE<a style="color:red;float:right;">17 July, 2016</a></label>
+            <div><small>Lorem Impatsu</small></div>
+            <br>
+            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-list-outline"></i> TASK NAME</label>
+            <div><small>Network Cabling</small></div>
+            <br>
+            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-android-clipboard"></i> DESCRIPTION</label>
+            <div><small>Lorem Impatsu si dolor amet.</small></div>
+            <hr>
+            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-home-outline"></i> STORE NAME & LOCATION</label>
+            <div><small>Telstra</small></div>
+            <br>
+            <div class="row">
+                <div class="col col-50">
+                    <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-alarm-outline"></i> DEADLINE</label>
+                    <div><small style="color:blue;">27 June 2016</small></div>
+                    <div><small style="color:red;">5 pm</small></div>
+                </div>
+                <div class="col col-50">
+                    <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-clock-outline"></i> ESTIMATE TASK COMPLETION</label>
+                    <!--  <div><small style="color:blue;">Day/s: 1 day</small></div> -->
+                    <div><small style="color:red;">Hour/s: 5 hours</small></div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col col-75">
+                    <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-clock-outline"></i> TOTAL # OF HOURS SPENT:</label>
+                    <br>
+                    <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-clock-outline"></i> DURING BASE HOURS:</label>
+                    <br>
+                    <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-clock-outline"></i> DURING AFTER HOURS:</label>
+                </div>
+                <div class="col">
+                    <small style="color:red;">7 Hours</small>
+                    <br> <small style="color:blue;">4 Hours</small>
+                    <br> <small style="color:blue;">3 Hours</small>
+                </div>
+                <hr>
+            </div>
+            <hr>
+            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-photos-outline"></i> INSTALLATION CHECKLIST </label>
+            <div class="row">
+            
+                <div class="col col-50"><small>1. Media Player</small></div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes1 = true; filter.no1= false; filter.na1=false" ng-model="filter.yes1"><small style="margin-left: 20px;">Yes</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes1 = false; filter.no1= true; filter.na1=false" ng-model="filter.no1"><small style="margin-left: 20px;">No</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes1 = false; filter.no1= false; filter.na1=true" ng-model="filter.na1"><small style="margin-left: 20px;">NA</small></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-50"><small>2. Software Installation</small></div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes2 = true; filter.no2= false; filter.na2=false" ng-model="filter.yes2"><small style="margin-left: 20px;">Yes</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes2 = false; filter.no2= true; filter.na2=false" ng-model="filter.no2"><small style="margin-left: 20px;">No</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes2 = false; filter.no2= false; filter.na2=true" ng-model="filter.na2"><small style="margin-left: 20px;">NA</small></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-50">
+                    <small>3. Screen, set to "always ON" 
+                    <label class="item item-input" style="height: 30px;border-radius:4px;">
+                        <input type="number" ng-model="data.fname" placeholder="spicify how many">
+                    </label>
+                    </small>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes3 = true; filter.no3= false; filter.na3=false" ng-model="filter.yes3"><small style="margin-left: 20px;">Yes</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes3 = false; filter.no3= true; filter.na3=false" ng-model="filter.no3"><small style="margin-left: 20px;">No</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes3 = false; filter.no3= false; filter.na3=true" ng-model="filter.na3"><small style="margin-left: 20px;">NA</small></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-50"><small>4. Ensure location of computer is accessible to staff to restart</small></div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes4 = true; filter.no4= false; filter.na4=false" ng-model="filter.yes4"><small style="margin-left: 20px;">Yes</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes4 = false; filter.no4= true; filter.na4=false" ng-model="filter.no4"><small style="margin-left: 20px;">No</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes4 = false; filter.no4= false; filter.na4=true" ng-model="filter.na4"><small style="margin-left: 20px;">NA</small></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-50"><small>5. Test: unplug power to PC & reconnect - it should restart automatically.</small></div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes5 = true; filter.no5= false; filter.na5=false" ng-model="filter.yes5"><small style="margin-left: 20px;">Yes</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes5 = false; filter.no5= true; filter.na5=false" ng-model="filter.no5"><small style="margin-left: 20px;">No</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes5 = false; filter.no5= false; filter.na5=true" ng-model="filter.na5"><small style="margin-left: 20px;">NA</small></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-50"><small>6. Test: unplug power to screen & reconnect - it should restart automatically.</small></div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes6 = true; filter.no6= false; filter.na6=false" ng-model="filter.yes6"><small style="margin-left: 20px;">Yes</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes6 = false; filter.no6= true; filter.na6=false" ng-model="filter.no6"><small style="margin-left: 20px;">No</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes6 = false; filter.no6= false; filter.na6=true" ng-model="filter.na6"><small style="margin-left: 20px;">NA</small></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-50"><small>7. Test: there is internet connectivity & live properties are downloading.</small></div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes7 = true; filter.no7= false; filter.na7=false" ng-model="filter.yes7"><small style="margin-left: 20px;">Yes</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes7 = false; filter.no7= true; filter.na7=false" ng-model="filter.no7"><small style="margin-left: 20px;">No</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes7 = false; filter.no7= false; filter.na7=true" ng-model="filter.na7"><small style="margin-left: 20px;">NA</small></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-50"><small>8. Test: touch screen sensitivity through calibration.</small></div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes8 = true; filter.no8= false; filter.na8=false" ng-model="filter.yes8"><small style="margin-left: 20px;">Yes</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes8 = false; filter.no8= true; filter.na8=false" ng-model="filter.no8"><small style="margin-left: 20px;">No</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes8 = false; filter.no8= false; filter.na8=true" ng-model="filter.na8"><small style="margin-left: 20px;">NA</small></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-50"><small>9. Test: simple navigation through app making all section of touch foil is working.</small></div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes9 = true; filter.no9= false; filter.na9=false" ng-model="filter.yes9"><small style="margin-left: 20px;">Yes</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes9 = false; filter.no9= true; filter.na9=false" ng-model="filter.no9"><small style="margin-left: 20px;">No</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="filter.yes9 = false; filter.no9= false; filter.na9=true" ng-model="filter.na9"><small style="margin-left: 20px;">NA</small></div>
+                </div>
+            </div>
+            <label class="new-label" style="margin-left: 0px;"> PHOTOS/IMAGES <small style="font-style:italic;">(mandatory)</small>
+                <br><small style="font-style:italic;">(photos of the solution (including player and/or screens))</small></label>
+            <br>
+            <button class="addp2"><i class="icon ion-android-add"></i></button>
+            <br>
+            <br>
+            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-information-outline"></i> OUTSTANDING ISSUE</label>
+            <textarea class="reptxtarea" placeholder="If unknown, otherwise write 'unknown'" rows="4">
+            </textarea>
+            <br>
+            <hr>
+            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-photos-outline"></i> TEST ITEMS <small style="font-style:italic;">(mandatory)</small></label>
+            <br>
+            <br>
+            <label class="new-label" style="margin-left: 0px;">
+                </i>Test Items <small style="font-style:italic;">(To be answered by customer)</small></label>
+            <div class="row">
+                <div class="col col-50"><small>1. Power-up screen</small></div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="pass1 = true; fail1= false" ng-model="pass1"><small style="margin-left: 20px;">Pass</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="pass1 = false; fail1= true" ng-model="fail1"><small style="margin-left: 20px;">Fail</small></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-50"><small>2. Screen is playing media content from PC correctly</small></div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="pass2 = true; fail2= false" ng-model="pass2"><small style="margin-left: 20px;">Pass</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="pass2 = false; fail2= true" ng-model="fail2"><small style="margin-left: 20px;">Fail</small></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-50"><small>3. Test 3G signal (if applicable)</small></div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="pass3 = true; fail3= false" ng-model="pass3"><small style="margin-left: 20px;">Pass</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="pass3 = false; fail3= true" ng-model="fail3"><small style="margin-left: 20px;">Fail</small></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-50"><small>4. Test audio</small></div>
+               <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="pass4 = true; fail4= false" ng-model="pass4"><small style="margin-left: 20px;">Pass</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="pass4 = false; fail4= true" ng-model="fail4"><small style="margin-left: 20px;">Fail</small></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-50"><small>5. Check if area is left tidy and cable free</small></div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="pass5 = true; fail5= false" ng-model="pass5"><small style="margin-left: 20px;">Pass</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="pass5 = false; fail5= true" ng-model="fail5"><small style="margin-left: 20px;">Fail</small></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-50"><small>6. Software training has been conducted.<label class="item item-input" style="height: 30px;border-radius:4px;">
+                        <input type="number" ng-model="data.fname" placeholder="spicify date">
+                    </label></small></div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="pass6 = true; fail6= false" ng-model="pass6"><small style="margin-left: 20px;">Pass</small></div>
+                </div>
+                <div class="col">
+                    <div class="checkbox1">
+                        <input type="checkbox" class="new-item" name="" ng-click="pass6 = false; fail6= true" ng-model="fail6"><small style="margin-left: 20px;">Fail</small></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-100"><small>7. Name of person the remote is in possession of OR location of remote control.<label class="item item-input" style="height: 30px;border-radius:4px;">
+                        <input type="number"  placeholder="name">
+                    </label></small></div>
+            </div>
+            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-star-outline"></i> CUSTOMER RATING </label>
+            <br>
+            <small style="font-style:italic;">Rate service (1-5)</small>
+            <div class="rating">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+         
+            <br>
+            <hr>
+            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-person-outline"></i> CUSTOMER RATING </label>
+            <div class="form" style="margin-left: -10px;margin-right: -10px;">
+                <div class="list list-inset">
+                    <label class="item item-input item-icon-left">
+                        <span class="i-con ion-ios-person-outline"></span>
+                        <input type="text" ng-model="data.lname" placeholder="Last Name">
+                    </label>
+                    <label class="item item-input item-icon-left">
+                        <span class="i-con"></span>
+                        <input type="text" ng-model="data.fname" placeholder="First Name">
+                    </label>
+                </div>
+                <div class="list list-inset">
+                    <label class="item item-input item-icon-left">
+                        <span class="i-con ion-ios-telephone-outline"></span>
+                        <input type="text" placeholder="Contact Number" ng-model="data.phone" mask="(999) 999-9999" clean="true">
+                    </label>
+                </div>
+                <div class="list list-inset">
+                    <label class="item item-input bordbot item-icon-left">
+                        <span class="i-con ion-ios-email-outline"></span>
+                        <input type="email" placeholder="Email Address" ng-model="data.email">
+                    </label>
+                </div>
+            </div>
+            <button class="button button-block button-energized icon-left ion-camera">
+                Get Signature
+            </button>
+            <hr>
+            <br>
+            <button  class="button button-block button-positive">
+                Submit Report
+            </button>
+        </div>
+        <br>
+    </ion-content>
+</ion-view>

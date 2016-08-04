@@ -1,0 +1,78 @@
+<ion-view view-title="Task" style="background-color: #efefef;">
+    <ion-nav-buttons side="secondary">
+        <button class="button button-icon ion-ios-gear-outline" ng-click="showPopoveradmin($event)"></button>
+    </ion-nav-buttons>
+    <ion-content style="top: 55px;background-color: #efefef;">
+        <label class="new-label" style="margin-top:20px;"><i class="icon ion-ios-pie-outline"></i> IN PROGRESS <a style="float:right;margin-right:10px;">VIEW ALL</a></label>
+        <div class="card newcard">
+            <!-- card start -->
+            <div class=" taskcardgreen" ng-click="filter.direct = true; filter.check= false; filter.check1= false">
+                <div class="card-sidepad"></div>
+                <div class="cardin">
+                    <div class="card-lbl">Digital Ticket Testing</div>
+                    <p class="card-lblp">Telstra</p>
+                    <p class="card-lblp" style="margin-top: -5px;">27 June 2016</p>
+                    <!-- <button class="btn-flat btn-done" ng-click="clickToCheckout()">DONE</button> -->
+                    <!-- ui-sref="progress" -->
+                </div>
+            </div>
+            <div class=" taskcardyellow" ng-click="filter.direct = false; filter.check= false; filter.check1= true">
+                <div class="card-sidepad" style="background-color: #ece505;"></div>
+                <div class="cardin">
+                    <div class="card-lbl">Hardware Installation</div>
+                    <p class="card-lblp">Telstra</p>
+                    <p class="card-lblp" style="margin-top: -5px;">17 July 2016</p>
+                    <!-- <button class="btn-flat btn-done" ng-click="clickToCheckout()">DONE</button> -->
+                    <!-- ui-sref="progress" -->
+                </div>
+            </div>
+            <!-- endcard -->
+        </div>
+        <label class="new-label" style="margin-top:20px;"><i class="icon ion-ios-plus-outline"></i> FOR APPROVAL <a style="float:right;margin-right:10px;">VIEW ALL</a></label>
+        <div class="card newcard">
+            <!-- card start -->
+            <div class=" taskcardred">
+                <div class="card-sidepad" style="background-color: #c10606;"></div>
+                <div class="cardin">
+                    <div class="card-lbl">Network Setup</div>
+                    <p class="card-lblp">7-Eleven</p>
+                    <p class="card-lblp" style="margin-top: -5px;">7 July 2016</p>
+                    <button class="btn-flat btn-done" ng-click="pendingDetails($event)">DETAILS</button>
+                </div>
+            </div>
+            <div class=" taskcardgreen">
+                <div class="card-sidepad"></div>
+                <div class="cardin">
+                    <div class="card-lbl">Digital Ticket Testing</div>
+                    <p class="card-lblp">Telstra</p>
+                    <p class="card-lblp" style="margin-top: -5px;">27 June 2016</p>
+                    <button class="btn-flat btn-done" ng-click="pendingDetails($event)">DETAILS</button>
+                </div>
+            </div>
+            <!-- endcard -->
+        </div>
+        <label class="new-label" style="margin-top:20px;"><i class="icon ion-ios-checkmark-outline"></i> COMPLETED <a style="float:right;margin-right:10px;">VIEW ALL</a></label>
+        <div class="card newcard">
+            <div class=" taskcardwhite" ng-click="">
+                <div class="card-sidepad" style="background-color: transparent;"></div>
+                <div class="cardin">
+                    <div class="card-lbl">Network Setup</div>
+                    <p class="card-lblp">7-Eleven</p>
+                    <p class="card-lblp" style="margin-top: -5px;">7 July 2016</p>
+                    <button class="btn-flat btn-done">CLOSE</button>
+                </div>
+            </div>
+            <div class=" taskcardwhite" ng-click="">
+                <div class="card-sidepad" style="background-color: transparent;"></div>
+                <div class="cardin">
+                    <div class="card-lbl">Hardware Installation</div>
+                    <p class="card-lblp">Telstra</p>
+                    <p class="card-lblp" style="margin-top: -5px;">17 July 2016</p>
+                    <button class="btn-flat btn-done">CLOSE</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </ion-content>
+</ion-view>
