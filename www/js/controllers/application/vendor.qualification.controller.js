@@ -64,7 +64,7 @@
             console.log(files, filenames);
         };
 
-        $scope.removetest = function(elemet){
+        $scope.removetest = function(element){
             $scope.filenames.splice(element,1);
         };
 

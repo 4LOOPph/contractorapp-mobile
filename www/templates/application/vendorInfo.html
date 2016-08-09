@@ -32,7 +32,7 @@
                 <div class="list list-inset" style="margin-top: -10px;">
                     <label class="item item-input item-icon-left">
                         <span class="i-con ion-ios-briefcase-outline"></span>
-                        <input type="text" name="cname" ng-model="data.CompanyName" placeholder="Company Name" required>
+                        <input type="text" name="cname" ng-model="data.CompanyName" placeholder="Company Name">
                     </label>
                 </div>
                 <div class="list padding-top">
@@ -51,12 +51,11 @@
                     </label>
                     <label class="item item-input item-select" style="height: 48px;">
                         <span class="i-con"></span>
-                        <input ion-autocomplete type="text" readonly="readonly" class="ion-autocomplete" autocomplete="off" max-selected-items="1" placeholder="Cities..." items-method-value-key="items" item-value-key="id" item-view-value-key="name"  ng-model="data.city" items-method="callbackMethod(query)" items-clicked-method="itemsClicked(callback)"/>
+                        <input ion-autocomplete type="text" readonly="readonly" class="ion-autocomplete" autocomplete="off" max-selected-items="1" placeholder="Cities..." items-method-value-key="items" item-value-key="id" item-view-value-key="name" ng-model="data.city" items-method="callbackMethod(query)" items-clicked-method="itemsClicked(callback)" />
                     </label>
-                    <label class="item item-input item-icon-left item-icon-right validated">
+                    <label class="item item-input item-icon-left item-icon-right">
                         <span class="i-con ion-ios-home-outline"></span>
-                        <input type="text" placeholder="Specific Address" name="address" ng-model="data.address" required>
-                        <i class="icon ion-alert-circled error"></i>
+                        <input type="text" placeholder="Specific Address" name="address" ng-model="data.address">
                     </label>
                     <label class="item item-input item-icon-left">
                         <span class="i-con"></span>
@@ -66,7 +65,7 @@
                 <div class="list list-inset">
                     <label class="item item-input item-icon-left item-icon-right validated">
                         <span class="i-con ion-ios-briefcase-outline"></span>
-                        <input type="number" name="abn" ng-model="data.abn" placeholder="ABN" required>
+                        <input type="number" name="abn" ng-model="data.abn" placeholder="ABN" required="required">
                         <i class="icon ion-alert-circled error"></i>
                     </label>
                 </div>
@@ -76,14 +75,14 @@
                 <div class="list list-inset" style="margin-top: -51px;">
                     <label class="item item-input item-icon-left item-icon-right validated">
                         <span class="i-con ion-ios-telephone-outline"></span>
-                        <input type="number" placeholder="Contact Number" name="phone" ng-model="data.phone" required>
+                        <input type="number" placeholder="Contact Number" name="phone" ng-model="data.phone" required="required">
                         <i class="icon ion-alert-circled error"></i>
                     </label>
                 </div>
                 <div class="list list-inset">
                     <label class="item item-input bordbot item-icon-left item-icon-right validated">
                         <span class="i-con ion-ios-email-outline"></span>
-                        <input type="email" placeholder="Email Address" name="email" ng-model="data.email" required>
+                        <input type="email" placeholder="Email Address" name="email" ng-model="data.email" required="required">
                         <i class="icon ion-alert-circled error"></i>
                     </label>
                 </div>

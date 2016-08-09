@@ -764,6 +764,13 @@ input[type="file"] {
     text-align: center;
     color: #fff;
 }
+.dropprofile{
+    background-color: #0e60a3;
+    text-align: center;
+    color: #fff;
+    margin-top: 0px;
+    padding-top: 15px;
+}
 
 .popover {
     position: absolute;
@@ -792,7 +799,7 @@ input[type="file"] {
     margin-bottom: -1px;
     width: auto;
     height: auto;
-    background-color: #fbfbfb;
+    // background-color: #fbfbfb;
 }
 
 .platform-ios .popover {
@@ -1561,4 +1568,10 @@ form.ng-submitted input.ng-valid + i.icon.error {
     padding: 5px 10px;
     border-bottom: 1px solid #eee;
     text-align: center;
+}
+
+.platform-android .popover {
+    margin-top: 0px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
 }

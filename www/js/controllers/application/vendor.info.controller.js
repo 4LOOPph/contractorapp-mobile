@@ -202,7 +202,7 @@
         $scope.vendorinf = function(form) {
             if (form.$valid) {
 
-                if ($scope.avail) {
+                if ($scope.avail.availability) {
                     $scope.data.availabilityArr.push({
                         availability: $scope.avail.availability,
                         start: $scope.avail.start,
@@ -214,7 +214,7 @@
                     $scope.avail.end = '';
                 }
 
-                if ($scope.area) {
+                if ($scope.area.coverage) {
                     $scope.data.coverageArr.push({
                         area: $scope.area.coverage
                     });
