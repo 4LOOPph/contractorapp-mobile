@@ -1,0 +1,3159 @@
+[
+  {
+    "place_name": "Mount Stuart",
+    "state_code": "TAS",
+    "latitude": -42.8716,
+    "longitude": 147.3016
+  },
+  {
+    "place_name": "North Hobart",
+    "state_code": "TAS",
+    "latitude": -42.8741,
+    "longitude": 147.316
+  },
+  {
+    "place_name": "Queens Domain",
+    "state_code": "TAS",
+    "latitude": -42.877,
+    "longitude": 147.3288
+  },
+  {
+    "place_name": "West Hobart",
+    "state_code": "TAS",
+    "latitude": -42.8766,
+    "longitude": 147.3069
+  },
+  {
+    "place_name": "Glebe",
+    "state_code": "TAS",
+    "latitude": -42.8747,
+    "longitude": 147.3281
+  },
+  {
+    "place_name": "Hobart",
+    "state_code": "TAS",
+    "latitude": -42.8794,
+    "longitude": 147.3294
+  },
+  {
+    "place_name": "Hobart",
+    "state_code": "TAS",
+    "latitude": -42.8794,
+    "longitude": 147.3294
+  },
+  {
+    "place_name": "North Hobart",
+    "state_code": "TAS",
+    "latitude": -42.8741,
+    "longitude": 147.316
+  },
+  {
+    "place_name": "South Hobart",
+    "state_code": "TAS",
+    "latitude": -42.8946,
+    "longitude": 147.3092
+  },
+  {
+    "place_name": "Battery Point",
+    "state_code": "TAS",
+    "latitude": -42.8899,
+    "longitude": 147.3332
+  },
+  {
+    "place_name": "Sandy Bay",
+    "state_code": "TAS",
+    "latitude": -42.8945,
+    "longitude": 147.3244
+  },
+  {
+    "place_name": "Dynnyrne",
+    "state_code": "TAS",
+    "latitude": -42.9054,
+    "longitude": 147.3158
+  },
+  {
+    "place_name": "Lower Sandy Bay",
+    "state_code": "TAS",
+    "latitude": -42.913,
+    "longitude": 147.3532
+  },
+  {
+    "place_name": "University Of Tasmania",
+    "state_code": "TAS",
+    "latitude": -42.9107,
+    "longitude": 147.3357
+  },
+  {
+    "place_name": "Sandy Bay",
+    "state_code": "TAS",
+    "latitude": -42.8945,
+    "longitude": 147.3244
+  },
+  {
+    "place_name": "Tolmans Hill",
+    "state_code": "TAS",
+    "latitude": -42.914,
+    "longitude": 147.3071
+  },
+  {
+    "place_name": "Mount Nelson",
+    "state_code": "TAS",
+    "latitude": -42.9207,
+    "longitude": 147.3207
+  },
+  {
+    "place_name": "New Town",
+    "state_code": "TAS",
+    "latitude": -42.8576,
+    "longitude": 147.3087
+  },
+  {
+    "place_name": "Lenah Valley",
+    "state_code": "TAS",
+    "latitude": -42.8715,
+    "longitude": 147.2751
+  },
+  {
+    "place_name": "West Moonah",
+    "state_code": "TAS",
+    "latitude": -42.85,
+    "longitude": 147.2818
+  },
+  {
+    "place_name": "Moonah",
+    "state_code": "TAS",
+    "latitude": -42.8462,
+    "longitude": 147.3023
+  },
+  {
+    "place_name": "Derwent Park",
+    "state_code": "TAS",
+    "latitude": -42.8351,
+    "longitude": 147.2949
+  },
+  {
+    "place_name": "Lutana",
+    "state_code": "TAS",
+    "latitude": -42.8347,
+    "longitude": 147.3115
+  },
+  {
+    "place_name": "Rosetta",
+    "state_code": "TAS",
+    "latitude": -42.821,
+    "longitude": 147.2526
+  },
+  {
+    "place_name": "Montrose",
+    "state_code": "TAS",
+    "latitude": -42.829,
+    "longitude": 147.2473
+  },
+  {
+    "place_name": "Dowsing Point",
+    "state_code": "TAS",
+    "latitude": -42.8208,
+    "longitude": 147.3022
+  },
+  {
+    "place_name": "Goodwood",
+    "state_code": "TAS",
+    "latitude": -42.8282,
+    "longitude": 147.293
+  },
+  {
+    "place_name": "Elwick",
+    "state_code": "TAS",
+    "latitude": -42.8355,
+    "longitude": 147.2646
+  },
+  {
+    "place_name": "Glenorchy",
+    "state_code": "TAS",
+    "latitude": -42.8334,
+    "longitude": 147.2759
+  },
+  {
+    "place_name": "Berriedale",
+    "state_code": "TAS",
+    "latitude": -42.8167,
+    "longitude": 147.25
+  },
+  {
+    "place_name": "Chigwell",
+    "state_code": "TAS",
+    "latitude": -42.8091,
+    "longitude": 147.2448
+  },
+  {
+    "place_name": "Claremont",
+    "state_code": "TAS",
+    "latitude": -42.7833,
+    "longitude": 147.25
+  },
+  {
+    "place_name": "Austins Ferry",
+    "state_code": "TAS",
+    "latitude": -42.7667,
+    "longitude": 147.25
+  },
+  {
+    "place_name": "Collinsvale",
+    "state_code": "TAS",
+    "latitude": -42.8417,
+    "longitude": 147.1961
+  },
+  {
+    "place_name": "Glenlusk",
+    "state_code": "TAS",
+    "latitude": -42.8167,
+    "longitude": 147.2
+  },
+  {
+    "place_name": "Geilston Bay",
+    "state_code": "TAS",
+    "latitude": -42.8296,
+    "longitude": 147.3463
+  },
+  {
+    "place_name": "Lindisfarne",
+    "state_code": "TAS",
+    "latitude": -42.8484,
+    "longitude": 147.3619
+  },
+  {
+    "place_name": "Rose Bay",
+    "state_code": "TAS",
+    "latitude": -42.832,
+    "longitude": 147.3227
+  },
+  {
+    "place_name": "Risdon Vale",
+    "state_code": "TAS",
+    "latitude": -42.8124,
+    "longitude": 147.3565
+  },
+  {
+    "place_name": "Honeywood",
+    "state_code": "TAS",
+    "latitude": -42.7261,
+    "longitude": 147.2802
+  },
+  {
+    "place_name": "Grasstree Hill",
+    "state_code": "TAS",
+    "latitude": -42.782,
+    "longitude": 147.3613
+  },
+  {
+    "place_name": "Risdon",
+    "state_code": "TAS",
+    "latitude": -42.8,
+    "longitude": 147.3333
+  },
+  {
+    "place_name": "Old Beach",
+    "state_code": "TAS",
+    "latitude": -42.7776,
+    "longitude": 147.2666
+  },
+  {
+    "place_name": "Otago",
+    "state_code": "TAS",
+    "latitude": -42.8088,
+    "longitude": 147.2984
+  },
+  {
+    "place_name": "Tea Tree",
+    "state_code": "TAS",
+    "latitude": -42.6833,
+    "longitude": 147.3167
+  },
+  {
+    "place_name": "Rosny",
+    "state_code": "TAS",
+    "latitude": -42.8707,
+    "longitude": 147.357
+  },
+  {
+    "place_name": "Bellerive",
+    "state_code": "TAS",
+    "latitude": -42.8755,
+    "longitude": 147.3703
+  },
+  {
+    "place_name": "Montagu Bay",
+    "state_code": "TAS",
+    "latitude": -42.8626,
+    "longitude": 147.3533
+  },
+  {
+    "place_name": "Rosny Park",
+    "state_code": "TAS",
+    "latitude": -42.8661,
+    "longitude": 147.3677
+  },
+  {
+    "place_name": "Tranmere",
+    "state_code": "TAS",
+    "latitude": -42.9218,
+    "longitude": 147.417
+  },
+  {
+    "place_name": "Warrane",
+    "state_code": "TAS",
+    "latitude": -42.8555,
+    "longitude": 147.383
+  },
+  {
+    "place_name": "Mornington",
+    "state_code": "TAS",
+    "latitude": -42.8627,
+    "longitude": 147.3982
+  },
+  {
+    "place_name": "Howrah",
+    "state_code": "TAS",
+    "latitude": -42.8873,
+    "longitude": 147.4055
+  },
+  {
+    "place_name": "Oakdowns",
+    "state_code": "TAS",
+    "latitude": -42.9018,
+    "longitude": 147.4559
+  },
+  {
+    "place_name": "Clarendon Vale",
+    "state_code": "TAS",
+    "latitude": -42.8899,
+    "longitude": 147.4437
+  },
+  {
+    "place_name": "Rokeby",
+    "state_code": "TAS",
+    "latitude": -42.8987,
+    "longitude": 147.4492
+  },
+  {
+    "place_name": "Sandford",
+    "state_code": "TAS",
+    "latitude": -42.9333,
+    "longitude": 147.5
+  },
+  {
+    "place_name": "Clifton Beach",
+    "state_code": "TAS",
+    "latitude": -42.9853,
+    "longitude": 147.5211
+  },
+  {
+    "place_name": "Lauderdale",
+    "state_code": "TAS",
+    "latitude": -42.9136,
+    "longitude": 147.4875
+  },
+  {
+    "place_name": "South Arm",
+    "state_code": "TAS",
+    "latitude": -43.0247,
+    "longitude": 147.4149
+  },
+  {
+    "place_name": "Opossum Bay",
+    "state_code": "TAS",
+    "latitude": -42.9954,
+    "longitude": 147.4038
+  },
+  {
+    "place_name": "Cremorne",
+    "state_code": "TAS",
+    "latitude": -42.9578,
+    "longitude": 147.5315
+  },
+  {
+    "place_name": "Richmond",
+    "state_code": "TAS",
+    "latitude": -42.7355,
+    "longitude": 147.4383
+  },
+  {
+    "place_name": "Dulcot",
+    "state_code": "TAS",
+    "latitude": -42.7883,
+    "longitude": 147.4014
+  },
+  {
+    "place_name": "Campania",
+    "state_code": "TAS",
+    "latitude": -42.6648,
+    "longitude": 147.4232
+  },
+  {
+    "place_name": "Colebrook",
+    "state_code": "TAS",
+    "latitude": -42.5333,
+    "longitude": 147.3667
+  },
+  {
+    "place_name": "Steppes",
+    "state_code": "TAS",
+    "latitude": -42.1104,
+    "longitude": 146.8924
+  },
+  {
+    "place_name": "Flintstone",
+    "state_code": "TAS",
+    "latitude": -42.5042,
+    "longitude": 147.1203
+  },
+  {
+    "place_name": "Bothwell",
+    "state_code": "TAS",
+    "latitude": -42.3848,
+    "longitude": 147.0083
+  },
+  {
+    "place_name": "Pontville",
+    "state_code": "TAS",
+    "latitude": -42.687,
+    "longitude": 147.2686
+  },
+  {
+    "place_name": "Hermitage",
+    "state_code": "TAS",
+    "latitude": -42.25,
+    "longitude": 146.8833
+  },
+  {
+    "place_name": "Tods Corner",
+    "state_code": "TAS",
+    "latitude": -42.5042,
+    "longitude": 147.1203
+  },
+  {
+    "place_name": "Apsley",
+    "state_code": "TAS",
+    "latitude": -42.4365,
+    "longitude": 147.1466
+  },
+  {
+    "place_name": "Broadmarsh",
+    "state_code": "TAS",
+    "latitude": -42.65,
+    "longitude": 147.1167
+  },
+  {
+    "place_name": "Miena",
+    "state_code": "TAS",
+    "latitude": -41.9817,
+    "longitude": 146.7232
+  },
+  {
+    "place_name": "Morass Bay",
+    "state_code": "TAS",
+    "latitude": -42.5042,
+    "longitude": 147.1203
+  },
+  {
+    "place_name": "Kempton",
+    "state_code": "TAS",
+    "latitude": -42.5359,
+    "longitude": 147.2052
+  },
+  {
+    "place_name": "Pelham",
+    "state_code": "TAS",
+    "latitude": -42.5833,
+    "longitude": 147
+  },
+  {
+    "place_name": "Gagebrook",
+    "state_code": "TAS",
+    "latitude": -42.7477,
+    "longitude": 147.2698
+  },
+  {
+    "place_name": "Lower Marshes",
+    "state_code": "TAS",
+    "latitude": -42.238,
+    "longitude": 147.01
+  },
+  {
+    "place_name": "Waddamana",
+    "state_code": "TAS",
+    "latitude": -42.1271,
+    "longitude": 146.7476
+  },
+  {
+    "place_name": "Elderslie",
+    "state_code": "TAS",
+    "latitude": -42.6,
+    "longitude": 147.0667
+  },
+  {
+    "place_name": "Shannon",
+    "state_code": "TAS",
+    "latitude": -42.238,
+    "longitude": 147.01
+  },
+  {
+    "place_name": "Bagdad",
+    "state_code": "TAS",
+    "latitude": -42.6297,
+    "longitude": 147.2234
+  },
+  {
+    "place_name": "Jericho",
+    "state_code": "TAS",
+    "latitude": -42.3833,
+    "longitude": 147.2833
+  },
+  {
+    "place_name": "Interlaken",
+    "state_code": "TAS",
+    "latitude": -42.15,
+    "longitude": 147.1833
+  },
+  {
+    "place_name": "Melton Mowbray",
+    "state_code": "TAS",
+    "latitude": -42.4667,
+    "longitude": 147.1833
+  },
+  {
+    "place_name": "Bagdad North",
+    "state_code": "TAS",
+    "latitude": -42.5042,
+    "longitude": 147.1203
+  },
+  {
+    "place_name": "Herdsmans Cove",
+    "state_code": "TAS",
+    "latitude": -42.7507,
+    "longitude": 147.2648
+  },
+  {
+    "place_name": "Dysart",
+    "state_code": "TAS",
+    "latitude": -42.5667,
+    "longitude": 147.2
+  },
+  {
+    "place_name": "Granton",
+    "state_code": "TAS",
+    "latitude": -42.7515,
+    "longitude": 147.228
+  },
+  {
+    "place_name": "Arthurs Lake",
+    "state_code": "TAS",
+    "latitude": -42.5042,
+    "longitude": 147.1203
+  },
+  {
+    "place_name": "Brighton",
+    "state_code": "TAS",
+    "latitude": -42.6981,
+    "longitude": 147.2449
+  },
+  {
+    "place_name": "Mangalore",
+    "state_code": "TAS",
+    "latitude": -42.65,
+    "longitude": 147.2333
+  },
+  {
+    "place_name": "Millers Bluff",
+    "state_code": "TAS",
+    "latitude": -42.5042,
+    "longitude": 147.1203
+  },
+  {
+    "place_name": "Bridgewater",
+    "state_code": "TAS",
+    "latitude": -42.7372,
+    "longitude": 147.2278
+  },
+  {
+    "place_name": "Lake Sorell",
+    "state_code": "TAS",
+    "latitude": -42.5042,
+    "longitude": 147.1203
+  },
+  {
+    "place_name": "Dromedary",
+    "state_code": "TAS",
+    "latitude": -42.7333,
+    "longitude": 147.1667
+  },
+  {
+    "place_name": "Cramps Bay",
+    "state_code": "TAS",
+    "latitude": -42.5042,
+    "longitude": 147.1203
+  },
+  {
+    "place_name": "Wilburville",
+    "state_code": "TAS",
+    "latitude": -42.5042,
+    "longitude": 147.1203
+  },
+  {
+    "place_name": "Liawenee",
+    "state_code": "TAS",
+    "latitude": -42.5042,
+    "longitude": 147.1203
+  },
+  {
+    "place_name": "Kingston Beach",
+    "state_code": "TAS",
+    "latitude": -42.9802,
+    "longitude": 147.3194
+  },
+  {
+    "place_name": "Kingston",
+    "state_code": "TAS",
+    "latitude": -42.9764,
+    "longitude": 147.3035
+  },
+  {
+    "place_name": "Kingston",
+    "state_code": "TAS",
+    "latitude": -42.9764,
+    "longitude": 147.3035
+  },
+  {
+    "place_name": "Blackmans Bay",
+    "state_code": "TAS",
+    "latitude": -43.0031,
+    "longitude": 147.3169
+  },
+  {
+    "place_name": "Bonnet Hill",
+    "state_code": "TAS",
+    "latitude": -42.968,
+    "longitude": 147.3319
+  },
+  {
+    "place_name": "Taroona",
+    "state_code": "TAS",
+    "latitude": -42.9452,
+    "longitude": 147.3484
+  },
+  {
+    "place_name": "Coningham",
+    "state_code": "TAS",
+    "latitude": -43.0767,
+    "longitude": 147.2756
+  },
+  {
+    "place_name": "Wellington Park",
+    "state_code": "TAS",
+    "latitude": -43.0081,
+    "longitude": 147.2655
+  },
+  {
+    "place_name": "Margate",
+    "state_code": "TAS",
+    "latitude": -43.0281,
+    "longitude": 147.2626
+  },
+  {
+    "place_name": "Tinderbox",
+    "state_code": "TAS",
+    "latitude": -43.0362,
+    "longitude": 147.3203
+  },
+  {
+    "place_name": "Neika",
+    "state_code": "TAS",
+    "latitude": -42.95,
+    "longitude": 147.2333
+  },
+  {
+    "place_name": "Lower Snug",
+    "state_code": "TAS",
+    "latitude": -43.0081,
+    "longitude": 147.2655
+  },
+  {
+    "place_name": "Electrona",
+    "state_code": "TAS",
+    "latitude": -43.0577,
+    "longitude": 147.2607
+  },
+  {
+    "place_name": "Barretta",
+    "state_code": "TAS",
+    "latitude": -43.0339,
+    "longitude": 147.2463
+  },
+  {
+    "place_name": "Snug",
+    "state_code": "TAS",
+    "latitude": -43.0667,
+    "longitude": 147.2547
+  },
+  {
+    "place_name": "Fern Tree",
+    "state_code": "TAS",
+    "latitude": -42.921,
+    "longitude": 147.2633
+  },
+  {
+    "place_name": "Ridgeway",
+    "state_code": "TAS",
+    "latitude": -42.928,
+    "longitude": 147.289
+  },
+  {
+    "place_name": "Leslie Vale",
+    "state_code": "TAS",
+    "latitude": -42.9743,
+    "longitude": 147.2295
+  },
+  {
+    "place_name": "Howden",
+    "state_code": "TAS",
+    "latitude": -43.0254,
+    "longitude": 147.2937
+  },
+  {
+    "place_name": "Huntingfield",
+    "state_code": "TAS",
+    "latitude": -43.0016,
+    "longitude": 147.2957
+  },
+  {
+    "place_name": "Wattle Grove",
+    "state_code": "TAS",
+    "latitude": -43.1673,
+    "longitude": 146.9986
+  },
+  {
+    "place_name": "Huonville",
+    "state_code": "TAS",
+    "latitude": -43.0312,
+    "longitude": 147.0481
+  },
+  {
+    "place_name": "Raminea",
+    "state_code": "TAS",
+    "latitude": -43.2109,
+    "longitude": 146.8676
+  },
+  {
+    "place_name": "Glen Huon",
+    "state_code": "TAS",
+    "latitude": -43.0333,
+    "longitude": 146.9667
+  },
+  {
+    "place_name": "Glendevie",
+    "state_code": "TAS",
+    "latitude": -43.2392,
+    "longitude": 146.9953
+  },
+  {
+    "place_name": "Hastings",
+    "state_code": "TAS",
+    "latitude": -43.4089,
+    "longitude": 146.9195
+  },
+  {
+    "place_name": "Southport",
+    "state_code": "TAS",
+    "latitude": -43.2109,
+    "longitude": 146.8676
+  },
+  {
+    "place_name": "Cradoc",
+    "state_code": "TAS",
+    "latitude": -43.0991,
+    "longitude": 147.0285
+  },
+  {
+    "place_name": "Grove",
+    "state_code": "TAS",
+    "latitude": -42.9833,
+    "longitude": 147.1
+  },
+  {
+    "place_name": "Lymington",
+    "state_code": "TAS",
+    "latitude": -43.1984,
+    "longitude": 147.0727
+  },
+  {
+    "place_name": "Petcheys Bay",
+    "state_code": "TAS",
+    "latitude": -43.2109,
+    "longitude": 146.8676
+  },
+  {
+    "place_name": "Woodstock",
+    "state_code": "TAS",
+    "latitude": -43.0736,
+    "longitude": 147.0376
+  },
+  {
+    "place_name": "Glaziers Bay",
+    "state_code": "TAS",
+    "latitude": -43.1333,
+    "longitude": 147.05
+  },
+  {
+    "place_name": "Judbury",
+    "state_code": "TAS",
+    "latitude": -42.9924,
+    "longitude": 146.9326
+  },
+  {
+    "place_name": "Lune River",
+    "state_code": "TAS",
+    "latitude": -43.4295,
+    "longitude": 146.9009
+  },
+  {
+    "place_name": "Ranelagh",
+    "state_code": "TAS",
+    "latitude": -43.0098,
+    "longitude": 147.0376
+  },
+  {
+    "place_name": "Crabtree",
+    "state_code": "TAS",
+    "latitude": -42.9329,
+    "longitude": 147.0489
+  },
+  {
+    "place_name": "Lower Longley",
+    "state_code": "TAS",
+    "latitude": -42.9791,
+    "longitude": 147.1444
+  },
+  {
+    "place_name": "Waterloo",
+    "state_code": "TAS",
+    "latitude": -43.2109,
+    "longitude": 146.8676
+  },
+  {
+    "place_name": "Lucaston",
+    "state_code": "TAS",
+    "latitude": -42.9833,
+    "longitude": 147.05
+  },
+  {
+    "place_name": "Strathblane",
+    "state_code": "TAS",
+    "latitude": -43.3341,
+    "longitude": 146.9705
+  },
+  {
+    "place_name": "Lonnavale",
+    "state_code": "TAS",
+    "latitude": -42.9754,
+    "longitude": 146.8397
+  },
+  {
+    "place_name": "Ida Bay",
+    "state_code": "TAS",
+    "latitude": -43.1269,
+    "longitude": 147.0275
+  },
+  {
+    "place_name": "Mountain River",
+    "state_code": "TAS",
+    "latitude": -42.945,
+    "longitude": 147.1257
+  },
+  {
+    "place_name": "Recherche",
+    "state_code": "TAS",
+    "latitude": -43.1269,
+    "longitude": 147.0275
+  },
+  {
+    "place_name": "Southport Lagoon",
+    "state_code": "TAS",
+    "latitude": -43.1269,
+    "longitude": 147.0275
+  },
+  {
+    "place_name": "Lower Wattle Grove",
+    "state_code": "TAS",
+    "latitude": -43.1269,
+    "longitude": 147.0275
+  },
+  {
+    "place_name": "Catamaran",
+    "state_code": "TAS",
+    "latitude": -43.5583,
+    "longitude": 146.8911
+  },
+  {
+    "place_name": "Nicholls Rivulet",
+    "state_code": "TAS",
+    "latitude": -43.1585,
+    "longitude": 147.1447
+  },
+  {
+    "place_name": "Randalls Bay",
+    "state_code": "TAS",
+    "latitude": -43.2434,
+    "longitude": 147.128
+  },
+  {
+    "place_name": "Deep Bay",
+    "state_code": "TAS",
+    "latitude": -43.2082,
+    "longitude": 147.134
+  },
+  {
+    "place_name": "Verona Sands",
+    "state_code": "TAS",
+    "latitude": -43.1696,
+    "longitude": 147.1296
+  },
+  {
+    "place_name": "Garden Island Creek",
+    "state_code": "TAS",
+    "latitude": -43.25,
+    "longitude": 147.1667
+  },
+  {
+    "place_name": "Eggs And Bacon Bay",
+    "state_code": "TAS",
+    "latitude": -43.2455,
+    "longitude": 147.1047
+  },
+  {
+    "place_name": "Cygnet",
+    "state_code": "TAS",
+    "latitude": -43.1533,
+    "longitude": 147.0725
+  },
+  {
+    "place_name": "Charlotte Cove",
+    "state_code": "TAS",
+    "latitude": -43.189,
+    "longitude": 147.148
+  },
+  {
+    "place_name": "Abels Bay",
+    "state_code": "TAS",
+    "latitude": -43.1696,
+    "longitude": 147.1296
+  },
+  {
+    "place_name": "Gardners Bay",
+    "state_code": "TAS",
+    "latitude": -43.1757,
+    "longitude": 147.1323
+  },
+  {
+    "place_name": "Franklin",
+    "state_code": "TAS",
+    "latitude": -43.0888,
+    "longitude": 147.0091
+  },
+  {
+    "place_name": "Castle Forbes Bay",
+    "state_code": "TAS",
+    "latitude": -43.1323,
+    "longitude": 146.9763
+  },
+  {
+    "place_name": "Brooks Bay",
+    "state_code": "TAS",
+    "latitude": -43.1708,
+    "longitude": 146.9784
+  },
+  {
+    "place_name": "Surges Bay",
+    "state_code": "TAS",
+    "latitude": -43.2188,
+    "longitude": 146.9926
+  },
+  {
+    "place_name": "Cairns Bay",
+    "state_code": "TAS",
+    "latitude": -43.2775,
+    "longitude": 146.4256
+  },
+  {
+    "place_name": "Police Point",
+    "state_code": "TAS",
+    "latitude": -43.2406,
+    "longitude": 147.0419
+  },
+  {
+    "place_name": "Surveyors Bay",
+    "state_code": "TAS",
+    "latitude": -43.1708,
+    "longitude": 146.9784
+  },
+  {
+    "place_name": "Port Huon",
+    "state_code": "TAS",
+    "latitude": -43.1564,
+    "longitude": 146.9638
+  },
+  {
+    "place_name": "Geeveston",
+    "state_code": "TAS",
+    "latitude": -43.1634,
+    "longitude": 146.9255
+  },
+  {
+    "place_name": "Dover",
+    "state_code": "TAS",
+    "latitude": -43.3142,
+    "longitude": 147.0149
+  },
+  {
+    "place_name": "Stonor",
+    "state_code": "TAS",
+    "latitude": -42.4,
+    "longitude": 147.3833
+  },
+  {
+    "place_name": "Swanston",
+    "state_code": "TAS",
+    "latitude": -42.3482,
+    "longitude": 147.4726
+  },
+  {
+    "place_name": "Baden",
+    "state_code": "TAS",
+    "latitude": -42.4333,
+    "longitude": 147.4667
+  },
+  {
+    "place_name": "Levendale",
+    "state_code": "TAS",
+    "latitude": -42.5333,
+    "longitude": 147.5667
+  },
+  {
+    "place_name": "Lemont",
+    "state_code": "TAS",
+    "latitude": -42.2974,
+    "longitude": 147.6081
+  },
+  {
+    "place_name": "Tiberias",
+    "state_code": "TAS",
+    "latitude": -42.3482,
+    "longitude": 147.4726
+  },
+  {
+    "place_name": "Andover",
+    "state_code": "TAS",
+    "latitude": -42.3333,
+    "longitude": 147.45
+  },
+  {
+    "place_name": "Mount Seymour",
+    "state_code": "TAS",
+    "latitude": -42.4,
+    "longitude": 147.45
+  },
+  {
+    "place_name": "Parattah",
+    "state_code": "TAS",
+    "latitude": -42.35,
+    "longitude": 147.4
+  },
+  {
+    "place_name": "Oatlands",
+    "state_code": "TAS",
+    "latitude": -42.303,
+    "longitude": 147.3672
+  },
+  {
+    "place_name": "Antill Ponds",
+    "state_code": "TAS",
+    "latitude": -42.2089,
+    "longitude": 147.4018
+  },
+  {
+    "place_name": "Whitefoord",
+    "state_code": "TAS",
+    "latitude": -42.4243,
+    "longitude": 147.5097
+  },
+  {
+    "place_name": "Woodbury",
+    "state_code": "TAS",
+    "latitude": -42.1794,
+    "longitude": 147.3889
+  },
+  {
+    "place_name": "York Plains",
+    "state_code": "TAS",
+    "latitude": -42.2792,
+    "longitude": 147.4456
+  },
+  {
+    "place_name": "Woodsdale",
+    "state_code": "TAS",
+    "latitude": -42.4849,
+    "longitude": 147.5631
+  },
+  {
+    "place_name": "Tunbridge",
+    "state_code": "TAS",
+    "latitude": -42.1327,
+    "longitude": 147.4292
+  },
+  {
+    "place_name": "Pawtella",
+    "state_code": "TAS",
+    "latitude": -42.2905,
+    "longitude": 147.504
+  },
+  {
+    "place_name": "Rhyndaston",
+    "state_code": "TAS",
+    "latitude": -42.4789,
+    "longitude": 147.3837
+  },
+  {
+    "place_name": "Tunnack",
+    "state_code": "TAS",
+    "latitude": -42.4519,
+    "longitude": 147.4618
+  },
+  {
+    "place_name": "Stonehenge",
+    "state_code": "TAS",
+    "latitude": -42.4,
+    "longitude": 147.6333
+  },
+  {
+    "place_name": "Strathgordon",
+    "state_code": "TAS",
+    "latitude": -42.7665,
+    "longitude": 146.0521
+  },
+  {
+    "place_name": "Macquarie Plains",
+    "state_code": "TAS",
+    "latitude": -42.7119,
+    "longitude": 146.9131
+  },
+  {
+    "place_name": "Plenty",
+    "state_code": "TAS",
+    "latitude": -42.7419,
+    "longitude": 146.9554
+  },
+  {
+    "place_name": "Victoria Valley",
+    "state_code": "TAS",
+    "latitude": -42.3167,
+    "longitude": 146.7333
+  },
+  {
+    "place_name": "Sorell Creek",
+    "state_code": "TAS",
+    "latitude": -42.8133,
+    "longitude": 147.8342
+  },
+  {
+    "place_name": "Fitzgerald",
+    "state_code": "TAS",
+    "latitude": -42.7496,
+    "longitude": 146.6424
+  },
+  {
+    "place_name": "Magra",
+    "state_code": "TAS",
+    "latitude": -42.75,
+    "longitude": 147.0667
+  },
+  {
+    "place_name": "Fentonbury",
+    "state_code": "TAS",
+    "latitude": -42.65,
+    "longitude": 146.7667
+  },
+  {
+    "place_name": "Karanja",
+    "state_code": "TAS",
+    "latitude": -42.5434,
+    "longitude": 146.4477
+  },
+  {
+    "place_name": "Hollow Tree",
+    "state_code": "TAS",
+    "latitude": -42.5333,
+    "longitude": 146.9333
+  },
+  {
+    "place_name": "Maydena",
+    "state_code": "TAS",
+    "latitude": -42.7548,
+    "longitude": 146.6256
+  },
+  {
+    "place_name": "Bronte Park",
+    "state_code": "TAS",
+    "latitude": -42.136,
+    "longitude": 146.4932
+  },
+  {
+    "place_name": "Lachlan",
+    "state_code": "TAS",
+    "latitude": -42.8333,
+    "longitude": 147.05
+  },
+  {
+    "place_name": "Malbina",
+    "state_code": "TAS",
+    "latitude": -42.8,
+    "longitude": 147.1333
+  },
+  {
+    "place_name": "Ouse",
+    "state_code": "TAS",
+    "latitude": -42.4862,
+    "longitude": 146.7126
+  },
+  {
+    "place_name": "Gretna",
+    "state_code": "TAS",
+    "latitude": -42.6809,
+    "longitude": 146.9365
+  },
+  {
+    "place_name": "Glenora",
+    "state_code": "TAS",
+    "latitude": -42.6833,
+    "longitude": 146.8667
+  },
+  {
+    "place_name": "Bushy Park",
+    "state_code": "TAS",
+    "latitude": -42.7,
+    "longitude": 146.9
+  },
+  {
+    "place_name": "Hayes",
+    "state_code": "TAS",
+    "latitude": -42.76,
+    "longitude": 147.0124
+  },
+  {
+    "place_name": "Black Hills",
+    "state_code": "TAS",
+    "latitude": -42.7167,
+    "longitude": 147.0333
+  },
+  {
+    "place_name": "Hamilton",
+    "state_code": "TAS",
+    "latitude": -42.5536,
+    "longitude": 146.8453
+  },
+  {
+    "place_name": "Mount Field",
+    "state_code": "TAS",
+    "latitude": -42.5434,
+    "longitude": 146.4477
+  },
+  {
+    "place_name": "Mount Lloyd",
+    "state_code": "TAS",
+    "latitude": -42.8167,
+    "longitude": 146.95
+  },
+  {
+    "place_name": "Lawitta",
+    "state_code": "TAS",
+    "latitude": -42.7682,
+    "longitude": 147.0359
+  },
+  {
+    "place_name": "Osterley",
+    "state_code": "TAS",
+    "latitude": -42.35,
+    "longitude": 146.75
+  },
+  {
+    "place_name": "Bradys Lake",
+    "state_code": "TAS",
+    "latitude": -42.5434,
+    "longitude": 146.4477
+  },
+  {
+    "place_name": "Moogara",
+    "state_code": "TAS",
+    "latitude": -42.7833,
+    "longitude": 146.9167
+  },
+  {
+    "place_name": "Wayatinah",
+    "state_code": "TAS",
+    "latitude": -42.3769,
+    "longitude": 146.5085
+  },
+  {
+    "place_name": "Butlers Gorge",
+    "state_code": "TAS",
+    "latitude": -42.279,
+    "longitude": 146.2777
+  },
+  {
+    "place_name": "Lake St Clair",
+    "state_code": "TAS",
+    "latitude": -42.5434,
+    "longitude": 146.4477
+  },
+  {
+    "place_name": "Westerway",
+    "state_code": "TAS",
+    "latitude": -42.6833,
+    "longitude": 146.7833
+  },
+  {
+    "place_name": "Ellendale",
+    "state_code": "TAS",
+    "latitude": -42.6167,
+    "longitude": 146.7167
+  },
+  {
+    "place_name": "National Park",
+    "state_code": "TAS",
+    "latitude": -42.6805,
+    "longitude": 146.7277
+  },
+  {
+    "place_name": "Molesworth",
+    "state_code": "TAS",
+    "latitude": -42.5434,
+    "longitude": 146.4477
+  },
+  {
+    "place_name": "Tarraleah",
+    "state_code": "TAS",
+    "latitude": -42.3015,
+    "longitude": 146.4492
+  },
+  {
+    "place_name": "Strickland",
+    "state_code": "TAS",
+    "latitude": -42.3667,
+    "longitude": 146.6667
+  },
+  {
+    "place_name": "New Norfolk",
+    "state_code": "TAS",
+    "latitude": -42.7826,
+    "longitude": 147.0587
+  },
+  {
+    "place_name": "Styx",
+    "state_code": "TAS",
+    "latitude": -42.618,
+    "longitude": 146.8279
+  },
+  {
+    "place_name": "Uxbridge",
+    "state_code": "TAS",
+    "latitude": -42.773,
+    "longitude": 146.8686
+  },
+  {
+    "place_name": "Derwent Bridge",
+    "state_code": "TAS",
+    "latitude": -42.1394,
+    "longitude": 146.2314
+  },
+  {
+    "place_name": "Little Pine Lagoon",
+    "state_code": "TAS",
+    "latitude": -42.618,
+    "longitude": 146.8279
+  },
+  {
+    "place_name": "Tyenna",
+    "state_code": "TAS",
+    "latitude": -42.7287,
+    "longitude": 146.6665
+  },
+  {
+    "place_name": "Boyer",
+    "state_code": "TAS",
+    "latitude": -42.7823,
+    "longitude": 147.1062
+  },
+  {
+    "place_name": "Dee",
+    "state_code": "TAS",
+    "latitude": -42.2833,
+    "longitude": 146.6167
+  },
+  {
+    "place_name": "Glenfern",
+    "state_code": "TAS",
+    "latitude": -42.8167,
+    "longitude": 147
+  },
+  {
+    "place_name": "Rosegarland",
+    "state_code": "TAS",
+    "latitude": -42.7,
+    "longitude": 146.9489
+  },
+  {
+    "place_name": "Meadowbank",
+    "state_code": "TAS",
+    "latitude": -42.618,
+    "longitude": 146.8279
+  },
+  {
+    "place_name": "Florentine",
+    "state_code": "TAS",
+    "latitude": -42.618,
+    "longitude": 146.8279
+  },
+  {
+    "place_name": "London Lakes",
+    "state_code": "TAS",
+    "latitude": -42.618,
+    "longitude": 146.8279
+  },
+  {
+    "place_name": "Allens Rivulet",
+    "state_code": "TAS",
+    "latitude": -43.0151,
+    "longitude": 147.2014
+  },
+  {
+    "place_name": "Upper Woodstock",
+    "state_code": "TAS",
+    "latitude": -43.2345,
+    "longitude": 147.2537
+  },
+  {
+    "place_name": "South Bruny",
+    "state_code": "TAS",
+    "latitude": -43.4386,
+    "longitude": 147.2462
+  },
+  {
+    "place_name": "Barnes Bay",
+    "state_code": "TAS",
+    "latitude": -43.1216,
+    "longitude": 147.368
+  },
+  {
+    "place_name": "Pelverata",
+    "state_code": "TAS",
+    "latitude": -43.0462,
+    "longitude": 147.1127
+  },
+  {
+    "place_name": "Killora",
+    "state_code": "TAS",
+    "latitude": -43.2345,
+    "longitude": 147.2537
+  },
+  {
+    "place_name": "Oyster Cove",
+    "state_code": "TAS",
+    "latitude": -43.1052,
+    "longitude": 147.2436
+  },
+  {
+    "place_name": "Lunawanna",
+    "state_code": "TAS",
+    "latitude": -43.3666,
+    "longitude": 147.2432
+  },
+  {
+    "place_name": "Simpsons Bay",
+    "state_code": "TAS",
+    "latitude": -43.278,
+    "longitude": 147.2997
+  },
+  {
+    "place_name": "North Bruny",
+    "state_code": "TAS",
+    "latitude": -43.1287,
+    "longitude": 147.2464
+  },
+  {
+    "place_name": "Gordon",
+    "state_code": "TAS",
+    "latitude": -43.262,
+    "longitude": 147.2395
+  },
+  {
+    "place_name": "Apollo Bay",
+    "state_code": "TAS",
+    "latitude": -43.1287,
+    "longitude": 147.2464
+  },
+  {
+    "place_name": "Dennes Point",
+    "state_code": "TAS",
+    "latitude": -43.0628,
+    "longitude": 147.3528
+  },
+  {
+    "place_name": "Great Bay",
+    "state_code": "TAS",
+    "latitude": -43.2345,
+    "longitude": 147.2537
+  },
+  {
+    "place_name": "Adventure Bay",
+    "state_code": "TAS",
+    "latitude": -43.3602,
+    "longitude": 147.3214
+  },
+  {
+    "place_name": "Alonnah",
+    "state_code": "TAS",
+    "latitude": -43.315,
+    "longitude": 147.2443
+  },
+  {
+    "place_name": "Longley",
+    "state_code": "TAS",
+    "latitude": -42.9708,
+    "longitude": 147.1947
+  },
+  {
+    "place_name": "Sandfly",
+    "state_code": "TAS",
+    "latitude": -42.9833,
+    "longitude": 147.1962
+  },
+  {
+    "place_name": "Kaoota",
+    "state_code": "TAS",
+    "latitude": -43.0167,
+    "longitude": 147.1833
+  },
+  {
+    "place_name": "Macquarie Island",
+    "state_code": "TAS",
+    "latitude": -42.7167,
+    "longitude": 146.9167
+  },
+  {
+    "place_name": "Macquarie",
+    "state_code": "TAS",
+    "latitude": -42.7119,
+    "longitude": 146.9131
+  },
+  {
+    "place_name": "Casey",
+    "state_code": "TAS",
+    "latitude": -42.7167,
+    "longitude": 146.9167
+  },
+  {
+    "place_name": "Mawson",
+    "state_code": "TAS",
+    "latitude": -42.7167,
+    "longitude": 146.9167
+  },
+  {
+    "place_name": "Davis",
+    "state_code": "TAS",
+    "latitude": -42.7167,
+    "longitude": 146.9167
+  },
+  {
+    "place_name": "Heard Island",
+    "state_code": "TAS",
+    "latitude": -42.7167,
+    "longitude": 146.9167
+  },
+  {
+    "place_name": "Mcdonald Islands",
+    "state_code": "TAS",
+    "latitude": -42.7167,
+    "longitude": 146.9167
+  },
+  {
+    "place_name": "Kettering",
+    "state_code": "TAS",
+    "latitude": -43.1262,
+    "longitude": 147.2464
+  },
+  {
+    "place_name": "Birchs Bay",
+    "state_code": "TAS",
+    "latitude": -43.1755,
+    "longitude": 147.242
+  },
+  {
+    "place_name": "Woodbridge",
+    "state_code": "TAS",
+    "latitude": -43.1557,
+    "longitude": 147.2389
+  },
+  {
+    "place_name": "Flowerpot",
+    "state_code": "TAS",
+    "latitude": -43.2336,
+    "longitude": 147.2198
+  },
+  {
+    "place_name": "Middleton",
+    "state_code": "TAS",
+    "latitude": -43.2316,
+    "longitude": 147.2529
+  },
+  {
+    "place_name": "Seven Mile Beach",
+    "state_code": "TAS",
+    "latitude": -42.8586,
+    "longitude": 147.5053
+  },
+  {
+    "place_name": "Roches Beach",
+    "state_code": "TAS",
+    "latitude": -42.8902,
+    "longitude": 147.4953
+  },
+  {
+    "place_name": "Cambridge",
+    "state_code": "TAS",
+    "latitude": -42.8333,
+    "longitude": 147.45
+  },
+  {
+    "place_name": "Mount Rumney",
+    "state_code": "TAS",
+    "latitude": -42.8606,
+    "longitude": 147.4476
+  },
+  {
+    "place_name": "Acton Park",
+    "state_code": "TAS",
+    "latitude": -42.8793,
+    "longitude": 147.4846
+  },
+  {
+    "place_name": "Penna",
+    "state_code": "TAS",
+    "latitude": -42.7776,
+    "longitude": 147.5228
+  },
+  {
+    "place_name": "Midway Point",
+    "state_code": "TAS",
+    "latitude": -42.7816,
+    "longitude": 147.5627
+  },
+  {
+    "place_name": "Orielton",
+    "state_code": "TAS",
+    "latitude": -42.7333,
+    "longitude": 147.5333
+  },
+  {
+    "place_name": "Sorell",
+    "state_code": "TAS",
+    "latitude": -42.7816,
+    "longitude": 147.5627
+  },
+  {
+    "place_name": "Nugent",
+    "state_code": "TAS",
+    "latitude": -42.7172,
+    "longitude": 147.7522
+  },
+  {
+    "place_name": "Pawleena",
+    "state_code": "TAS",
+    "latitude": -42.7333,
+    "longitude": 147.6
+  },
+  {
+    "place_name": "Wattle Hill",
+    "state_code": "TAS",
+    "latitude": -42.7667,
+    "longitude": 147.65
+  },
+  {
+    "place_name": "Forcett",
+    "state_code": "TAS",
+    "latitude": -42.8,
+    "longitude": 147.6333
+  },
+  {
+    "place_name": "Carlton River",
+    "state_code": "TAS",
+    "latitude": -42.8474,
+    "longitude": 147.6451
+  },
+  {
+    "place_name": "Primrose Sands",
+    "state_code": "TAS",
+    "latitude": -42.8858,
+    "longitude": 147.6695
+  },
+  {
+    "place_name": "Lewisham",
+    "state_code": "TAS",
+    "latitude": -42.8333,
+    "longitude": 147.6167
+  },
+  {
+    "place_name": "Dodges Ferry",
+    "state_code": "TAS",
+    "latitude": -42.8531,
+    "longitude": 147.6226
+  },
+  {
+    "place_name": "Connellys Marsh",
+    "state_code": "TAS",
+    "latitude": -42.8222,
+    "longitude": 147.6703
+  },
+  {
+    "place_name": "Carlton",
+    "state_code": "TAS",
+    "latitude": -42.874,
+    "longitude": 147.6534
+  },
+  {
+    "place_name": "Copping",
+    "state_code": "TAS",
+    "latitude": -42.8167,
+    "longitude": 147.8
+  },
+  {
+    "place_name": "Bream Creek",
+    "state_code": "TAS",
+    "latitude": -42.8133,
+    "longitude": 147.8342
+  },
+  {
+    "place_name": "Marion Bay",
+    "state_code": "TAS",
+    "latitude": -42.8133,
+    "longitude": 147.8342
+  },
+  {
+    "place_name": "Kellevie",
+    "state_code": "TAS",
+    "latitude": -42.7785,
+    "longitude": 147.8153
+  },
+  {
+    "place_name": "Boomer Bay",
+    "state_code": "TAS",
+    "latitude": -42.8865,
+    "longitude": 147.8108
+  },
+  {
+    "place_name": "Dunalley",
+    "state_code": "TAS",
+    "latitude": -42.8865,
+    "longitude": 147.8108
+  },
+  {
+    "place_name": "Murdunna",
+    "state_code": "TAS",
+    "latitude": -42.9473,
+    "longitude": 147.8705
+  },
+  {
+    "place_name": "Eaglehawk Neck",
+    "state_code": "TAS",
+    "latitude": -43.0179,
+    "longitude": 147.9222
+  },
+  {
+    "place_name": "Taranna",
+    "state_code": "TAS",
+    "latitude": -43.0629,
+    "longitude": 147.863
+  },
+  {
+    "place_name": "Port Arthur",
+    "state_code": "TAS",
+    "latitude": -43.1458,
+    "longitude": 147.8437
+  },
+  {
+    "place_name": "Cape Pillar",
+    "state_code": "TAS",
+    "latitude": -43.15,
+    "longitude": 147.85
+  },
+  {
+    "place_name": "Fortescue",
+    "state_code": "TAS",
+    "latitude": -43.15,
+    "longitude": 147.85
+  },
+  {
+    "place_name": "Highcroft",
+    "state_code": "TAS",
+    "latitude": -43.1333,
+    "longitude": 147.8
+  },
+  {
+    "place_name": "White Beach",
+    "state_code": "TAS",
+    "latitude": -43.1249,
+    "longitude": 147.7212
+  },
+  {
+    "place_name": "Nubeena",
+    "state_code": "TAS",
+    "latitude": -43.0971,
+    "longitude": 147.7433
+  },
+  {
+    "place_name": "Cape Raoul",
+    "state_code": "TAS",
+    "latitude": -43.111,
+    "longitude": 147.7322
+  },
+  {
+    "place_name": "Stormlea",
+    "state_code": "TAS",
+    "latitude": -43.1703,
+    "longitude": 147.7718
+  },
+  {
+    "place_name": "Premaydena",
+    "state_code": "TAS",
+    "latitude": -43.0546,
+    "longitude": 147.7708
+  },
+  {
+    "place_name": "Saltwater River",
+    "state_code": "TAS",
+    "latitude": -43.0234,
+    "longitude": 147.7183
+  },
+  {
+    "place_name": "Sloping Main",
+    "state_code": "TAS",
+    "latitude": -43.0167,
+    "longitude": 147.75
+  },
+  {
+    "place_name": "Koonya",
+    "state_code": "TAS",
+    "latitude": -43.05,
+    "longitude": 147.85
+  },
+  {
+    "place_name": "Swansea",
+    "state_code": "TAS",
+    "latitude": -42.1228,
+    "longitude": 148.0743
+  },
+  {
+    "place_name": "Little Swanport",
+    "state_code": "TAS",
+    "latitude": -42.3375,
+    "longitude": 147.9334
+  },
+  {
+    "place_name": "Dolphin Sands",
+    "state_code": "TAS",
+    "latitude": -42.4221,
+    "longitude": 147.8876
+  },
+  {
+    "place_name": "Runnymede",
+    "state_code": "TAS",
+    "latitude": -42.6419,
+    "longitude": 147.5605
+  },
+  {
+    "place_name": "Rheban",
+    "state_code": "TAS",
+    "latitude": -42.63,
+    "longitude": 147.928
+  },
+  {
+    "place_name": "Orford",
+    "state_code": "TAS",
+    "latitude": -42.5602,
+    "longitude": 147.8718
+  },
+  {
+    "place_name": "Cranbrook",
+    "state_code": "TAS",
+    "latitude": -42.0062,
+    "longitude": 148.0689
+  },
+  {
+    "place_name": "Triabunna",
+    "state_code": "TAS",
+    "latitude": -42.508,
+    "longitude": 147.9113
+  },
+  {
+    "place_name": "Spring Beach",
+    "state_code": "TAS",
+    "latitude": -42.5841,
+    "longitude": 147.9041
+  },
+  {
+    "place_name": "Buckland",
+    "state_code": "TAS",
+    "latitude": -42.6,
+    "longitude": 147.7167
+  },
+  {
+    "place_name": "Pontypool",
+    "state_code": "TAS",
+    "latitude": -42.4221,
+    "longitude": 147.8876
+  },
+  {
+    "place_name": "Apslawn",
+    "state_code": "TAS",
+    "latitude": -41.9738,
+    "longitude": 148.1865
+  },
+  {
+    "place_name": "Maria Island",
+    "state_code": "TAS",
+    "latitude": -42.3064,
+    "longitude": 147.9158
+  },
+  {
+    "place_name": "Rocky Hills",
+    "state_code": "TAS",
+    "latitude": -42.4221,
+    "longitude": 147.8876
+  },
+  {
+    "place_name": "Ross",
+    "state_code": "TAS",
+    "latitude": -42.0308,
+    "longitude": 147.4927
+  },
+  {
+    "place_name": "Tooms Lake",
+    "state_code": "TAS",
+    "latitude": -42.0308,
+    "longitude": 147.4927
+  },
+  {
+    "place_name": "Campbell Town",
+    "state_code": "TAS",
+    "latitude": -41.9256,
+    "longitude": 147.4939
+  },
+  {
+    "place_name": "Lake Leake",
+    "state_code": "TAS",
+    "latitude": -42.0136,
+    "longitude": 147.7954
+  },
+  {
+    "place_name": "Cleveland",
+    "state_code": "TAS",
+    "latitude": -41.8,
+    "longitude": 147.4
+  },
+  {
+    "place_name": "Conara",
+    "state_code": "TAS",
+    "latitude": -41.8333,
+    "longitude": 147.4333
+  },
+  {
+    "place_name": "Epping Forest",
+    "state_code": "TAS",
+    "latitude": -41.7599,
+    "longitude": 147.3498
+  },
+  {
+    "place_name": "Evandale",
+    "state_code": "TAS",
+    "latitude": -41.5686,
+    "longitude": 147.2527
+  },
+  {
+    "place_name": "Burns Creek",
+    "state_code": "TAS",
+    "latitude": -41.4147,
+    "longitude": 147.5265
+  },
+  {
+    "place_name": "Blessington",
+    "state_code": "TAS",
+    "latitude": -41.519,
+    "longitude": 147.4761
+  },
+  {
+    "place_name": "Upper Blessington",
+    "state_code": "TAS",
+    "latitude": -41.4591,
+    "longitude": 147.5922
+  },
+  {
+    "place_name": "Nile",
+    "state_code": "TAS",
+    "latitude": -41.6454,
+    "longitude": 147.3301
+  },
+  {
+    "place_name": "Deddington",
+    "state_code": "TAS",
+    "latitude": -41.6024,
+    "longitude": 147.4272
+  },
+  {
+    "place_name": "Western Junction",
+    "state_code": "TAS",
+    "latitude": -41.5543,
+    "longitude": 147.2282
+  },
+  {
+    "place_name": "Ben Lomond",
+    "state_code": "TAS",
+    "latitude": -41.5535,
+    "longitude": 147.3829
+  },
+  {
+    "place_name": "Royal George",
+    "state_code": "TAS",
+    "latitude": -41.8307,
+    "longitude": 147.8968
+  },
+  {
+    "place_name": "Rossarden",
+    "state_code": "TAS",
+    "latitude": -41.667,
+    "longitude": 147.745
+  },
+  {
+    "place_name": "Avoca",
+    "state_code": "TAS",
+    "latitude": -41.7864,
+    "longitude": 147.7209
+  },
+  {
+    "place_name": "Mangana",
+    "state_code": "TAS",
+    "latitude": -41.6081,
+    "longitude": 147.8854
+  },
+  {
+    "place_name": "Fingal",
+    "state_code": "TAS",
+    "latitude": -41.6396,
+    "longitude": 147.9695
+  },
+  {
+    "place_name": "Upper Esk",
+    "state_code": "TAS",
+    "latitude": -41.4308,
+    "longitude": 147.7256
+  },
+  {
+    "place_name": "Mathinna",
+    "state_code": "TAS",
+    "latitude": -41.4751,
+    "longitude": 147.89
+  },
+  {
+    "place_name": "Seymour",
+    "state_code": "TAS",
+    "latitude": -41.7438,
+    "longitude": 148.2762
+  },
+  {
+    "place_name": "Scamander",
+    "state_code": "TAS",
+    "latitude": -41.456,
+    "longitude": 148.261
+  },
+  {
+    "place_name": "Douglas River",
+    "state_code": "TAS",
+    "latitude": -41.7856,
+    "longitude": 148.2503
+  },
+  {
+    "place_name": "Douglas-Apsley",
+    "state_code": "TAS",
+    "latitude": -41.6675,
+    "longitude": 148.2438
+  },
+  {
+    "place_name": "Falmouth",
+    "state_code": "TAS",
+    "latitude": -41.5058,
+    "longitude": 148.2709
+  },
+  {
+    "place_name": "St Marys",
+    "state_code": "TAS",
+    "latitude": -41.5834,
+    "longitude": 148.1875
+  },
+  {
+    "place_name": "Coles Bay",
+    "state_code": "TAS",
+    "latitude": -42.1264,
+    "longitude": 148.2887
+  },
+  {
+    "place_name": "Friendly Beaches",
+    "state_code": "TAS",
+    "latitude": -41.6675,
+    "longitude": 148.2438
+  },
+  {
+    "place_name": "Bicheno",
+    "state_code": "TAS",
+    "latitude": -41.8743,
+    "longitude": 148.3024
+  },
+  {
+    "place_name": "Cornwall",
+    "state_code": "TAS",
+    "latitude": -41.559,
+    "longitude": 148.1453
+  },
+  {
+    "place_name": "Four Mile Creek",
+    "state_code": "TAS",
+    "latitude": -41.723,
+    "longitude": 148.1894
+  },
+  {
+    "place_name": "Beaumaris",
+    "state_code": "TAS",
+    "latitude": -41.4159,
+    "longitude": 148.2614
+  },
+  {
+    "place_name": "Chain Of Lagoons",
+    "state_code": "TAS",
+    "latitude": -41.723,
+    "longitude": 148.1894
+  },
+  {
+    "place_name": "Gray",
+    "state_code": "TAS",
+    "latitude": -41.6287,
+    "longitude": 148.2284
+  },
+  {
+    "place_name": "Upper Scamander",
+    "state_code": "TAS",
+    "latitude": -41.6675,
+    "longitude": 148.2438
+  },
+  {
+    "place_name": "Freycinet",
+    "state_code": "TAS",
+    "latitude": -41.6675,
+    "longitude": 148.2438
+  },
+  {
+    "place_name": "The Gardens",
+    "state_code": "TAS",
+    "latitude": -41.2651,
+    "longitude": 148.1443
+  },
+  {
+    "place_name": "Pyengana",
+    "state_code": "TAS",
+    "latitude": -41.2918,
+    "longitude": 148.0127
+  },
+  {
+    "place_name": "Goshen",
+    "state_code": "TAS",
+    "latitude": -41.2721,
+    "longitude": 148.1054
+  },
+  {
+    "place_name": "Ansons Bay",
+    "state_code": "TAS",
+    "latitude": -41.2687,
+    "longitude": 148.0987
+  },
+  {
+    "place_name": "St Helens",
+    "state_code": "TAS",
+    "latitude": -41.3203,
+    "longitude": 148.2389
+  },
+  {
+    "place_name": "Lottah",
+    "state_code": "TAS",
+    "latitude": -41.2258,
+    "longitude": 148.0324
+  },
+  {
+    "place_name": "Stieglitz",
+    "state_code": "TAS",
+    "latitude": -41.3217,
+    "longitude": 148.3058
+  },
+  {
+    "place_name": "Goulds Country",
+    "state_code": "TAS",
+    "latitude": -41.2422,
+    "longitude": 148.056
+  },
+  {
+    "place_name": "Akaroa",
+    "state_code": "TAS",
+    "latitude": -41.3045,
+    "longitude": 148.3167
+  },
+  {
+    "place_name": "Binalong Bay",
+    "state_code": "TAS",
+    "latitude": -41.2511,
+    "longitude": 148.3117
+  },
+  {
+    "place_name": "Newnham",
+    "state_code": "TAS",
+    "latitude": -41.3971,
+    "longitude": 147.1313
+  },
+  {
+    "place_name": "Rocherlea",
+    "state_code": "TAS",
+    "latitude": -41.3808,
+    "longitude": 147.1574
+  },
+  {
+    "place_name": "Mowbray",
+    "state_code": "TAS",
+    "latitude": -41.4024,
+    "longitude": 147.1506
+  },
+  {
+    "place_name": "Mayfield",
+    "state_code": "TAS",
+    "latitude": -41.3876,
+    "longitude": 147.1305
+  },
+  {
+    "place_name": "Invermay",
+    "state_code": "TAS",
+    "latitude": -41.4204,
+    "longitude": 147.1336
+  },
+  {
+    "place_name": "Youngtown",
+    "state_code": "TAS",
+    "latitude": -41.4833,
+    "longitude": 147.1707
+  },
+  {
+    "place_name": "Kings Meadows",
+    "state_code": "TAS",
+    "latitude": -41.4704,
+    "longitude": 147.162
+  },
+  {
+    "place_name": "Glen Dhu",
+    "state_code": "TAS",
+    "latitude": -41.476,
+    "longitude": 147.1577
+  },
+  {
+    "place_name": "Punchbowl",
+    "state_code": "TAS",
+    "latitude": -41.4576,
+    "longitude": 147.1647
+  },
+  {
+    "place_name": "South Launceston",
+    "state_code": "TAS",
+    "latitude": -41.4551,
+    "longitude": 147.1456
+  },
+  {
+    "place_name": "Norwood",
+    "state_code": "TAS",
+    "latitude": -41.4592,
+    "longitude": 147.1808
+  },
+  {
+    "place_name": "Prospect",
+    "state_code": "TAS",
+    "latitude": -41.481,
+    "longitude": 147.1041
+  },
+  {
+    "place_name": "Prospect Vale",
+    "state_code": "TAS",
+    "latitude": -41.481,
+    "longitude": 147.1041
+  },
+  {
+    "place_name": "Waverley",
+    "state_code": "TAS",
+    "latitude": -41.436,
+    "longitude": 147.1859
+  },
+  {
+    "place_name": "Trevallyn",
+    "state_code": "TAS",
+    "latitude": -41.4425,
+    "longitude": 147.1048
+  },
+  {
+    "place_name": "East Launceston",
+    "state_code": "TAS",
+    "latitude": -41.4384,
+    "longitude": 147.151
+  },
+  {
+    "place_name": "Newstead",
+    "state_code": "TAS",
+    "latitude": -41.4333,
+    "longitude": 147.1667
+  },
+  {
+    "place_name": "Travellers Rest",
+    "state_code": "TAS",
+    "latitude": -41.4971,
+    "longitude": 147.0929
+  },
+  {
+    "place_name": "Launceston",
+    "state_code": "TAS",
+    "latitude": -41.4388,
+    "longitude": 147.1347
+  },
+  {
+    "place_name": "Blackstone Heights",
+    "state_code": "TAS",
+    "latitude": -41.4598,
+    "longitude": 147.0841
+  },
+  {
+    "place_name": "Summerhill",
+    "state_code": "TAS",
+    "latitude": -41.4675,
+    "longitude": 147.128
+  },
+  {
+    "place_name": "West Launceston",
+    "state_code": "TAS",
+    "latitude": -41.4509,
+    "longitude": 147.1311
+  },
+  {
+    "place_name": "Riverside",
+    "state_code": "TAS",
+    "latitude": -41.4211,
+    "longitude": 147.0509
+  },
+  {
+    "place_name": "Ravenswood",
+    "state_code": "TAS",
+    "latitude": -41.4159,
+    "longitude": 147.1825
+  },
+  {
+    "place_name": "St Leonards",
+    "state_code": "TAS",
+    "latitude": -41.4625,
+    "longitude": 147.2146
+  },
+  {
+    "place_name": "Swan Bay",
+    "state_code": "TAS",
+    "latitude": -41.1315,
+    "longitude": 147.01
+  },
+  {
+    "place_name": "Dilston",
+    "state_code": "TAS",
+    "latitude": -41.3296,
+    "longitude": 147.0652
+  },
+  {
+    "place_name": "Pipers River",
+    "state_code": "TAS",
+    "latitude": -41.0973,
+    "longitude": 147.0809
+  },
+  {
+    "place_name": "Weymouth",
+    "state_code": "TAS",
+    "latitude": -41.0145,
+    "longitude": 147.1517
+  },
+  {
+    "place_name": "Mount Direction",
+    "state_code": "TAS",
+    "latitude": -41.2464,
+    "longitude": 147.0132
+  },
+  {
+    "place_name": "Lefroy",
+    "state_code": "TAS",
+    "latitude": -41.1,
+    "longitude": 146.9833
+  },
+  {
+    "place_name": "Hillwood",
+    "state_code": "TAS",
+    "latitude": -41.2442,
+    "longitude": 146.9842
+  },
+  {
+    "place_name": "Beechford",
+    "state_code": "TAS",
+    "latitude": -41.1315,
+    "longitude": 147.01
+  },
+  {
+    "place_name": "Windermere",
+    "state_code": "TAS",
+    "latitude": -41.3134,
+    "longitude": 147.0058
+  },
+  {
+    "place_name": "Stony Head",
+    "state_code": "TAS",
+    "latitude": -41.1659,
+    "longitude": 147.0475
+  },
+  {
+    "place_name": "Lulworth",
+    "state_code": "TAS",
+    "latitude": -41,
+    "longitude": 147.07
+  },
+  {
+    "place_name": "George Town",
+    "state_code": "TAS",
+    "latitude": -41.1056,
+    "longitude": 146.8261
+  },
+  {
+    "place_name": "Long Reach",
+    "state_code": "TAS",
+    "latitude": -41.0971,
+    "longitude": 146.8325
+  },
+  {
+    "place_name": "Low Head",
+    "state_code": "TAS",
+    "latitude": -41.08,
+    "longitude": 146.8075
+  },
+  {
+    "place_name": "Bell Bay",
+    "state_code": "TAS",
+    "latitude": -41.13,
+    "longitude": 146.87
+  },
+  {
+    "place_name": "Golconda",
+    "state_code": "TAS",
+    "latitude": -41.167,
+    "longitude": 147.3094
+  },
+  {
+    "place_name": "Lebrina",
+    "state_code": "TAS",
+    "latitude": -41.179,
+    "longitude": 147.2283
+  },
+  {
+    "place_name": "Tunnel",
+    "state_code": "TAS",
+    "latitude": -41.1952,
+    "longitude": 147.193
+  },
+  {
+    "place_name": "Pipers Brook",
+    "state_code": "TAS",
+    "latitude": -41.0831,
+    "longitude": 147.1743
+  },
+  {
+    "place_name": "Bellingham",
+    "state_code": "TAS",
+    "latitude": -41.0164,
+    "longitude": 147.1688
+  },
+  {
+    "place_name": "Retreat",
+    "state_code": "TAS",
+    "latitude": -41.1505,
+    "longitude": 147.173
+  },
+  {
+    "place_name": "Wyena",
+    "state_code": "TAS",
+    "latitude": -41.176,
+    "longitude": 147.2668
+  },
+  {
+    "place_name": "Ranga",
+    "state_code": "TAS",
+    "latitude": -40.1522,
+    "longitude": 148.0673
+  },
+  {
+    "place_name": "Emita",
+    "state_code": "TAS",
+    "latitude": -40.0008,
+    "longitude": 147.9165
+  },
+  {
+    "place_name": "Blue Rocks",
+    "state_code": "TAS",
+    "latitude": -40.0571,
+    "longitude": 147.9555
+  },
+  {
+    "place_name": "Loccota",
+    "state_code": "TAS",
+    "latitude": -40.2181,
+    "longitude": 148.0423
+  },
+  {
+    "place_name": "Leeka",
+    "state_code": "TAS",
+    "latitude": -39.9005,
+    "longitude": 147.7989
+  },
+  {
+    "place_name": "Lackrana",
+    "state_code": "TAS",
+    "latitude": -40.1194,
+    "longitude": 148.0978
+  },
+  {
+    "place_name": "Lughrata",
+    "state_code": "TAS",
+    "latitude": -39.9741,
+    "longitude": 147.9297
+  },
+  {
+    "place_name": "Strzelecki",
+    "state_code": "TAS",
+    "latitude": -40.0066,
+    "longitude": 147.9897
+  },
+  {
+    "place_name": "Lady Barron",
+    "state_code": "TAS",
+    "latitude": -40.21,
+    "longitude": 148.24
+  },
+  {
+    "place_name": "Wingaroo",
+    "state_code": "TAS",
+    "latitude": -40.0066,
+    "longitude": 147.9897
+  },
+  {
+    "place_name": "Palana",
+    "state_code": "TAS",
+    "latitude": -39.7667,
+    "longitude": 147.8833
+  },
+  {
+    "place_name": "Whitemark",
+    "state_code": "TAS",
+    "latitude": -40.1222,
+    "longitude": 148.0164
+  },
+  {
+    "place_name": "Killiecrankie",
+    "state_code": "TAS",
+    "latitude": -39.8391,
+    "longitude": 147.834
+  },
+  {
+    "place_name": "Memana",
+    "state_code": "TAS",
+    "latitude": -39.9789,
+    "longitude": 148.0914
+  },
+  {
+    "place_name": "Naracoopa",
+    "state_code": "TAS",
+    "latitude": -39.9208,
+    "longitude": 144.1194
+  },
+  {
+    "place_name": "Yarra Creek",
+    "state_code": "TAS",
+    "latitude": -39.8478,
+    "longitude": 143.9795
+  },
+  {
+    "place_name": "Yambacoona",
+    "state_code": "TAS",
+    "latitude": -39.7042,
+    "longitude": 143.9306
+  },
+  {
+    "place_name": "Currie",
+    "state_code": "TAS",
+    "latitude": -39.9298,
+    "longitude": 143.8538
+  },
+  {
+    "place_name": "Grassy",
+    "state_code": "TAS",
+    "latitude": -40.0492,
+    "longitude": 144.0561
+  },
+  {
+    "place_name": "Pearshape",
+    "state_code": "TAS",
+    "latitude": -39.8478,
+    "longitude": 143.9795
+  },
+  {
+    "place_name": "Pegarah",
+    "state_code": "TAS",
+    "latitude": -39.9417,
+    "longitude": 143.9958
+  },
+  {
+    "place_name": "Loorana",
+    "state_code": "TAS",
+    "latitude": -39.8389,
+    "longitude": 143.8958
+  },
+  {
+    "place_name": "Sea Elephant",
+    "state_code": "TAS",
+    "latitude": -39.8286,
+    "longitude": 144.1111
+  },
+  {
+    "place_name": "Surprise Bay",
+    "state_code": "TAS",
+    "latitude": -39.8478,
+    "longitude": 143.9795
+  },
+  {
+    "place_name": "Reekara",
+    "state_code": "TAS",
+    "latitude": -39.7553,
+    "longitude": 143.9175
+  },
+  {
+    "place_name": "Nugara",
+    "state_code": "TAS",
+    "latitude": -39.8478,
+    "longitude": 143.9795
+  },
+  {
+    "place_name": "Bungaree",
+    "state_code": "TAS",
+    "latitude": -39.8478,
+    "longitude": 143.9795
+  },
+  {
+    "place_name": "Lymwood",
+    "state_code": "TAS",
+    "latitude": -39.8478,
+    "longitude": 143.9795
+  },
+  {
+    "place_name": "Wickham",
+    "state_code": "TAS",
+    "latitude": -39.8478,
+    "longitude": 143.9795
+  },
+  {
+    "place_name": "Egg Lagoon",
+    "state_code": "TAS",
+    "latitude": -39.6611,
+    "longitude": 143.9764
+  },
+  {
+    "place_name": "Cape Barren Island",
+    "state_code": "TAS",
+    "latitude": -40.3734,
+    "longitude": 148.027
+  },
+  {
+    "place_name": "Relbia",
+    "state_code": "TAS",
+    "latitude": -41.5058,
+    "longitude": 147.2021
+  },
+  {
+    "place_name": "White Hills",
+    "state_code": "TAS",
+    "latitude": -41.5055,
+    "longitude": 147.2543
+  },
+  {
+    "place_name": "Breadalbane",
+    "state_code": "TAS",
+    "latitude": -41.5268,
+    "longitude": 147.1965
+  },
+  {
+    "place_name": "Patersonia",
+    "state_code": "TAS",
+    "latitude": -41.3403,
+    "longitude": 147.303
+  },
+  {
+    "place_name": "Myrtle Bank",
+    "state_code": "TAS",
+    "latitude": -41.2941,
+    "longitude": 147.3584
+  },
+  {
+    "place_name": "Targa",
+    "state_code": "TAS",
+    "latitude": -41.3138,
+    "longitude": 147.367
+  },
+  {
+    "place_name": "Nunamara",
+    "state_code": "TAS",
+    "latitude": -41.3896,
+    "longitude": 147.3067
+  },
+  {
+    "place_name": "Tayene",
+    "state_code": "TAS",
+    "latitude": -41.3457,
+    "longitude": 147.4494
+  },
+  {
+    "place_name": "North Scottsdale",
+    "state_code": "TAS",
+    "latitude": -41.1215,
+    "longitude": 147.5595
+  },
+  {
+    "place_name": "Blumont",
+    "state_code": "TAS",
+    "latitude": -41.1681,
+    "longitude": 147.4846
+  },
+  {
+    "place_name": "Nabowla",
+    "state_code": "TAS",
+    "latitude": -41.1712,
+    "longitude": 147.3662
+  },
+  {
+    "place_name": "Jetsonville",
+    "state_code": "TAS",
+    "latitude": -41.1167,
+    "longitude": 147.4667
+  },
+  {
+    "place_name": "Scottsdale",
+    "state_code": "TAS",
+    "latitude": -41.1578,
+    "longitude": 147.5173
+  },
+  {
+    "place_name": "Cuckoo",
+    "state_code": "TAS",
+    "latitude": -41.1674,
+    "longitude": 147.5017
+  },
+  {
+    "place_name": "South Springfield",
+    "state_code": "TAS",
+    "latitude": -41.2515,
+    "longitude": 147.5081
+  },
+  {
+    "place_name": "Tonganah",
+    "state_code": "TAS",
+    "latitude": -41.1862,
+    "longitude": 147.5881
+  },
+  {
+    "place_name": "Springfield",
+    "state_code": "TAS",
+    "latitude": -41.2,
+    "longitude": 147.4833
+  },
+  {
+    "place_name": "Tulendeena",
+    "state_code": "TAS",
+    "latitude": -41.1681,
+    "longitude": 147.4846
+  },
+  {
+    "place_name": "Kamona",
+    "state_code": "TAS",
+    "latitude": -41.1542,
+    "longitude": 147.6768
+  },
+  {
+    "place_name": "Lietinna",
+    "state_code": "TAS",
+    "latitude": -41.15,
+    "longitude": 147.4667
+  },
+  {
+    "place_name": "Forester",
+    "state_code": "TAS",
+    "latitude": -41.0848,
+    "longitude": 147.6633
+  },
+  {
+    "place_name": "West Scottsdale",
+    "state_code": "TAS",
+    "latitude": -41.1674,
+    "longitude": 147.5017
+  },
+  {
+    "place_name": "Lisle",
+    "state_code": "TAS",
+    "latitude": -41.2307,
+    "longitude": 147.3345
+  },
+  {
+    "place_name": "Branxholm",
+    "state_code": "TAS",
+    "latitude": -41.1662,
+    "longitude": 147.7431
+  },
+  {
+    "place_name": "Warrentinna",
+    "state_code": "TAS",
+    "latitude": -41.1004,
+    "longitude": 147.7559
+  },
+  {
+    "place_name": "Waterhouse",
+    "state_code": "TAS",
+    "latitude": -40.9607,
+    "longitude": 147.6967
+  },
+  {
+    "place_name": "Tomahawk",
+    "state_code": "TAS",
+    "latitude": -40.867,
+    "longitude": 147.756
+  },
+  {
+    "place_name": "Bridport",
+    "state_code": "TAS",
+    "latitude": -41.0005,
+    "longitude": 147.3918
+  },
+  {
+    "place_name": "Trenah",
+    "state_code": "TAS",
+    "latitude": -41.3106,
+    "longitude": 147.69
+  },
+  {
+    "place_name": "Talawa",
+    "state_code": "TAS",
+    "latitude": -41.2521,
+    "longitude": 147.7302
+  },
+  {
+    "place_name": "Legerwood",
+    "state_code": "TAS",
+    "latitude": -41.213,
+    "longitude": 147.6994
+  },
+  {
+    "place_name": "Ringarooma",
+    "state_code": "TAS",
+    "latitude": -41.2418,
+    "longitude": 147.7376
+  },
+  {
+    "place_name": "Alberton",
+    "state_code": "TAS",
+    "latitude": -41.2679,
+    "longitude": 147.8003
+  },
+  {
+    "place_name": "Gladstone",
+    "state_code": "TAS",
+    "latitude": -40.9593,
+    "longitude": 148.0094
+  },
+  {
+    "place_name": "South Mount Cameron",
+    "state_code": "TAS",
+    "latitude": -41.0246,
+    "longitude": 147.9639
+  },
+  {
+    "place_name": "Boobyalla",
+    "state_code": "TAS",
+    "latitude": -41.0696,
+    "longitude": 147.9241
+  },
+  {
+    "place_name": "Mount William",
+    "state_code": "TAS",
+    "latitude": -40.9221,
+    "longitude": 148.2129
+  },
+  {
+    "place_name": "Cape Portland",
+    "state_code": "TAS",
+    "latitude": -41.0754,
+    "longitude": 148.0082
+  },
+  {
+    "place_name": "Telita",
+    "state_code": "TAS",
+    "latitude": -41.1657,
+    "longitude": 147.7408
+  },
+  {
+    "place_name": "Eddystone",
+    "state_code": "TAS",
+    "latitude": -41.0696,
+    "longitude": 147.9241
+  },
+  {
+    "place_name": "Moorina",
+    "state_code": "TAS",
+    "latitude": -41.1275,
+    "longitude": 147.8695
+  },
+  {
+    "place_name": "Pioneer",
+    "state_code": "TAS",
+    "latitude": -41.0754,
+    "longitude": 148.0082
+  },
+  {
+    "place_name": "Ansons Bay",
+    "state_code": "TAS",
+    "latitude": -41.0696,
+    "longitude": 147.9241
+  },
+  {
+    "place_name": "Derby",
+    "state_code": "TAS",
+    "latitude": -41.1489,
+    "longitude": 147.8025
+  },
+  {
+    "place_name": "Musselroe Bay",
+    "state_code": "TAS",
+    "latitude": -40.8803,
+    "longitude": 148.1374
+  },
+  {
+    "place_name": "Weldborough",
+    "state_code": "TAS",
+    "latitude": -41.1938,
+    "longitude": 147.9067
+  },
+  {
+    "place_name": "Rushy Lagoon",
+    "state_code": "TAS",
+    "latitude": -41.0696,
+    "longitude": 147.9241
+  },
+  {
+    "place_name": "Herrick",
+    "state_code": "TAS",
+    "latitude": -41.1002,
+    "longitude": 147.8826
+  },
+  {
+    "place_name": "Winnaleah",
+    "state_code": "TAS",
+    "latitude": -41.0975,
+    "longitude": 147.8238
+  },
+  {
+    "place_name": "Banca",
+    "state_code": "TAS",
+    "latitude": -41.0833,
+    "longitude": 147.8167
+  },
+  {
+    "place_name": "Karoola",
+    "state_code": "TAS",
+    "latitude": -41.2443,
+    "longitude": 147.1534
+  },
+  {
+    "place_name": "Bangor",
+    "state_code": "TAS",
+    "latitude": -41.2184,
+    "longitude": 147.1411
+  },
+  {
+    "place_name": "Turners Marsh",
+    "state_code": "TAS",
+    "latitude": -41.2666,
+    "longitude": 147.1311
+  },
+  {
+    "place_name": "Lalla",
+    "state_code": "TAS",
+    "latitude": -41.2565,
+    "longitude": 147.1783
+  },
+  {
+    "place_name": "Lower Turners Marsh",
+    "state_code": "TAS",
+    "latitude": -41.2085,
+    "longitude": 147.1126
+  },
+  {
+    "place_name": "Underwood",
+    "state_code": "TAS",
+    "latitude": -41.288,
+    "longitude": 147.2136
+  },
+  {
+    "place_name": "Lilydale",
+    "state_code": "TAS",
+    "latitude": -41.2503,
+    "longitude": 147.2176
+  },
+  {
+    "place_name": "North Lilydale",
+    "state_code": "TAS",
+    "latitude": -41.2257,
+    "longitude": 147.2404
+  },
+  {
+    "place_name": "Rowella",
+    "state_code": "TAS",
+    "latitude": -41.2,
+    "longitude": 146.9
+  },
+  {
+    "place_name": "York Town",
+    "state_code": "TAS",
+    "latitude": -41.1725,
+    "longitude": 146.8325
+  },
+  {
+    "place_name": "Sidmouth",
+    "state_code": "TAS",
+    "latitude": -41.2085,
+    "longitude": 146.8949
+  },
+  {
+    "place_name": "Kelso",
+    "state_code": "TAS",
+    "latitude": -41.1049,
+    "longitude": 146.7929
+  },
+  {
+    "place_name": "Greens Beach",
+    "state_code": "TAS",
+    "latitude": -41.0848,
+    "longitude": 146.7504
+  },
+  {
+    "place_name": "Badger Head",
+    "state_code": "TAS",
+    "latitude": -41.1725,
+    "longitude": 146.8325
+  },
+  {
+    "place_name": "Kayena",
+    "state_code": "TAS",
+    "latitude": -41.1889,
+    "longitude": 146.895
+  },
+  {
+    "place_name": "Flowery Gully",
+    "state_code": "TAS",
+    "latitude": -41.2582,
+    "longitude": 146.8159
+  },
+  {
+    "place_name": "Beauty Point",
+    "state_code": "TAS",
+    "latitude": -41.1622,
+    "longitude": 146.8215
+  },
+  {
+    "place_name": "Beaconsfield",
+    "state_code": "TAS",
+    "latitude": -41.2023,
+    "longitude": 146.8172
+  },
+  {
+    "place_name": "Clarence Point",
+    "state_code": "TAS",
+    "latitude": -41.1293,
+    "longitude": 146.7892
+  },
+  {
+    "place_name": "Blackwall",
+    "state_code": "TAS",
+    "latitude": -41.3021,
+    "longitude": 146.969
+  },
+  {
+    "place_name": "Swan Point",
+    "state_code": "TAS",
+    "latitude": -41.2613,
+    "longitude": 146.9644
+  },
+  {
+    "place_name": "Notley Hills",
+    "state_code": "TAS",
+    "latitude": -41.3485,
+    "longitude": 146.9286
+  },
+  {
+    "place_name": "Lanena",
+    "state_code": "TAS",
+    "latitude": -41.3021,
+    "longitude": 146.969
+  },
+  {
+    "place_name": "Glengarry",
+    "state_code": "TAS",
+    "latitude": -41.3488,
+    "longitude": 146.8655
+  },
+  {
+    "place_name": "Robigana",
+    "state_code": "TAS",
+    "latitude": -41.2618,
+    "longitude": 146.9465
+  },
+  {
+    "place_name": "Loira",
+    "state_code": "TAS",
+    "latitude": -41.276,
+    "longitude": 146.923
+  },
+  {
+    "place_name": "Winkleigh",
+    "state_code": "TAS",
+    "latitude": -41.2933,
+    "longitude": 146.8358
+  },
+  {
+    "place_name": "

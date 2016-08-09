@@ -1,39 +1,53 @@
-<ion-view view-title="Admin Profile" name="vendor-info" style="margin-top: 35px;">
-<ion-nav-buttons side="primary">
-        <button class="button button-icon ion-ios-arrow-left"  ng-click="myGoBack()"></button>
+<ion-view view-title="Admin Profile" name="vendor-info" style="">
+    <ion-nav-buttons side="primary">
+        <button class="button button-icon ion-ios-arrow-left" ng-click="myGoBack()"></button>
     </ion-nav-buttons>
-    <!-- <ion-nav-buttons side="secondary">
-        <button class="button button-icon ion-android-more-vertical" ng-class="{'ion-android-more-vertical': !drop, 'ion-android-more-horizontal': drop}" ng-click="showPopoveredit($event); drop = !drop"></button>
-    </ion-nav-buttons> -->
-    <ion-content class="padding">
-        <br>
-        <div class="list form" style="padding: 10px;">
-            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-person-outline"></i> VENDOR NAME</label>
-            <div>Impatsu, Loren
-                <!-- <a style="float:right;">EDIT</a> --></div>
-            <br>
-            <hr>
-             <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-people-outline"></i> POSITION</label>
-            <div>Project Lead
-                <!-- <a style="float:right;">EDIT</a> --></div>
-            <br>
-            <hr>
-            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-location-outline"></i> LOCATION</label>
-            <div>Sydney, CBD
-                <!-- <a style="float:right;">EDIT</a> --></div>
-            <div>Melbourne, CBD
-                <!-- <a style="float:right;">EDIT</a> --></div>
-            <br>
-            <hr>
-            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-telephone-outline"></i> CONTACT NUMBER</label>
-            <div>0411123236
-                <!-- <a style="float:right;">EDIT</a> --></div>
-            <br>
-            <hr>
-            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-email-outline"></i> EMAIL ADDRESS</label>
-            <div>loren@impatsu.com.au
+    <ion-nav-buttons side="secondary">
+        <button class="button button-icon ion-ios-create" ng-click=""></button>
+    </ion-nav-buttons>
+    <ion-content class="padding" style="" has-header="true">
+        <div id="content">
+            <div id="profile-info">
+                <img id="profile-image" class="animated fadeInBounce" src="img/no-avatar.jpg">
             </div>
-<!--             <div class="row" style="margin-top:20px;">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="list form profborder" style="padding-left:30px;">
+            <small><a>VENDOR NAME</a>
+            </small>
+            <br>
+            <label class="new-label" style="margin-left: 0px;">Impatsu, Loren</label>
+            <br>
+            <br>
+            <small><a>POSITION</a>
+            </small>
+            <br>
+            <label class="new-label" style="margin-left: 0px;">Project Lead</label>
+            <br>
+            <br>
+            <small><a>LOCATION</a>
+            </small>
+            <br>
+            <label class="new-label" style="margin-left: 0px;">Sydney, CBD</label>
+            <br>
+            <label class="new-label" style="margin-left: 0px;">Melbourne, CBD</label>
+            <br>
+            <br>
+            <small><a>CONTACT NUMBER</a>
+            </small>
+            <br>
+            <label class="new-label" style="margin-left: 0px;">0411123236</label>
+            <br>
+            <br>
+            <small><a>EMAIL ADDRESS</a>
+            </small>
+            <br>
+            <label class="new-label" style="margin-left: 0px;">loren@impatsu.com.au</label>
+            <br>
+        </div>
+        <!--             <div class="row" style="margin-top:20px;">
                 <div class="col col-50">
                     <button ng-click="clickDecline()" class="button button-block button-stable">
                         Cancel

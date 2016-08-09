@@ -1,30 +1,21 @@
-<!-- <ion-popover-view class="dropbody" >
-    <ion-content>
-        <img src="img/no-avatar.jpg" class="img-circle dropaccout" alt="User Image">
-        <p>
-            <div>Vendor Vendor</div>
-            <small>Member since July. 2016</small>
-        </p>
-        <li class="user-footer" style="background-color: #f3f3f3;padding: 10px;">
-            <div class="pull-left">
-                <a ui-sref="admindash" class="btn btn-default btn-flat">Profile</a>
-            </div>
-            <div class="pull-right">
-                <a href="#" class="btn btn-default btn-flat">Sign out</a>
-            </div>
-        </li>
-    </ion-content>
-</ion-popover-view>
- -->
 <ion-popover-view style="background-color:transparent;">
     <ion-content>
         <div class="list">
             <div class="item droplist">
                 <img src="img/no-avatar.jpg" class="img-circle center dropaccout" alt="User Image">
-                <div>Vendor Vendor</div>
-                <small>Member since July. 2016</small>
+                <div ng-if="user.usertype=='con'">
+                    <div>Vendor Vendor</div>
+                    <small>Member since July. 2016</small>
+                </div>
+                <div ng-if="user.usertype=='proc'">
+                    <div>Lorem Impatsu</div>
+                    <small>PM since July. 2016</small>
+                </div>
             </div>
-            <div ng-click="gotToProfile($event)" class="item" style="text-align:center;">
+            <div ng-click="gotToProfile($event)" ng-if="user.usertype=='con'" class="item" style="text-align:center;">
+                Profile
+            </div>
+            <div ng-click="gotToadminProfile($event)" ng-if="user.usertype=='proc'" class="item" style="text-align:center;">
                 Profile
             </div>
             <div ng-click="signOut($event)" class="item" style="text-align:center;">

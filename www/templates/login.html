@@ -2,7 +2,7 @@
     <ion-content>
         <div class="list back padding-top">
             <div class="item item-image back">
-                <img src="./img/logo.png" style="width: 23%;margin-top: 50px;">
+                <img src="./img/eca-logo2.png" style="width: 23%;margin-top: 60px;">
             </div>
             <div class="item login-header back">
                 <h2 class="login-font">CONTRACTOR APP</h2>
@@ -10,11 +10,15 @@
                 <small class="l-font">Apply as one of our certified contractor</small>
             </div>
         </div>
+        <!-- <form name="authorizationForm" novalidate="" ng-submit="signIn(authorizationForm)"> -->
         <div class="list list-inset padding-left padding-right">
             <label class="item item-input bortop">
                 <span class="i-con ion-android-person"></span>
                 <input type="text" placeholder="Username" ng-model="data.username">
             </label>
+            <!-- <div class="error-container" ng-show="authorizationForm.username.$error" ng-messages="authorizationForm.username.$error">
+                    <div ng-messages-include="error-list.html"></div>
+                </div> -->
             <label class="item item-input bordbot">
                 <span class="i-con ion-android-lock"></span>
                 <input type="password" placeholder="Password" ng-model="data.password">
@@ -22,12 +26,34 @@
                     hide
                     </span>
             </label>
+            <!--  <div class="error-container last-error-container" ng-show="authorizationForm.password.$error && authorizationForm.$submitted" ng-messages="authorizationForm.password.$error">
+                    <div ng-messages-include="error-list.html"></div>
+                </div> -->
         </div>
         <div class="padding-left padding-right">
-            <div class="forg" >Forgot Password?</div>
+            <div class="forg">Forgot Password?</div>
             <a class="button button-block button-positive" ng-click="login()">Login</a>
             <h4 ui-sref="vendorInfo" class="loglink positive">Apply as contractor</h4>
             <p class="loglink" style="font-size: 11px;color: #d8d8d8">© 2016 Engagis Pty Ltd</p>
         </div>
+        <!-- </form> -->
     </ion-content>
 </ion-view>
+<script id="home.html" type="text/ng-template">
+    <ion-view view-title="Second page">
+        <ion-content class="padding">
+            <h1>Wellcome</h1>
+        </ion-content>
+    </ion-view>
+</script>
+<!-- <script id="error-list.html" type="text/ng-template">
+    <div class="error" ng-message="required">
+        <i class="ion-information-circled"></i> This field is required!
+    </div>
+    <div class="error" ng-message="minlength">
+        <i class="ion-information-circled"></i> Minimum length of this field is 5 characters!
+    </div>
+    <div class="error" ng-message="maxlength">
+        <i class="ion-information-circled"></i> Maximum length of this field is 20 characters!
+    </div>
+</script> -->

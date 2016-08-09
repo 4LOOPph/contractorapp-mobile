@@ -1,0 +1,926 @@
+[
+  {
+    "place_name": "Australian National University",
+    "state_code": "ACT",
+    "latitude": -35.2777,
+    "longitude": 149.1189
+  },
+  {
+    "place_name": "Barton",
+    "state_code": "ACT",
+    "latitude": -35.3049,
+    "longitude": 149.1412
+  },
+  {
+    "place_name": "Wreck Bay",
+    "state_code": "ACT",
+    "latitude": -35.1627,
+    "longitude": 150.6907
+  },
+  {
+    "place_name": "Hmas Creswell",
+    "state_code": "ACT",
+    "latitude": -35.028,
+    "longitude": 150.5501
+  },
+  {
+    "place_name": "Jervis Bay",
+    "state_code": "ACT",
+    "latitude": -35.1333,
+    "longitude": 150.7
+  },
+  {
+    "place_name": "Deakin West",
+    "state_code": "ACT",
+    "latitude": -35.3126,
+    "longitude": 149.1278
+  },
+  {
+    "place_name": "Duntroon",
+    "state_code": "ACT",
+    "latitude": -35.3,
+    "longitude": 149.1667
+  },
+  {
+    "place_name": "Parliament House",
+    "state_code": "ACT",
+    "latitude": -35.3126,
+    "longitude": 149.1278
+  },
+  {
+    "place_name": "Yarralumla",
+    "state_code": "ACT",
+    "latitude": -35.2998,
+    "longitude": 149.1058
+  },
+  {
+    "place_name": "Russell",
+    "state_code": "ACT",
+    "latitude": -35.2977,
+    "longitude": 149.151
+  },
+  {
+    "place_name": "Barton",
+    "state_code": "ACT",
+    "latitude": -35.3049,
+    "longitude": 149.1412
+  },
+  {
+    "place_name": "Deakin",
+    "state_code": "ACT",
+    "latitude": -35.3193,
+    "longitude": 149.1031
+  },
+  {
+    "place_name": "Capital Hill",
+    "state_code": "ACT",
+    "latitude": -35.3066,
+    "longitude": 149.1246
+  },
+  {
+    "place_name": "Parkes",
+    "state_code": "ACT",
+    "latitude": -35.3018,
+    "longitude": 149.1304
+  },
+  {
+    "place_name": "Harman",
+    "state_code": "ACT",
+    "latitude": -35.35,
+    "longitude": 149.2
+  },
+  {
+    "place_name": "Hmas Harman",
+    "state_code": "ACT",
+    "latitude": -35.31,
+    "longitude": 149.1385
+  },
+  {
+    "place_name": "Canberra",
+    "state_code": "ACT",
+    "latitude": -35.2835,
+    "longitude": 149.1281
+  },
+  {
+    "place_name": "City",
+    "state_code": "ACT",
+    "latitude": -35.2813,
+    "longitude": 149.1293
+  },
+  {
+    "place_name": "Canberra",
+    "state_code": "ACT",
+    "latitude": -35.2835,
+    "longitude": 149.1281
+  },
+  {
+    "place_name": "Acton",
+    "state_code": "ACT",
+    "latitude": -35.2777,
+    "longitude": 149.1183
+  },
+  {
+    "place_name": "Black Mountain",
+    "state_code": "ACT",
+    "latitude": -35.2772,
+    "longitude": 149.1054
+  },
+  {
+    "place_name": "Downer",
+    "state_code": "ACT",
+    "latitude": -35.2446,
+    "longitude": 149.1447
+  },
+  {
+    "place_name": "Hackett",
+    "state_code": "ACT",
+    "latitude": -35.2495,
+    "longitude": 149.1635
+  },
+  {
+    "place_name": "Watson",
+    "state_code": "ACT",
+    "latitude": -35.2381,
+    "longitude": 149.1527
+  },
+  {
+    "place_name": "Lyneham",
+    "state_code": "ACT",
+    "latitude": -35.2398,
+    "longitude": 149.1307
+  },
+  {
+    "place_name": "O'Connor",
+    "state_code": "ACT",
+    "latitude": -35.2564,
+    "longitude": 149.1125
+  },
+  {
+    "place_name": "Ainslie",
+    "state_code": "ACT",
+    "latitude": -35.2625,
+    "longitude": 149.1437
+  },
+  {
+    "place_name": "Dickson",
+    "state_code": "ACT",
+    "latitude": -35.2508,
+    "longitude": 149.1393
+  },
+  {
+    "place_name": "Red Hill",
+    "state_code": "ACT",
+    "latitude": -35.3262,
+    "longitude": 149.1191
+  },
+  {
+    "place_name": "Manuka",
+    "state_code": "ACT",
+    "latitude": -35.3126,
+    "longitude": 149.1278
+  },
+  {
+    "place_name": "Griffith",
+    "state_code": "ACT",
+    "latitude": -35.3253,
+    "longitude": 149.1371
+  },
+  {
+    "place_name": "Forrest",
+    "state_code": "ACT",
+    "latitude": -35.315,
+    "longitude": 149.1286
+  },
+  {
+    "place_name": "Narrabundah",
+    "state_code": "ACT",
+    "latitude": -35.3357,
+    "longitude": 149.1492
+  },
+  {
+    "place_name": "Causeway",
+    "state_code": "ACT",
+    "latitude": -35.3151,
+    "longitude": 149.1512
+  },
+  {
+    "place_name": "Kingston",
+    "state_code": "ACT",
+    "latitude": -35.3152,
+    "longitude": 149.1466
+  },
+  {
+    "place_name": "Hughes",
+    "state_code": "ACT",
+    "latitude": -35.3327,
+    "longitude": 149.0949
+  },
+  {
+    "place_name": "Garran",
+    "state_code": "ACT",
+    "latitude": -35.3421,
+    "longitude": 149.1085
+  },
+  {
+    "place_name": "Curtin",
+    "state_code": "ACT",
+    "latitude": -35.3246,
+    "longitude": 149.0776
+  },
+  {
+    "place_name": "O'Malley",
+    "state_code": "ACT",
+    "latitude": -35.3525,
+    "longitude": 149.1128
+  },
+  {
+    "place_name": "Lyons",
+    "state_code": "ACT",
+    "latitude": -35.3406,
+    "longitude": 149.074
+  },
+  {
+    "place_name": "Chifley",
+    "state_code": "ACT",
+    "latitude": -35.3534,
+    "longitude": 149.0768
+  },
+  {
+    "place_name": "Woden",
+    "state_code": "ACT",
+    "latitude": -35.3481,
+    "longitude": 149.0905
+  },
+  {
+    "place_name": "Phillip",
+    "state_code": "ACT",
+    "latitude": -35.3503,
+    "longitude": 149.0915
+  },
+  {
+    "place_name": "Swinger Hill",
+    "state_code": "ACT",
+    "latitude": -35.3481,
+    "longitude": 149.0905
+  },
+  {
+    "place_name": "Isaacs",
+    "state_code": "ACT",
+    "latitude": -35.3686,
+    "longitude": 149.1156
+  },
+  {
+    "place_name": "Torrens",
+    "state_code": "ACT",
+    "latitude": -35.372,
+    "longitude": 149.0877
+  },
+  {
+    "place_name": "Mawson",
+    "state_code": "ACT",
+    "latitude": -35.3634,
+    "longitude": 149.0986
+  },
+  {
+    "place_name": "Farrer",
+    "state_code": "ACT",
+    "latitude": -35.3767,
+    "longitude": 149.105
+  },
+  {
+    "place_name": "Pearce",
+    "state_code": "ACT",
+    "latitude": -35.3622,
+    "longitude": 149.0834
+  },
+  {
+    "place_name": "Civic Square",
+    "state_code": "ACT",
+    "latitude": -35.31,
+    "longitude": 149.1933
+  },
+  {
+    "place_name": "Pialligo",
+    "state_code": "ACT",
+    "latitude": -35.3201,
+    "longitude": 149.207
+  },
+  {
+    "place_name": "Canberra Airport",
+    "state_code": "ACT",
+    "latitude": -35.3172,
+    "longitude": 149.1753
+  },
+  {
+    "place_name": "Fyshwick",
+    "state_code": "ACT",
+    "latitude": -35.3333,
+    "longitude": 149.1667
+  },
+  {
+    "place_name": "Symonston",
+    "state_code": "ACT",
+    "latitude": -35.3516,
+    "longitude": 149.1592
+  },
+  {
+    "place_name": "Majura",
+    "state_code": "ACT",
+    "latitude": -35.2667,
+    "longitude": 149.2
+  },
+  {
+    "place_name": "Canberra Bc",
+    "state_code": "ACT",
+    "latitude": -35.2778,
+    "longitude": 149.0111
+  },
+  {
+    "place_name": "Canberra Mc",
+    "state_code": "ACT",
+    "latitude": -35.2498,
+    "longitude": 149.0591
+  },
+  {
+    "place_name": "Stirling",
+    "state_code": "ACT",
+    "latitude": -35.3497,
+    "longitude": 149.0493
+  },
+  {
+    "place_name": "Wright",
+    "state_code": "ACT",
+    "latitude": -35.3224,
+    "longitude": 149.0346
+  },
+  {
+    "place_name": "Coree",
+    "state_code": "ACT",
+    "latitude": -35.2794,
+    "longitude": 148.9194
+  },
+  {
+    "place_name": "Uriarra Village",
+    "state_code": "ACT",
+    "latitude": -35.3503,
+    "longitude": 149.0155
+  },
+  {
+    "place_name": "Holder",
+    "state_code": "ACT",
+    "latitude": -35.3344,
+    "longitude": 149.0461
+  },
+  {
+    "place_name": "Stromlo",
+    "state_code": "ACT",
+    "latitude": -35.3255,
+    "longitude": 148.9993
+  },
+  {
+    "place_name": "Waramanga",
+    "state_code": "ACT",
+    "latitude": -35.353,
+    "longitude": 149.0621
+  },
+  {
+    "place_name": "Chapman",
+    "state_code": "ACT",
+    "latitude": -35.3562,
+    "longitude": 149.0374
+  },
+  {
+    "place_name": "Weston Creek",
+    "state_code": "ACT",
+    "latitude": -35.3333,
+    "longitude": 149.05
+  },
+  {
+    "place_name": "Mount Stromlo",
+    "state_code": "ACT",
+    "latitude": -35.4171,
+    "longitude": 148.7769
+  },
+  {
+    "place_name": "Weston",
+    "state_code": "ACT",
+    "latitude": -35.3358,
+    "longitude": 149.0593
+  },
+  {
+    "place_name": "Coombs",
+    "state_code": "ACT",
+    "latitude": -35.3163,
+    "longitude": 149.0394
+  },
+  {
+    "place_name": "Uriarra",
+    "state_code": "ACT",
+    "latitude": -35.4171,
+    "longitude": 148.7769
+  },
+  {
+    "place_name": "Duffy",
+    "state_code": "ACT",
+    "latitude": -35.3346,
+    "longitude": 149.0319
+  },
+  {
+    "place_name": "Fisher",
+    "state_code": "ACT",
+    "latitude": -35.3613,
+    "longitude": 149.057
+  },
+  {
+    "place_name": "Rivett",
+    "state_code": "ACT",
+    "latitude": -35.3471,
+    "longitude": 149.0379
+  },
+  {
+    "place_name": "Campbell",
+    "state_code": "ACT",
+    "latitude": -35.2891,
+    "longitude": 149.1538
+  },
+  {
+    "place_name": "Turner",
+    "state_code": "ACT",
+    "latitude": -35.2688,
+    "longitude": 149.1247
+  },
+  {
+    "place_name": "Reid",
+    "state_code": "ACT",
+    "latitude": -35.2858,
+    "longitude": 149.1391
+  },
+  {
+    "place_name": "Braddon",
+    "state_code": "ACT",
+    "latitude": -35.2708,
+    "longitude": 149.1357
+  },
+  {
+    "place_name": "Cook",
+    "state_code": "ACT",
+    "latitude": -35.2601,
+    "longitude": 149.0657
+  },
+  {
+    "place_name": "Aranda",
+    "state_code": "ACT",
+    "latitude": -35.2582,
+    "longitude": 149.0804
+  },
+  {
+    "place_name": "Page",
+    "state_code": "ACT",
+    "latitude": -35.2386,
+    "longitude": 149.0499
+  },
+  {
+    "place_name": "Hawker",
+    "state_code": "ACT",
+    "latitude": -35.2471,
+    "longitude": 149.0367
+  },
+  {
+    "place_name": "Scullin",
+    "state_code": "ACT",
+    "latitude": -35.2346,
+    "longitude": 149.039
+  },
+  {
+    "place_name": "Jamison Centre",
+    "state_code": "ACT",
+    "latitude": -35.2498,
+    "longitude": 149.0591
+  },
+  {
+    "place_name": "Weetangera",
+    "state_code": "ACT",
+    "latitude": -35.2498,
+    "longitude": 149.0591
+  },
+  {
+    "place_name": "Macquarie",
+    "state_code": "ACT",
+    "latitude": -35.2513,
+    "longitude": 149.0636
+  },
+  {
+    "place_name": "Fraser",
+    "state_code": "ACT",
+    "latitude": -35.1917,
+    "longitude": 149.0453
+  },
+  {
+    "place_name": "Spence",
+    "state_code": "ACT",
+    "latitude": -35.1987,
+    "longitude": 149.0644
+  },
+  {
+    "place_name": "Florey",
+    "state_code": "ACT",
+    "latitude": -35.2259,
+    "longitude": 149.05
+  },
+  {
+    "place_name": "Holt",
+    "state_code": "ACT",
+    "latitude": -35.2244,
+    "longitude": 149.0119
+  },
+  {
+    "place_name": "Charnwood",
+    "state_code": "ACT",
+    "latitude": -35.2002,
+    "longitude": 149.0341
+  },
+  {
+    "place_name": "Higgins",
+    "state_code": "ACT",
+    "latitude": -35.2324,
+    "longitude": 149.0272
+  },
+  {
+    "place_name": "Dunlop",
+    "state_code": "ACT",
+    "latitude": -35.194,
+    "longitude": 149.0198
+  },
+  {
+    "place_name": "Kippax",
+    "state_code": "ACT",
+    "latitude": -35.2101,
+    "longitude": 149.034
+  },
+  {
+    "place_name": "Melba",
+    "state_code": "ACT",
+    "latitude": -35.2102,
+    "longitude": 149.0541
+  },
+  {
+    "place_name": "Flynn",
+    "state_code": "ACT",
+    "latitude": -35.2059,
+    "longitude": 149.0439
+  },
+  {
+    "place_name": "Latham",
+    "state_code": "ACT",
+    "latitude": -35.2165,
+    "longitude": 149.0314
+  },
+  {
+    "place_name": "Macgregor",
+    "state_code": "ACT",
+    "latitude": -35.2098,
+    "longitude": 149.011
+  },
+  {
+    "place_name": "Kippax Centre",
+    "state_code": "ACT",
+    "latitude": -35.2101,
+    "longitude": 149.034
+  },
+  {
+    "place_name": "Belconnen",
+    "state_code": "ACT",
+    "latitude": -35.2167,
+    "longitude": 149.0833
+  },
+  {
+    "place_name": "Mckellar",
+    "state_code": "ACT",
+    "latitude": -35.2175,
+    "longitude": 149.077
+  },
+  {
+    "place_name": "Belconnen",
+    "state_code": "ACT",
+    "latitude": -35.2167,
+    "longitude": 149.0833
+  },
+  {
+    "place_name": "Evatt",
+    "state_code": "ACT",
+    "latitude": -35.2119,
+    "longitude": 149.0689
+  },
+  {
+    "place_name": "Lawson",
+    "state_code": "ACT",
+    "latitude": -35.2241,
+    "longitude": 149.0998
+  },
+  {
+    "place_name": "Giralang",
+    "state_code": "ACT",
+    "latitude": -35.2109,
+    "longitude": 149.096
+  },
+  {
+    "place_name": "University Of Canberra",
+    "state_code": "ACT",
+    "latitude": -35.2498,
+    "longitude": 149.0591
+  },
+  {
+    "place_name": "Belconnen DC",
+    "state_code": "ACT",
+    "latitude": -35.2199,
+    "longitude": 149.0869
+  },
+  {
+    "place_name": "Kaleen",
+    "state_code": "ACT",
+    "latitude": -35.2181,
+    "longitude": 149.1052
+  },
+  {
+    "place_name": "Bruce",
+    "state_code": "ACT",
+    "latitude": -35.2441,
+    "longitude": 149.0908
+  },
+  {
+    "place_name": "Hall",
+    "state_code": "ACT",
+    "latitude": -35.1685,
+    "longitude": 149.0683
+  },
+  {
+    "place_name": "Hume",
+    "state_code": "ACT",
+    "latitude": -35.3855,
+    "longitude": 149.1658
+  },
+  {
+    "place_name": "Paddys River",
+    "state_code": "ACT",
+    "latitude": -35.3914,
+    "longitude": 149.2166
+  },
+  {
+    "place_name": "Beard",
+    "state_code": "ACT",
+    "latitude": -35.3422,
+    "longitude": 149.2101
+  },
+  {
+    "place_name": "Oaks Estate",
+    "state_code": "ACT",
+    "latitude": -35.3397,
+    "longitude": 149.2121
+  },
+  {
+    "place_name": "Tharwa",
+    "state_code": "ACT",
+    "latitude": -35.5167,
+    "longitude": 149.0667
+  },
+  {
+    "place_name": "Kowen",
+    "state_code": "ACT",
+    "latitude": -35.3914,
+    "longitude": 149.2166
+  },
+  {
+    "place_name": "Greenway",
+    "state_code": "ACT",
+    "latitude": -35.4183,
+    "longitude": 149.0666
+  },
+  {
+    "place_name": "Tuggeranong",
+    "state_code": "ACT",
+    "latitude": -35.4158,
+    "longitude": 149.0649
+  },
+  {
+    "place_name": "Tuggeranong Dc",
+    "state_code": "ACT",
+    "latitude": -35.4333,
+    "longitude": 149.15
+  },
+  {
+    "place_name": "Kambah",
+    "state_code": "ACT",
+    "latitude": -35.3862,
+    "longitude": 149.058
+  },
+  {
+    "place_name": "Kambah Village",
+    "state_code": "ACT",
+    "latitude": -35.3862,
+    "longitude": 149.058
+  },
+  {
+    "place_name": "Erindale Centre",
+    "state_code": "ACT",
+    "latitude": -35.3998,
+    "longitude": 149.0888
+  },
+  {
+    "place_name": "Oxley",
+    "state_code": "ACT",
+    "latitude": -35.4095,
+    "longitude": 149.0786
+  },
+  {
+    "place_name": "Wanniassa",
+    "state_code": "ACT",
+    "latitude": -35.3978,
+    "longitude": 149.0909
+  },
+  {
+    "place_name": "Fadden",
+    "state_code": "ACT",
+    "latitude": -35.405,
+    "longitude": 149.1166
+  },
+  {
+    "place_name": "Monash",
+    "state_code": "ACT",
+    "latitude": -35.4158,
+    "longitude": 149.0906
+  },
+  {
+    "place_name": "Gowrie",
+    "state_code": "ACT",
+    "latitude": -35.4119,
+    "longitude": 149.109
+  },
+  {
+    "place_name": "Macarthur",
+    "state_code": "ACT",
+    "latitude": -35.4089,
+    "longitude": 149.127
+  },
+  {
+    "place_name": "Isabella Plains",
+    "state_code": "ACT",
+    "latitude": -35.4283,
+    "longitude": 149.088
+  },
+  {
+    "place_name": "Theodore",
+    "state_code": "ACT",
+    "latitude": -35.4496,
+    "longitude": 149.1197
+  },
+  {
+    "place_name": "Gilmore",
+    "state_code": "ACT",
+    "latitude": -35.4199,
+    "longitude": 149.1348
+  },
+  {
+    "place_name": "Richardson",
+    "state_code": "ACT",
+    "latitude": -35.4279,
+    "longitude": 149.1138
+  },
+  {
+    "place_name": "Calwell",
+    "state_code": "ACT",
+    "latitude": -35.4404,
+    "longitude": 149.1071
+  },
+  {
+    "place_name": "Chisholm",
+    "state_code": "ACT",
+    "latitude": -35.4125,
+    "longitude": 149.1283
+  },
+  {
+    "place_name": "Bonython",
+    "state_code": "ACT",
+    "latitude": -35.4333,
+    "longitude": 149.0782
+  },
+  {
+    "place_name": "Conder",
+    "state_code": "ACT",
+    "latitude": -35.4593,
+    "longitude": 149.1042
+  },
+  {
+    "place_name": "Gordon",
+    "state_code": "ACT",
+    "latitude": -35.4568,
+    "longitude": 149.085
+  },
+  {
+    "place_name": "Banks",
+    "state_code": "ACT",
+    "latitude": -35.4719,
+    "longitude": 149.0997
+  },
+  {
+    "place_name": "Mitchell",
+    "state_code": "ACT",
+    "latitude": -35.2145,
+    "longitude": 149.1293
+  },
+  {
+    "place_name": "Crace",
+    "state_code": "ACT",
+    "latitude": -35.2028,
+    "longitude": 149.1074
+  },
+  {
+    "place_name": "Gungahlin",
+    "state_code": "ACT",
+    "latitude": -35.1867,
+    "longitude": 149.1362
+  },
+  {
+    "place_name": "Casey",
+    "state_code": "ACT",
+    "latitude": -35.167,
+    "longitude": 149.0947
+  },
+  {
+    "place_name": "Franklin",
+    "state_code": "ACT",
+    "latitude": -35.1995,
+    "longitude": 149.1433
+  },
+  {
+    "place_name": "Taylor",
+    "state_code": "ACT",
+    "latitude": -35.1489,
+    "longitude": 149.1092
+  },
+  {
+    "place_name": "Palmerston",
+    "state_code": "ACT",
+    "latitude": -35.1945,
+    "longitude": 149.1194
+  },
+  {
+    "place_name": "Kinlyside",
+    "state_code": "ACT",
+    "latitude": -35.1754,
+    "longitude": 149.0798
+  },
+  {
+    "place_name": "Nicholls",
+    "state_code": "ACT",
+    "latitude": -35.1873,
+    "longitude": 149.0965
+  },
+  {
+    "place_name": "Ginninderra Village",
+    "state_code": "ACT",
+    "latitude": -35.1875,
+    "longitude": 149.1244
+  },
+  {
+    "place_name": "Ngunnawal",
+    "state_code": "ACT",
+    "latitude": -35.1728,
+    "longitude": 149.1115
+  },
+  {
+    "place_name": "Bonner",
+    "state_code": "ACT",
+    "latitude": -35.1623,
+    "longitude": 149.1386
+  },
+  {
+    "place_name": "Forde",
+    "state_code": "ACT",
+    "latitude": -35.1682,
+    "longitude": 149.1461
+  },
+  {
+    "place_name": "Harrison",
+    "state_code": "ACT",
+    "latitude": -35.1991,
+    "longitude": 149.1563
+  },
+  {
+    "place_name": "Amaroo",
+    "state_code": "ACT",
+    "latitude": -35.1696,
+    "longitude": 149.128
+  },
+  {
+    "place_name": "Moncrieff",
+    "state_code": "ACT",
+    "latitude": -35.1651,
+    "longitude": 149.1179
+  },
+  {
+    "place_name": "Jacka",
+    "state_code": "ACT",
+    "latitude": -35.1568,
+    "longitude": 149.1288
+  }
+]

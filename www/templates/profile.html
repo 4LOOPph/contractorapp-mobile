@@ -1,215 +1,227 @@
-<ion-view view-title="User Profile" name="vendor-info" style="margin-top: 35px;">
-<ion-nav-buttons side="primary">
-        <button class="button button-icon ion-ios-arrow-left"  ng-click="myGoBack()"></button>
+<ion-view view-title="User Profile" name="vendor-info">
+    <ion-nav-buttons side="primary">
+        <button class="button button-icon ion-ios-arrow-left" ng-click="myGoBack()"></button>
     </ion-nav-buttons>
-    <ion-nav-buttons side="secondary">
+    <!-- <ion-nav-buttons side="secondary">
         <button class="button button-icon ion-android-more-vertical" ng-class="{'ion-android-more-vertical': !drop, 'ion-android-more-horizontal': drop}" ng-click="showPopoveredit($event); drop = !drop"></button>
-    </ion-nav-buttons>
-
+    </ion-nav-buttons> -->
     <ion-content class="padding">
+        <div id="content">
+            <div id="profile-info">
+                <img id="profile-image" class="animated fadeInBounce" src="img/no-avatar.jpg">
+            </div>
+        </div>
+        <br>
+        <br>
         <br>
         <div class="list form" style="padding: 10px;">
-            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-person-outline"></i> VENDOR NAME</label>
-            <div>Reid, James Roy
-                <!-- <a style="float:right;">EDIT</a> --></div>
-            <br>
-            <hr>
-            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-location-outline"></i> AREA OF COVERAGE</label>
-            <div>Sydney, CBD
-                <!-- <a style="float:right;">EDIT</a> --></div>
-            <div>Melbourne, CBD
-                <!-- <a style="float:right;">EDIT</a> --></div>
-            <br>
-            <hr>
-            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-telephone-outline"></i> CONTACT NUMBER</label>
-            <div>0411123236
-                <!-- <a style="float:right;">EDIT</a> --></div>
-            <br>
-            <hr>
-            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-email-outline"></i> EMAIL ADDRESS</label>
-            <div>james@tecport.com.au
-                <!-- <a style="float:right;">EDIT</a> --></div>
-            <br>
-            <hr>
-            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-checkmark-outline"></i> AVAILABILITY</label>
-            <div class="row" style="text-align:center;">
-                <div class="col col-33">Day</div>
-                <div class="col col-33">Start time</div>
-                <div class="col col-33">End time</div>
-            </div>
-            <div class="row" style="text-align:center;">
-                <div class="col col-33" style="margin-top: -7px;">Sunday</div>
-                <div class="col col-33">
-                    <div class="list list-inset" style="margin-top: -15px;">
-                        <label class="item item-input daytime">
-                            <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
+            <div class="profborder" style="margin-left:-10px;">
+                <small><a>VENDOR NAME
+               </a></small>
+                <br>
+                <label class="new-label" style="margin-left: 0px;">Reid, James Roy</label>
+                <br>
+                <br>
+                <small><a>AREA OF COVERAGE</a>
+               </small>
+                <br>
+                <label class="new-label" style="margin-left: 0px;">Sydney, CBD</label>
+                <br>
+                <label class="new-label" style="margin-left: 0px;">Melbourne, CBD</label>
+                <br>
+                <br>
+                <small><a>CONTACT NUMBER</a>
+               </small>
+                <br>
+                <label class="new-label" style="margin-left: 0px;">0411123236</label>
+                <br>
+                <br>
+                <small><a>EMAIL ADDRESS</a>
+               </small>
+                <br>
+                <label class="new-label" style="margin-left: 0px;">james@tecport.com.au</label>
+                <br>
+                <br>
+                <hr>
+                <label class="new-label" style="margin-left: 0px;">AVAILABILITY</label>
+                <div class="row" style="text-align:center;">
+                    <div class="col col-33">Day</div>
+                    <div class="col col-33">Start time</div>
+                    <div class="col col-33">End time</div>
+                </div>
+                <div class="row" style="text-align:center;">
+                    <div class="col col-33" style="margin-top: -7px;">Sunday</div>
+                    <div class="col col-33">
+                        <div class="list list-inset" style="margin-top: -15px;">
+                            <label class="item item-input daytime">
+                                <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col col-33">
+                        <div class="list list-inset" style="margin-top: -15px;">
+                            <label class="item item-input daytime">
+                                <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="text-align:center;">
+                    <div class="col col-33" style="margin-top: -7px;">Monday</div>
+                    <div class="col col-33">
+                        <div class="list list-inset" style="margin-top: -15px;">
+                            <label class="item item-input daytime">
+                                <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col col-33">
+                        <div class="list list-inset" style="margin-top: -15px;">
+                            <label class="item item-input daytime">
+                                <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="text-align:center;">
+                    <div class="col col-33" style="margin-top: -7px;">Tuesday</div>
+                    <div class="col col-33">
+                        <div class="list list-inset" style="margin-top: -15px;">
+                            <label class="item item-input daytime">
+                                <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col col-33">
+                        <div class="list list-inset" style="margin-top: -15px;">
+                            <label class="item item-input daytime">
+                                <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="text-align:center;">
+                    <div class="col col-33" style="margin-top: -7px;">Wednesday</div>
+                    <div class="col col-33">
+                        <div class="list list-inset" style="margin-top: -15px;">
+                            <label class="item item-input daytime">
+                                <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col col-33">
+                        <div class="list list-inset" style="margin-top: -15px;">
+                            <label class="item item-input daytime">
+                                <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="text-align:center;">
+                    <div class="col col-33" style="margin-top: -7px;">Thursday</div>
+                    <div class="col col-33">
+                        <div class="list list-inset" style="margin-top: -15px;">
+                            <label class="item item-input daytime">
+                                <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col col-33">
+                        <div class="list list-inset" style="margin-top: -15px;">
+                            <label class="item item-input daytime">
+                                <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="text-align:center;">
+                    <div class="col col-33" style="margin-top: -7px;">Friday</div>
+                    <div class="col col-33">
+                        <div class="list list-inset" style="margin-top: -15px;">
+                            <label class="item item-input daytime">
+                                <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col col-33">
+                        <div class="list list-inset" style="margin-top: -15px;">
+                            <label class="item item-input daytime">
+                                <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="text-align:center;">
+                    <div class="col col-33" style="margin-top: -7px;">Saturday</div>
+                    <div class="col col-33">
+                        <div class="list list-inset" style="margin-top: -15px;">
+                            <label class="item item-input daytime">
+                                <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col col-33">
+                        <div class="list list-inset" style="margin-top: -15px;">
+                            <label class="item item-input daytime">
+                                <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <small style="font-style:italic;float:right;">Leave blank if not available</small>
+                <br>
+                <hr>
+                <label class="new-label" style="margin-left: 0px;">RATE</label>
+                <br>
+                <br>
+                <div class="list">
+                    <p>Standard Rate
+                    </p>
+                    <div class=" profilerate">
+                        <label class="item item-input bortop bordbot time-lab">
+                            <i class="icon ion-social-usd"></i>
+                            <input type="number" ng-model="rate.stanDard" placeholder="00.00" style="padding-right: 0;height: 44px;">
                         </label>
                     </div>
                 </div>
-                <div class="col col-33">
-                    <div class="list list-inset" style="margin-top: -15px;">
-                        <label class="item item-input daytime">
-                            <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
-                        </label>
+                <div class="list form" style="margin-top: -30px;">
+                    <div class="row">
+                        <div class="col col-50">Weekdays
+                            <div style="color: blue;font-size:13px;font-style: italic;">Base Hours:</div>
+                            <label class="item item-input bortop bordbot time-lab">
+                                <i class="icon ion-social-usd"></i>
+                                <input type="number" ng-model="rate.psrrate" placeholder="00.00" style="padding-right: 0;">
+                            </label>
+                            <br>
+                            <div style="color: red;font-size:13px;font-style: italic;">After Hours:</div>
+                            <label class="item item-input bortop bordbot time-lab">
+                                <i class="icon ion-social-usd"></i>
+                                <input type="number" ng-model="rate.psrrate" placeholder="00.00" style="padding-right: 0;">
+                            </label>
+                        </div>
+                        <div class="col col-50">Weekends
+                            <div style="color: blue;font-size:13px;font-style: italic;">Base Hours:</div>
+                            <label class="item item-input bortop bordbot time-lab">
+                                <i class="icon ion-social-usd"></i>
+                                <input type="number" ng-model="rate.psrrate" placeholder="00.00" style="padding-right: 0;">
+                            </label>
+                            <br>
+                            <div style="color: red;font-size:13px;font-style: italic;">After Hours:</div>
+                            <label class="item item-input bortop bordbot time-lab">
+                                <i class="icon ion-social-usd"></i>
+                                <input type="number" ng-model="rate.psrrate" placeholder="00.00" style="padding-right: 0;">
+                            </label>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="row" style="text-align:center;">
-                <div class="col col-33" style="margin-top: -7px;">Monday</div>
-                <div class="col col-33">
-                    <div class="list list-inset" style="margin-top: -15px;">
-                        <label class="item item-input daytime">
-                            <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
-                        </label>
-                    </div>
-                </div>
-                <div class="col col-33">
-                    <div class="list list-inset" style="margin-top: -15px;">
-                        <label class="item item-input daytime">
-                            <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="text-align:center;">
-                <div class="col col-33" style="margin-top: -7px;">Tuesday</div>
-                <div class="col col-33">
-                    <div class="list list-inset" style="margin-top: -15px;">
-                        <label class="item item-input daytime">
-                            <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
-                        </label>
-                    </div>
-                </div>
-                <div class="col col-33">
-                    <div class="list list-inset" style="margin-top: -15px;">
-                        <label class="item item-input daytime">
-                            <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="text-align:center;">
-                <div class="col col-33" style="margin-top: -7px;">Wednesday</div>
-                <div class="col col-33">
-                    <div class="list list-inset" style="margin-top: -15px;">
-                        <label class="item item-input daytime">
-                            <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
-                        </label>
-                    </div>
-                </div>
-                <div class="col col-33">
-                    <div class="list list-inset" style="margin-top: -15px;">
-                        <label class="item item-input daytime">
-                            <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="text-align:center;">
-                <div class="col col-33" style="margin-top: -7px;">Thursday</div>
-                <div class="col col-33">
-                    <div class="list list-inset" style="margin-top: -15px;">
-                        <label class="item item-input daytime">
-                            <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
-                        </label>
-                    </div>
-                </div>
-                <div class="col col-33">
-                    <div class="list list-inset" style="margin-top: -15px;">
-                        <label class="item item-input daytime">
-                            <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="text-align:center;">
-                <div class="col col-33" style="margin-top: -7px;">Friday</div>
-                <div class="col col-33">
-                    <div class="list list-inset" style="margin-top: -15px;">
-                        <label class="item item-input daytime">
-                            <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
-                        </label>
-                    </div>
-                </div>
-                <div class="col col-33">
-                    <div class="list list-inset" style="margin-top: -15px;">
-                        <label class="item item-input daytime">
-                            <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="text-align:center;">
-                <div class="col col-33" style="margin-top: -7px;">Saturday</div>
-                <div class="col col-33">
-                    <div class="list list-inset" style="margin-top: -15px;">
-                        <label class="item item-input daytime">
-                            <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
-                        </label>
-                    </div>
-                </div>
-                <div class="col col-33">
-                    <div class="list list-inset" style="margin-top: -15px;">
-                        <label class="item item-input daytime">
-                            <input type="text" placeholder="" ng-model="data.username" style="padding: 5px;">
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <small style="font-style:italic;float:right;">Leave blank if not available</small>
-            <br>
-            <hr>
-            <label class="new-label" style="margin-left: 0px;"><i class="icon ion-ios-checkmark-outline"></i> RATE</label>
-            <br>
-            <br>
-            <div class="list">
-                <p>Standard Rate
                     <!-- <a style="float:right;">EDIT</a> -->
-                </p>
-                <div class=" profilerate">
-                    <label class="item item-input bortop bordbot time-lab">
-                        <i class="icon ion-social-usd"></i>
-                        <input type="number" ng-model="rate.stanDard" placeholder="00.00" style="padding-right: 0;height: 44px;">
-                    </label>
                 </div>
-            </div>
-            <div class="list form" style="margin-top: -30px;">
-                <div class="row">
-                    <div class="col col-50">Weekdays
-                        <div style="color: blue;font-size:13px;font-style: italic;">Base Hours:</div>
-                        <label class="item item-input bortop bordbot time-lab">
-                            <i class="icon ion-social-usd"></i>
-                            <input type="number" ng-model="rate.psrrate" placeholder="00.00" style="padding-right: 0;">
-                        </label>
-                        <br>
-                        <div style="color: red;font-size:13px;font-style: italic;">After Hours:</div>
-                        <label class="item item-input bortop bordbot time-lab">
-                            <i class="icon ion-social-usd"></i>
-                            <input type="number" ng-model="rate.psrrate" placeholder="00.00" style="padding-right: 0;">
-                        </label>
-                    </div>
-                    <div class="col col-50">Weekends
-                        <div style="color: blue;font-size:13px;font-style: italic;">Base Hours:</div>
-                        <label class="item item-input bortop bordbot time-lab">
-                            <i class="icon ion-social-usd"></i>
-                            <input type="number" ng-model="rate.psrrate" placeholder="00.00" style="padding-right: 0;">
-                        </label>
-                        <br>
-                        <div style="color: red;font-size:13px;font-style: italic;">After Hours:</div>
-                        <label class="item item-input bortop bordbot time-lab">
-                            <i class="icon ion-social-usd"></i>
-                            <input type="number" ng-model="rate.psrrate" placeholder="00.00" style="padding-right: 0;">
-                        </label>
-                    </div>
-                </div>
-                <!-- <a style="float:right;">EDIT</a> -->
-            </div>
-            <!--  <button class="button add-button" ng-click="addArea(rates)" style="margin-top:40px;">view PSD</button>
+                <!--  <button class="button add-button" ng-click="addArea(rates)" style="margin-top:40px;">view PSD</button>
             <button class="button button-block button-positive" style="margin-top:30px;">
                 Start
             </button> -->
+            </div>
         </div>
-        <div class="row" style="margin-top:20px;">
+        <!-- <div class="row" style="margin-top:20px;">
             <div class="col col-50">
                 <button ng-click="clickDecline()" class="button button-block button-stable">
                     Cancel
@@ -220,6 +232,6 @@
                     Save Changes
                 </button>
             </div>
-        </div><br><br>
+        </div> -->
     </ion-content>
 </ion-view>

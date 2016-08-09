@@ -1,36 +1,21 @@
-<!-- <div >
-<div class="ngdialog-message">
-    <h5>Terms and Condition</h5>
-    <p style="margin-bottom: 30px;font-size: 13px;">• The vendor is responsible for the accuracy of the above details
-        <br>• The Vendor warrants that the bank account details provided are true and correct
-        <br>• Engagis has the right to accept the authority of the Authorised Representative as conclusive evidence of that person's authority to execute this agreement on behalf of the Trade Vendor.
-        <br>• The Authorised Representative warrants in his/her own right that
-        <br> a.) he/she has the authority to bond the Vendor to the conditions of this payment
-        <br> b.) the banking details provided are accurate
-        <br> c.) by signing this form, that the Trade Vendor is aware of its responsibilities under this agreement.</p>
-</div>
-<div class="ngdialog-buttons">
-    <button type="button" class="ngdialog-button ngdialog-button-secondary left" ng-click="closeThisDialog('Cancel')" style="float:left;margin-left: 0px;">No</button>
-    <button type="button" class="ngdialog-button ngdialog-button-secondary" ng-click="confirm('Save')">Close</button>
-</div>
-</div> -->
 <ion-modal-view style="margin-top: 45px;">
-    <ion-header-bar class="bar bar-header">
+    <ion-header-bar class="bar bar-header bar-stable">
         <h1 class="title">Terms and Condition</h1>
-        <!-- <button class="button button-clear button-primary" ng-click="modal.hide()">Cancel</button> -->
+        <a class="button button-icon icon ion-ios-close-empty button-primary" ng-click="modal.hide()"></a>
     </ion-header-bar>
     <ion-content class="padding">
         <div class="list" style="margin-top: 50px;">
-            
-                <p style="margin-bottom: 30px;font-size: 13px;">• The vendor is responsible for the accuracy of the above details
-                    <br>• The Vendor warrants that the bank account details provided are true and correct
-                    <br>• Engagis has the right to accept the authority of the Authorised Representative as conclusive evidence of that person's authority to execute this agreement on behalf of the Trade Vendor.
-                    <br>• The Authorised Representative warrants in his/her own right that
-                    <br> a.) he/she has the authority to bond the Vendor to the conditions of this payment
-                    <br> b.) the banking details provided are accurate
-                    <br> c.) by signing this form, that the Trade Vendor is aware of its responsibilities under this agreement.</p>
-          
-            <button class="button button-primary" ng-click="modal.hide()" style="float: right;">Close</button>
+            <p style="    margin-bottom: 30px;
+    font-size: 13px;
+    padding-left: 15px;
+    color: #3c3c3c;">• The vendor is responsible for the accuracy of the above details
+                <br>• The Vendor warrants that the bank account details provided are true and correct
+                <br>• Engagis has the right to accept the authority of the Authorised Representative as conclusive evidence of that person's authority to execute this agreement on behalf of the Trade Vendor.
+                <br>• The Authorised Representative warrants in his/her own right that
+                <br> a.) he/she has the authority to bond the Vendor to the conditions of this payment
+                <br> b.) the banking details provided are accurate
+                <br> c.) by signing this form, that the Trade Vendor is aware of its responsibilities under this agreement.</p>
+           <!--  <button class="button button-block button-stable" ng-click="modal.hide()" style="float: right;">Close</button> -->
         </div>
     </ion-content>
 </ion-modal-view>

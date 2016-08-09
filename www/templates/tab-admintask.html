@@ -1,78 +1,308 @@
 <ion-view view-title="Task" style="background-color: #efefef;">
     <ion-nav-buttons side="secondary">
-        <button class="button button-icon ion-ios-gear-outline" ng-click="showPopoveradmin($event)"></button>
+        <button class="button button-icon ion-ios-gear-outline" ng-click="showPopover($event)"></button>
     </ion-nav-buttons>
-    <ion-content style="top: 55px;background-color: #efefef;">
-        <label class="new-label" style="margin-top:20px;"><i class="icon ion-ios-pie-outline"></i> IN PROGRESS <a style="float:right;margin-right:10px;">VIEW ALL</a></label>
-        <div class="card newcard">
-            <!-- card start -->
-            <div class=" taskcardgreen" ng-click="filter.direct = true; filter.check= false; filter.check1= false">
+    <ion-content style="margin-top:40px;" class="animated fadeInLeft">
+        <div class="item item-divider" style="font-size: 13px;" ng-hide="progress.length === 0">
+            IN PROGRESS
+            <a ng-click="$parent.opentaskinprogressModal()" style="float: right;font-size: 13px;">VIEW ALL</a>
+        </div>
+        <ion-list show-delete="false" can-swipe="true">
+            <ion-item ng-repeat="list in tasklist" ng-if="list.Task == 'progress'">
+                <div class="cardrightside">
+                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
+                </div>
+                <div class="card-sidepad" style="background-color: #c10606;" ng-if="list.Status === 'High'"></div>
+                <div class="card-sidepad" ng-if="list.Status === 'Medium'"></div>
+                <div class="card-sidepad" style="background-color: #ece505;" ng-if="list.Status === 'Low'"></div>
+                <div class="cardin">
+                    <div class="card-lbl">{{list.Title}}</div>
+                    <p class="card-lblp">({{list.Description}})</p>
+                    <div class="row" style="margin-top:-5px;">
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-alert-circled"></i> {{list.Status}}</small></p>
+                        </div>
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-android-calendar"></i> {{date | date:'longDate'}}</small></p>
+                        </div>
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-android-checkmark-circle"></i> Checked-In</small></p>
+                        </div>
+                    </div>
+                </div>
+                <ion-option-button ng-if="list.Status === 'High'" class="button button-balanced" ng-click="detailsH($event)" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+                </ion-option-button>
+                <ion-option-button ng-if="list.Status === 'Medium'" class="button button-balanced" ng-click="detailsM($event)" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+                </ion-option-button>
+                <ion-option-button ng-if="list.Status === 'Low'" class="button button-balanced" ng-click="detailsL($event)" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+                </ion-option-button>
+            </ion-item><br>
+            <div class="item item-divider" style="font-size: 13px;" ng-hide="pending.length === 0">
+                PENDING
+                <a ng-click="$parent.openpendingModal()" style="float: right;font-size: 13px;">VIEW ALL</a>
+            </div>
+            <ion-item style="height: 90px;" ng-repeat="list in tasklist" ng-if="list.Task == 'pending'">
+                <div class="cardrightside">
+                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
+                </div>
+                <div class="card-sidepad" style="background-color: #c10606;" ng-if="list.Status === 'High'"></div>
+                <div class="card-sidepad" ng-if="list.Status === 'Medium'"></div>
+                <div class="card-sidepad" style="background-color: #ece505;" ng-if="list.Status === 'Low'"></div>
+                <div class="cardin">
+                    <div class="card-lbl">{{list.Title}}</div>
+                    <p class="card-lblp">({{list.Description}})</p>
+                    <div class="row" style="margin-top:-5px;">
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-alert-circled"></i> {{list.Status}}</small></p>
+                        </div>
+                    </div>
+                </div>
+                <ion-option-button class="button button-balanced" ng-click="pendingDetails($event)" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+                </ion-option-button>
+            </ion-item><br>
+            <div class="item item-divider" style="font-size: 13px;">
+                FOR APPROVAL
+                <a ng-click="$parent.opennewtaskModal()" style="float: right;font-size: 13px;">VIEW ALL</a>
+            </div>
+            <ion-item style="height: 90px;">
+                <div class="cardrightside">
+                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
+                </div>
+                <div class="card-sidepad"></div>
+                <div class="cardin">
+                    <div class="card-lbl">AV-Installation</div>
+                    <p class="card-lblp">(Telstra, Melbourne)</p>
+                    <div class="row" style="margin-top:-5px;">
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-alert-circled"></i> Medium</small></p>
+                        </div>
+                    </div>
+                </div>
+                <ion-option-button class="button button-energized" ng-click="qowlist($event)" style="padding: 27px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-compose"></i></div><div>View</div> <div>QOW</div></small>
+                </ion-option-button>
+                <ion-option-button class="button button-balanced" ng-click="newTask($event)" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+                </ion-option-button>
+            </ion-item>
+            <ion-item style="height: 90px;">
+                <div class="cardrightside">
+                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
+                </div>
+                <div class="card-sidepad" style="background-color: #ece505;"></div>
+                <div class="cardin">
+                    <div class="card-lbl">Hardware Installation</div>
+                    <p class="card-lblp">(Telstra, Melbourne)</p>
+                    <div class="row" style="margin-top:-5px;">
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-alert-circled"></i> Low</small></p>
+                        </div>
+                    </div>
+                </div>
+                <ion-option-button class="button button-energized" ng-click="qowlist($event)" style="padding: 27px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-compose"></i></div><div>View</div> <div>QOW</div></small>
+                </ion-option-button>
+                <ion-option-button class="button button-balanced" ng-click="newTask($event)" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+                </ion-option-button>
+            </ion-item>
+            <ion-item style="height: 90px;">
+                <div class="cardrightside">
+                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
+                </div>
+                <div class="card-sidepad" style="background-color: #ece505;"></div>
+                <div class="cardin">
+                    <div class="card-lbl">Hardware Installation</div>
+                    <p class="card-lblp">(Telstra, Melbourne)</p>
+                    <div class="row" style="margin-top:-5px;">
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-alert-circled"></i> Low</small></p>
+                        </div>
+                    </div>
+                </div>
+                <ion-option-button class="button button-energized" ng-click="qowlist($event)" style="padding: 27px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-compose"></i></div><div>View</div> <div>QOW</div></small>
+                </ion-option-button>
+                <ion-option-button class="button button-balanced" ng-click="newTask($event)" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+                </ion-option-button>
+            </ion-item><br>
+            <div class="item item-divider" style="font-size: 13px;" ng-if="delete || delete2">
+                COMPLETED
+                <a ng-click="$parent.opencompletedModal()" style="float: right;font-size: 13px;">VIEW ALL</a>
+            </div>
+            <!-- <ion-item style="height: 90px;" ng-repeat="list in tasklist" ng-if="list.Task == 'complete'">
+                <div class="cardrightside">
+                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
+                </div>
+                <div class="card-sidepad" style="background-color: #c10606;" ng-if="list.Status === 'High'"></div>
+                <div class="card-sidepad" ng-if="list.Status === 'Medium'"></div>
+                <div class="card-sidepad" style="background-color: #ece505;" ng-if="list.Status === 'Low'"></div>
+                <div class="cardin">
+                    <div class="card-lbl">{{list.Title}}</div>
+                    <p class="card-lblp">({{list.Description}})</p>
+                    <div class="row" style="margin-top:-5px;">
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-alert-circled"></i> {{list.Status}}</small></p>
+                        </div>
+                    </div>
+                </div>
+                <ion-option-button class="button button-assertive" style="padding: 26px;line-height: 1.5;" ng-click="delete(list)">
+                    <small><div><i  class="icon ion-close-round"></i></div><div>Close</div> <div>Task</div></small>
+                </ion-option-button>
+                <ion-option-button class="button button-balanced" ng-click="comptask($event)" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+                </ion-option-button>
+            </ion-item> -->
+            <ion-item style="height: 90px;" ng-show="delete">
+                <div class="cardrightside">
+                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
+                </div>
+                <div class="card-sidepad"></div>
+                <div class="cardin">
+                    <div class="card-lbl">AV-Installation</div>
+                    <p class="card-lblp">(Telstra, Melbourne)</p>
+                    <div class="row" style="margin-top:-5px;">
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-alert-circled"></i> Medium</small></p>
+                        </div>
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-android-calendar"></i> {{date | date:'longDate'}}</small></p>
+                        </div>
+                    </div>
+                </div>
+                <ion-option-button class="button button-assertive" style="padding: 26px;line-height: 1.5;" ng-click="delete()">
+                    <small><div><i  class="icon ion-close-round"></i></div><div>Close</div> <div>Task</div></small>
+                </ion-option-button>
+                <ion-option-button class="button button-balanced" ng-click="comptask($event)" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+                </ion-option-button>
+            </ion-item>
+            <ion-item style="height: 90px;" ng-show="delete2">
+                <div class="cardrightside">
+                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
+                </div>
+                <div class="card-sidepad" style="background-color: #ece505;"></div>
+                <div class="cardin">
+                    <div class="card-lbl">Hardware Installation</div>
+                    <p class="card-lblp">(Telstra, Melbourne)</p>
+                    <div class="row" style="margin-top:-5px;">
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-alert-circled"></i> Low</small></p>
+                        </div>
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-android-calendar"></i> {{date | date:'longDate'}}</small></p>
+                        </div>
+                    </div>
+                </div>
+                <ion-option-button class="button button-assertive" style="padding: 26px;line-height: 1.5;" ng-click="delete2()">
+                    <small><div><i  class="icon ion-close-round"></i></div><div>Close</div> <div>Task</div></small>
+                </ion-option-button>
+                <ion-option-button class="button button-balanced" ng-click="comptask($event)" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+                </ion-option-button>
+            </ion-item>
+        </ion-list>
+        <br>
+        <br>
+        <br>
+    </ion-content>
+    <!--  <ion-content style="background-color: #efefef;margin-top:60px;">
+        <label class="new-label" style="margin-top:20px;"> IN PROGRESS </label>
+        <br><small style="font-style:italic;margin-left:10px;"> <a> (Tap task to view details <img src="img/tap.svg" style="width: 5%;
+    margin-bottom: -5px;">)</a></small>
+        <a ng-click="$parent.opentaskinprogressModal()" style="float: right;margin-right: 10px;">VIEW ALL</a>
+        <div class="card newcard animated fadeInLeft anim4">
+            <div class=" taskcardgreen" ng-click="gotoprog($event)">
                 <div class="card-sidepad"></div>
                 <div class="cardin">
                     <div class="card-lbl">Digital Ticket Testing</div>
                     <p class="card-lblp">Telstra</p>
                     <p class="card-lblp" style="margin-top: -5px;">27 June 2016</p>
-                    <!-- <button class="btn-flat btn-done" ng-click="clickToCheckout()">DONE</button> -->
-                    <!-- ui-sref="progress" -->
                 </div>
             </div>
-            <div class=" taskcardyellow" ng-click="filter.direct = false; filter.check= false; filter.check1= true">
+            <div class=" taskcardyellow" ng-click="gotoprog($event)">
                 <div class="card-sidepad" style="background-color: #ece505;"></div>
                 <div class="cardin">
                     <div class="card-lbl">Hardware Installation</div>
                     <p class="card-lblp">Telstra</p>
                     <p class="card-lblp" style="margin-top: -5px;">17 July 2016</p>
-                    <!-- <button class="btn-flat btn-done" ng-click="clickToCheckout()">DONE</button> -->
-                    <!-- ui-sref="progress" -->
                 </div>
             </div>
-            <!-- endcard -->
         </div>
-        <label class="new-label" style="margin-top:20px;"><i class="icon ion-ios-plus-outline"></i> FOR APPROVAL <a style="float:right;margin-right:10px;">VIEW ALL</a></label>
-        <div class="card newcard">
-            <!-- card start -->
-            <div class=" taskcardred">
-                <div class="card-sidepad" style="background-color: #c10606;"></div>
-                <div class="cardin">
-                    <div class="card-lbl">Network Setup</div>
-                    <p class="card-lblp">7-Eleven</p>
-                    <p class="card-lblp" style="margin-top: -5px;">7 July 2016</p>
-                    <button class="btn-flat btn-done" ng-click="pendingDetails($event)">DETAILS</button>
+        <div style="margin-top: 25px;">
+            <label class="new-label" style="margin-top:20px;"> FOR APPROVAL </label>
+            <br><small style="font-style:italic;margin-left:10px;"> <a> (Tap task to view details <img src="img/tap.svg" style="width: 5%;
+    margin-bottom: -5px;">)</a></small>
+            <a ng-click="openpendingModal()" style="float: right;margin-right: 10px;">VIEW ALL</a>
+            <div class="card newcard animated fadeInLeft anim5">
+                <div class=" taskcardred" ng-click="forApproval($event)">
+                    <div class="card-sidepad" style="background-color: #c10606;"></div>
+                    <div class="cardin">
+                        <div class="card-lbl">Network Setup</div>
+                        <p class="card-lblp">7-Eleven</p>
+                        <p class="card-lblp" style="margin-top: -5px;">7 July 2016</p>
+                    </div>
+                </div>
+                <div class=" taskcardgreen" ng-click="forApproval($event)">
+                    <div class="card-sidepad"></div>
+                    <div class="cardin">
+                        <div class="card-lbl">Digital Ticket Testing</div>
+                        <p class="card-lblp">Telstra</p>
+                        <p class="card-lblp" style="margin-top: -5px;">27 June 2016</p>
+                    </div>
                 </div>
             </div>
-            <div class=" taskcardgreen">
-                <div class="card-sidepad"></div>
-                <div class="cardin">
-                    <div class="card-lbl">Digital Ticket Testing</div>
-                    <p class="card-lblp">Telstra</p>
-                    <p class="card-lblp" style="margin-top: -5px;">27 June 2016</p>
-                    <button class="btn-flat btn-done" ng-click="pendingDetails($event)">DETAILS</button>
-                </div>
-            </div>
-            <!-- endcard -->
         </div>
-        <label class="new-label" style="margin-top:20px;"><i class="icon ion-ios-checkmark-outline"></i> COMPLETED <a style="float:right;margin-right:10px;">VIEW ALL</a></label>
-        <div class="card newcard">
-            <div class=" taskcardwhite" ng-click="">
-                <div class="card-sidepad" style="background-color: transparent;"></div>
-                <div class="cardin">
-                    <div class="card-lbl">Network Setup</div>
-                    <p class="card-lblp">7-Eleven</p>
-                    <p class="card-lblp" style="margin-top: -5px;">7 July 2016</p>
-                    <button class="btn-flat btn-done">CLOSE</button>
+        <div style="margin-top: 25px;">
+            <label class="new-label" style="margin-top:20px;">PENDING TASK </label>
+            <br><small style="font-style:italic;margin-left:10px;"> <a> (Tap task to view details <img src="img/tap.svg" style="width: 5%;
+    margin-bottom: -5px;">)</a></small>
+            <a ng-click="opennewtaskModal()" style="float: right;margin-right: 10px;">VIEW ALL</a>
+            <div class="card newcard animated fadeInLeft anim 6">
+                <div class=" taskcardred">
+                    <div class="card-sidepad" style="background-color: #c10606;"></div>
+                    <div class="cardin">
+                        <div class="card-lbl">Network Setup</div>
+                        <p class="card-lblp">7-Eleven</p>
+                        <p class="card-lblp" style="margin-top: -5px;">7 July 2016</p>
+                    </div>
+                </div>
+                <div class=" taskcardyellow">
+                    <div class="card-sidepad" style="background-color: #ece505;"></div>
+                    <div class="cardin">
+                        <div class="card-lbl">Hardware Installation</div>
+                        <p class="card-lblp">Telstra</p>
+                        <p class="card-lblp" style="margin-top: -5px;">17 July 2016</p>
+                    </div>
                 </div>
             </div>
-            <div class=" taskcardwhite" ng-click="">
-                <div class="card-sidepad" style="background-color: transparent;"></div>
-                <div class="cardin">
-                    <div class="card-lbl">Hardware Installation</div>
-                    <p class="card-lblp">Telstra</p>
-                    <p class="card-lblp" style="margin-top: -5px;">17 July 2016</p>
-                    <button class="btn-flat btn-done">CLOSE</button>
+        </div>
+        <div style="margin-top: 25px;">
+            <label class="new-label" style="margin-top:20px;">COMPLETED</label>
+            <br><small style="font-style:italic;margin-left:10px;"> <a> (Tap task to view details <img src="img/tap.svg" style="width: 5%;
+    margin-bottom: -5px;">)</a></small>
+            <a ng-click="opencompletedModal()" style="float: right;margin-right: 10px;">VIEW ALL</a>
+            <div class="animated fadeInLeft anim6">
+                <div class="card newcard" ng-class="{'animated bounceOutRight': model == true}">
+                    <div class=" taskcardwhite" ng-click="comptask($event)">
+                        <div class="card-sidepad" style="background-color: transparent;"></div>
+                        <div class="cardin">
+                            <div class="card-lbl">Network Setup</div>
+                            <p class="card-lblp">7-Eleven</p>
+                            <p class="card-lblp" style="margin-top: -5px;">7 July 2016</p>
+                        </div>
+                    </div>
+                    <button class="btn-flat btn-done animated fadeInBounce" style="margin-top:-40px;background-color:#c10606;margin-right:15px;" ng-model="model">CLOSE</button>
                 </div>
             </div>
         </div>
         <br>
         <br>
-    </ion-content>
+        <br>
+    </ion-content> -->
 </ion-view>

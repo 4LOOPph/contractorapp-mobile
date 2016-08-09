@@ -1,0 +1,165 @@
+<ion-modal-view style="margin-top:45px;">
+    <ion-header-bar class="bar bar-header bar-stable">
+        <h1 ng-if="user.usertype=='con'" class="title">List of My Report</h1>
+        <h1 ng-if="user.usertype=='proc'" class="title">List of Report</h1>
+        <button class="button button-clear button-primary" ng-click="closemyreportModal()">Close</button>
+    </ion-header-bar>
+    <ion-content style="margin-left:0px;margin-bottom:10px;margin-top:35px;">
+        <ion-list show-delete="false" can-swipe="true">
+            <ion-item style="height: 90px;">
+                <div class="cardrightside">
+                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
+                </div>
+                <div class="card-sidepad" style="background-color: white;"></div>
+                <div class="cardin" ng-if="user.usertype=='con'">
+                    <div style="margin-top: 10px;">
+                        <div class="card-lbl">Task:</div>
+                        <p class="card-lblp">Priority:</p>
+                        <p class="card-lblp" style="margin-top: -5px;">Date:</p>
+                    </div>
+                    <div style="margin-left: 65px;margin-top: 5px;">
+                        <div class="card-lbl">AV-Installation</div>
+                        <p class="card-lblp">Low</p>
+                        <p class="card-lblp" style="margin-top: -5px;">27 June 2016</p>
+                    </div>
+                </div>
+                <div class="cardin" ng-if="user.usertype=='proc'">
+                    <div>
+                        <div class="card-lbl">Sender:</div>
+                        <p class="card-lblp">Task:</p>
+                        <p class="card-lblp" style="margin-top: -5px;">Date:</p>
+                    </div>
+                    <div style="margin-left: 65px;margin-top: 5px;">
+                        <div class="card-lbl">Roberts, Johnny</div>
+                        <p class="card-lblp">Network Setup</p>
+                        <p class="card-lblp" style="margin-top: -5px;">7 July 2016</p>
+                    </div>
+                </div>
+                <ion-option-button class="button button-dark" style="padding: 15px;line-height: 1.5;padding-bottom: 35px;">
+                    <small><div><i  class="icon ion-android-download"></i></div><div>Download</div></small>
+                </ion-option-button>
+                <ion-option-button class="button button-balanced" ng-click="reportdone($event)" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+                </ion-option-button>
+            </ion-item>
+            <ion-item style="height: 90px;">
+                <div class="cardrightside">
+                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
+                </div>
+                <div class="card-sidepad" style="background-color: white;"></div>
+                <div class="cardin" ng-if="user.usertype=='con'">
+                    <div style="margin-top: 10px;">
+                        <div class="card-lbl">Task:</div>
+                        <p class="card-lblp">Priority:</p>
+                        <p class="card-lblp" style="margin-top: -5px;">Date:</p>
+                    </div>
+                    <div style="margin-left: 65px;margin-top: 5px;">
+                        <div class="card-lbl">AV-Installation</div>
+                        <p class="card-lblp">Medium</p>
+                        <p class="card-lblp" style="margin-top: -5px;">27 June 2016</p>
+                    </div>
+                </div>
+                <div class="cardin" ng-if="user.usertype=='proc'">
+                    <div>
+                        <div class="card-lbl">Sender:</div>
+                        <p class="card-lblp">Task:</p>
+                        <p class="card-lblp" style="margin-top: -5px;">Date:</p>
+                    </div>
+                    <div style="margin-left: 65px;margin-top: 5px;">
+                        <div class="card-lbl">Roberts, Johnny</div>
+                        <p class="card-lblp">Network Setup</p>
+                        <p class="card-lblp" style="margin-top: -5px;">7 July 2016</p>
+                    </div>
+                </div>
+                <ion-option-button class="button button-dark" style="padding: 15px;line-height: 1.5;padding-bottom: 35px;">
+                    <small><div><i class="icon ion-android-download"></i></div><div>Download</div></small>
+                </ion-option-button>
+                <ion-option-button class="button button-balanced" ng-click="reportdone2($event)" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+                </ion-option-button>
+            </ion-item>
+        </ion-list>
+        <!--  <div style="text-align:center;"><small style="font-style:italic;"> <a> (Tap task to view details <img src="img/tap.svg" style="width: 5%;
+    margin-bottom: -5px;">)</a></small></div>
+        <div class="card newcard animated fadeInLeft anim5">
+            <div>
+                <div class=" taskcardwhite" ng-click="myreportdone($event)">
+                    <div class="card-sidepad" style="background-color:transparent;"></div>
+                    <div class="cardin">
+                        <div>
+                            <div class="card-lbl">Sender:</div>
+                            <p class="card-lblp">Task:</p>
+                            <p class="card-lblp" style="margin-top: -5px;">Date:</p>
+                        </div>
+                        <div style="margin-left: 65px;margin-top: -75px;">
+                            <div class="card-lbl">Reynold, Ralph</div>
+                            <p class="card-lblp">Software Installation</p>
+                            <p class="card-lblp" style="margin-top: -5px;">27 July 2016</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-flat btn-done animated fadeInBounce" style="margin-top: -40px;width: 75px;font-size: 10px;margin-right: 15px;">DOWNLOAD</button>
+            </div>
+        </div>
+        <div class="card newcard animated fadeInLeft anim5">
+            <div>
+                <div class=" taskcardwhite" ng-click="myreportdone($event)">
+                    <div class="card-sidepad" style="background-color:transparent;"></div>
+                    <div class="cardin">
+                        <div>
+                            <div class="card-lbl">Sender:</div>
+                            <p class="card-lblp">Task:</p>
+                            <p class="card-lblp" style="margin-top: -5px;">Date:</p>
+                        </div>
+                        <div style="margin-left: 65px;margin-top: -75px;">
+                            <div class="card-lbl">Reynold, Ralph</div>
+                            <p class="card-lblp">Software Installation</p>
+                            <p class="card-lblp" style="margin-top: -5px;">27 July 2016</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-flat btn-done animated fadeInBounce" style="margin-top: -40px;width: 75px;font-size: 10px;margin-right: 15px;">DOWNLOAD</button>
+            </div>
+        </div>
+        <div class="card newcard animated fadeInLeft anim5">
+            <div>
+                <div class=" taskcardwhite" ng-click="myreportdone($event)">
+                    <div class="card-sidepad" style="background-color:transparent;"></div>
+                    <div class="cardin">
+                        <div>
+                            <div class="card-lbl">Sender:</div>
+                            <p class="card-lblp">Task:</p>
+                            <p class="card-lblp" style="margin-top: -5px;">Date:</p>
+                        </div>
+                        <div style="margin-left: 65px;margin-top: -75px;">
+                            <div class="card-lbl">Reynold, Ralph</div>
+                            <p class="card-lblp">Software Installation</p>
+                            <p class="card-lblp" style="margin-top: -5px;">27 July 2016</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-flat btn-done animated fadeInBounce" style="margin-top: -40px;width: 75px;font-size: 10px;margin-right: 15px;">DOWNLOAD</button>
+            </div>
+        </div>
+        <div class="card newcard animated fadeInLeft anim5">
+            <div>
+                <div class=" taskcardwhite" ng-click="myreportdone($event)">
+                    <div class="card-sidepad" style="background-color:transparent;"></div>
+                    <div class="cardin">
+                        <div>
+                            <div class="card-lbl">Sender:</div>
+                            <p class="card-lblp">Task:</p>
+                            <p class="card-lblp" style="margin-top: -5px;">Date:</p>
+                        </div>
+                        <div style="margin-left: 65px;margin-top: -75px;">
+                            <div class="card-lbl">Reynold, Ralph</div>
+                            <p class="card-lblp">Software Installation</p>
+                            <p class="card-lblp" style="margin-top: -5px;">27 July 2016</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-flat btn-done animated fadeInBounce" style="margin-top: -40px;width: 75px;font-size: 10px;margin-right: 15px;">DOWNLOAD</button>
+            </div>
+        </div> -->
+    </ion-content>
+</ion-modal-view>

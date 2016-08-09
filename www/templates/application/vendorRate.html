@@ -1,0 +1,166 @@
+<ion-view view-title="Payment" name="vendor-info" ng-init="filter.direct = true;" style="margin-top: 45px;">
+    <ion-content class="padding has-tabs-bottom">
+        <label class="new-label"> RATE</label>
+        <div class="list">
+            <ion-checkbox ng-init="data.standard = true;" ng-click="data.standard = true; data.other= false; disabled = true;" class="item-new" ng-model="data.standard">
+                <p>Standard Rate
+                    <div style="font-style: italic;font-size: 11px;">(please specify your rate)</div>
+                </p>
+            </ion-checkbox>
+            <div class="list list-inset" style="margin-left: 210px;margin-right: 3%;margin-top: -58px;margin-bottom: 10px;">
+                <label class="item item-input bortop bordbot time-lab">
+                    <i class="icon ion-social-usd"></i>
+                    <input type="number" ng-model="data.ratestandard" ng-show="rate.standard == true" ng-disabled="rate.other" placeholder="00.00" style="padding-right: 0;height: 44px;">
+                </label>
+            </div>
+            <ion-checkbox ng-click="data.standard = false; data.other= true;" class="item-new" ng-model="data.other">
+                <p>Other Rate <small style="font-style: italic;font-size: 11px;">(tick to specify other rate)</small></p>
+            </ion-checkbox>
+        </div>
+        <div class="list form" ng-show="data.other == true" style="margin-top: -30px;padding:10px;">
+            <div>
+                <label class="new-label">WEEKDAYS</label>
+                <div class="row">
+                    <div class="col col-50">
+                        <div style="color: blue;font-size:13px;font-style: italic;margin-top: 12px;margin-left: 40px;">Base Hours Rate:</div>
+                    </div>
+                    <div class="col col-50">
+                        <label class="item item-input bortop bordbot time-lab" style="margin-right: -10px;">
+                            <i class="icon ion-social-usd"></i>
+                            <input type="number" ng-model="data.other_base_hours" placeholder="00.00" style="padding-right: 0;">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-50">
+                        <div style="color: red;font-size:13px;font-style: italic;margin-top: 12px;margin-left: 40px;">After Hours Rate:</div>
+                    </div>
+                    <div class="col col-50">
+                        <label class="item item-input bortop bordbot time-lab" style="margin-right: -10px;">
+                            <i class="icon ion-social-usd"></i>
+                            <input type="number" ng-model="data.other_after_hours" placeholder="00.00" style="padding-right: 0;">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label class="new-label">WEEKENDS</label>
+                <div class="row">
+                    <div class="col col-50">
+                        <div style="color: blue;font-size:13px;font-style: italic;margin-top: 12px;margin-left: 40px;">Weekend Rate:</div>
+                    </div>
+                    <div class="col col-50">
+                        <label class="item item-input bortop bordbot time-lab" style="margin-right: -10px;">
+                            <i class="icon ion-social-usd"></i>
+                            <input type="number" ng-model="data.other_weekends" placeholder="00.00" style="padding-right: 0;">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top:30px;">
+            <div style="padding-left:10px;padding-right:10px;">
+                <hr>
+            </div>
+            <label class="new-label">CURRENCY</label>
+            <div class="list" class="padding-top" style="margin-top: 10px;">
+                <label class="item item-input item-select curr bordbot">
+                    <select style="padding: 10px;" ng-model="data.currency" ng-options="item.code as item.name for item in currencies">
+                        <option value="" disabled selected hidden>-- Select Currency -- </option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <label class="new-label">PAYMENT METHOD</label>
+        <div class="list">
+            <ion-checkbox ng-click="filter.direct = true; filter.check= false; checka = false; isa = false" class="item-new" ng-model="filter.direct">Direct Deposit</ion-checkbox>
+            <ion-checkbox ng-click="filter.direct = false; filter.check= true" class="item-new" ng-model="filter.check">Cheque</ion-checkbox>
+        </div>
+        <div class="list form" ng-show="filter.direct == true">
+            <div style="padding-left:10px;padding-right:10px;">
+                <hr>
+            </div>
+            <p class="account-det">All requests for payment to bank accounts must be signed by the vendor or accompanied by documentary evidence of bank account details from the vendor(e.g. Email, Fax, Invoice)</p>
+            <h4 class="new-label padding-top">BANK ACCOUNT</h4>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input ion-autocomplete type="text" readonly="readonly" class="ion-autocomplete" autocomplete="off" max-selected-items="1" placeholder="Name of Bank" items-method-value-key="items" item-value-key="id" item-view-value-key="name" ng-model="data.bankname" items-method="callbackCityMethod(query)" items-clicked-method="itemsCityClicked(callback)" />
+                </label>
+            </div>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="text" placeholder="Branch of Bank" ng-model="data.bankbranch">
+                </label>
+            </div>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="text" placeholder="Account Name" ng-model="data.bankaccount">
+                </label>
+            </div>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="text" placeholder="BSB" ng-model="data.bankbsb">
+                </label>
+            </div>
+        </div>
+        <div class="list" ng-show="filter.check == true">
+            <div style="padding-left:10px;padding-right:10px;">
+                <hr>
+            </div>
+            <p class="account-det">Cheque will be sent to the address you have provided on your basic information.</p>
+            <div class="list">
+                <ion-checkbox ng-click="isa = !isa" name="check" ng-model="checka" class="checkbox-square checkboxList" style="width: 5px;padding-left: 30px;" required>
+                </ion-checkbox>
+                <div class="new-label positive" style="margin-top: -25px;margin-left: 55px;">Tick here to specify your prefered billing address</div>
+            </div>
+            <div class="list list-inset" ng-show="isa" style="padding-left:10px;padding-right:10px;">
+                <label class="item item-input item-select" style="height: 48px;">
+                    <select ng-model="data.check_country" ng-options="week.code as week.name for week in countries" ng-change="getCountryState(data.check_country)">
+                        <option value="" disabled selected hidden>Country...</option>
+                    </select>
+                </label>
+                <label class="item item-input item-select" style="height: 48px;">
+                    <select ng-model="data.check_state" ng-options="week.code as week.name for week in states" ng-change="getCityState(data.check_state)">
+                        <option value="" disabled selected hidden>State...</option>
+                    </select>
+                </label>
+                <label class="item item-input item-select" style="height: 48px;">
+                    <span class="i-con"></span>
+                    <input ion-autocomplete type="text" readonly="readonly" class="ion-autocomplete" autocomplete="off" max-selected-items="1" placeholder="Cities..." items-method-value-key="items" item-value-key="id" item-view-value-key="name" ng-model="data.check_city" items-method="callbackMethod(query)" items-clicked-method="itemsClicked(callback)" />
+                </label>
+                <label class="item item-input item-icon-left">
+                    <span class="i-con ion-ios-home-outline"></span>
+                    <input type="text" placeholder="Specific Address" ng-model="data.check_address">
+                </label>
+                <label class="item item-input item-icon-left">
+                    <span class="i-con"></span>
+                    <input type="text" placeholder="Post Code" ng-model="data.check_postcode">
+                </label>
+            </div>
+        </div>
+        <div style="padding-left:10px;padding-right:10px;">
+            <hr>
+        </div>
+        <div class="list">
+            <!-- <form name="myForm" novalidate> -->
+            <ion-checkbox name="check" ng-model="check" class="checkbox-square checkboxList" style="width: 5px;padding-left: 40px;" required>
+            </ion-checkbox>
+            <!--  </form> -->
+            <div class="new-label positive" ng-click="openModal()" style="margin-top: -25px;margin-left: 65px;">VIEW TERMS AND CONDITION</div>
+        </div>
+        <div class="row padding-top">
+            <div class="col col-50">
+                <button ng-click="showCancel()" class="button button-block button-stable">
+                    Cancel
+                </button>
+            </div>
+            <div class="col col-50">
+                <button ui-sref="qualification" class="button button-block button-positive" ng-disabled="check?false:true">
+                    Next
+                </button>
+            </div>
+        </div>
+        <br>
+        <br>
+    </ion-content>
+</ion-view>ng-click="showConfirm()"

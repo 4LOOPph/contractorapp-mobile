@@ -1,4 +1,7 @@
-<ion-view view-title="Scope of Work" name="vendor-info" style="margin-top: 35px;">
+<ion-view view-title="Quote of Work" name="vendor-info" style="margin-top: 35px;">
+<ion-nav-buttons side="primary">
+        <button class="button button-icon ion-ios-arrow-left" ng-click="myGoBack()"></button>
+    </ion-nav-buttons>
     <ion-content class="padding" style="padding:10px;">
         <br>
         <div class="row" style="background-color: #eaeaea;font-weight: 500;text-align: center;">
@@ -12,7 +15,7 @@
             <div class="col col-33">
                 <div class="list list-inset" style="margin-top: -15px;">
                     <label class="item item-input" style="padding: 5px;">
-                        <input type="text" placeholder="# of hours" ng-model="data.username" style="padding: 5px;">
+                        <input type="text" placeholder="# of hours"  style="padding: 5px;">
                     </label>
                 </div>
             </div>
@@ -24,14 +27,14 @@
             <div class="col col-33">
                 <div class="list list-inset" style="margin-top: -15px;">
                     <label class="item item-input" style="padding: 5px;">
-                        <input type="text" placeholder="distance" ng-model="data.username" style="padding: 5px;">
+                        <input type="text" placeholder="Description" n style="padding: 5px;">
                     </label>
                 </div>
             </div>
             <div class="col col-20">
                 <div class="list list-inset" style="margin-top: -15px;">
                     <label class="item item-input" style="padding: 5px;">
-                        <input type="text" placeholder="$" ng-model="data.username" style="padding: 5px;">
+                        <input type="text" placeholder="$"  style="padding: 5px;">
                     </label>
                 </div>
             </div>
@@ -43,32 +46,50 @@
             <div class="col col-33">
                 <div class="list list-inset" style="margin-top: -15px;">
                     <label class="item item-input" style="padding: 5px;">
-                        <input type="text" placeholder="distance" ng-model="data.username" style="padding: 5px;">
+                        <input type="text" placeholder="Description"  style="padding: 5px;">
                     </label>
                 </div>
             </div>
             <div class="col col-20">
                 <div class="list list-inset" style="margin-top: -15px;">
                     <label class="item item-input" style="padding: 5px;">
-                        <input type="text" placeholder="$" ng-model="data.username" style="padding: 5px;">
+                        <input type="text" placeholder="$"  style="padding: 5px;">
                     </label>
                 </div>
             </div>
             <div class="col"></div>
         </div>
-        <div class="row" ng-repeat="contact in contacts" style="margin-top:5px;text-align: center;">
-            <div class="col col-25" style="text-align:left;">Materials{{contact.name}}</div>
+        <div class="row" style="margin-top:5px;text-align: center;">
+            <div class="col col-25" style="text-align:left;">Materials</div>
             <div class="col col-33">
                 <div class="list list-inset" style="margin-top: -15px;">
                     <label class="item item-input" style="padding: 5px;">
-                        <input type="text" placeholder="distance" ng-model="data.username" style="padding: 5px;">
+                        <input type="text" placeholder="Description"  style="padding: 5px;">
                     </label>
                 </div>
             </div>
             <div class="col col-20">
                 <div class="list list-inset" style="margin-top: -15px;">
                     <label class="item item-input" style="padding: 5px;">
-                        <input type="text" placeholder="$" ng-model="data.username" style="padding: 5px;">
+                        <input type="text" placeholder="$"  style="padding: 5px;">
+                    </label>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row" ng-repeat="contact in contacts" style="margin-top:5px;text-align: center;" ng-if="contacts.length > 0">
+            <div class="col col-25" style="text-align:left;">{{contact.name}}</div>
+            <div class="col col-33">
+                <div class="list list-inset" style="margin-top: -15px;">
+                    <label class="item item-input" style="padding: 5px;">
+                        <input type="text" placeholder="Description" ng-model="contact.description" style="padding: 5px;">
+                    </label>
+                </div>
+            </div>
+            <div class="col col-20">
+                <div class="list list-inset" style="margin-top: -15px;">
+                    <label class="item item-input" style="padding: 5px;">
+                        <input type="text" placeholder="$" ng-model="contact.rate" style="padding: 5px;">
                     </label>
                 </div>
             </div>
@@ -82,7 +103,9 @@
                 <button class="button add-button" ng-click="openModal()" style="margin-top: 5px;margin-right: 0px;">ADD ITEM</button>
             </div>
         </div>
-        <hr>
+        <div style="padding-left:10px;padding-right:10px;">
+            <hr>
+        </div>
         <div class="row" style="font-size: 18px;font-weight: 600;">
             <div class="col col-50" style="text-align:center;">Total</div>
             <div class="col col-50">
@@ -96,11 +119,13 @@
         <br>
         <br>
         <br>
-        <hr>
+        <div style="padding-left:10px;padding-right:10px;">
+            <hr>
+        </div>
         <div class="list form" style="padding: 10px;margin-top:-80px;">
-            <button class="button button-block button-positive" style="margin-top:80px;">
+            <button class="button button-block button-positive" style="margin-top:80px;" ng-click="quotsub($event)">
                 Submit Quote
             </button>
-        </div>
+        </div><br>
     </ion-content>
 </ion-view>

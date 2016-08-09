@@ -1,0 +1,231 @@
+<ion-modal-view style="margin-top:45px;">
+    <ion-header-bar class="bar bar-header bar-stable">
+        <h1 class="title" ng-if="user.usertype=='proc'">List of Task in progress</h1>
+        <h1 class="title" ng-if="user.usertype=='con'">List of Recent Task</h1>
+        <button class="button button-clear button-primary" ng-click="closetaskinprogressModal()">Close</button>
+    </ion-header-bar>
+    <ion-content style="margin-left:0px;margin-bottom:10px;margin-top:35px;">
+        <ion-list show-delete="false" can-swipe="true">
+            <ion-item style="height: 90px;" ng-class="{active:filter.check == true}" ng-click="showHigh()">
+                <div class="cardrightside">
+                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
+                </div>
+                <div class="card-sidepad" style="background-color: #c10606;"></div>
+                <div class="cardin">
+                    <div class="card-lbl">Network Setup</div>
+                    <p class="card-lblp">(7-Eleven)</p>
+                    <div class="row" style="margin-top:-5px;">
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-alert-circled"></i> High</small></p>
+                        </div>
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-android-calendar"></i> 27 June 2016</small></p>
+                        </div>
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-android-checkmark-circle"></i> Checked-In</small></p>
+                        </div>
+                    </div>
+                </div>
+                <ion-option-button ng-if="user.usertype=='con'" class="button button-royal" ng-click="showCheck()" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i class="icon ion-ios-upload"></i></div><div>Check</div> <div>out</div></small>
+                </ion-option-button>
+                <ion-option-button ng-if="user.usertype=='con'" class="button button-positive" style="padding: 15px;line-height: 1.5;">
+                    <small><div><i class="icon ion-android-done-all"></i></div><div>Complete</div> <div>task</div></small>
+                </ion-option-button>
+                <ion-option-button class="button button-balanced" ng-click="detailsH($event)" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+                </ion-option-button>
+            </ion-item>
+            <ion-item style="height: 90px;" ng-class="{active:filter.direct == true}" ng-click="showModerate()">
+                <div class="cardrightside">
+                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
+                </div>
+                <div class="card-sidepad"></div>
+                <div class="cardin">
+                    <div class="card-lbl">AV-Installation</div>
+                    <p class="card-lblp">(Telstra, Melbourne)</p>
+                    <div class="row" style="margin-top:-5px;">
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-alert-circled"></i> Medium</small></p>
+                        </div>
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-android-calendar"></i> 27 June 2016</small></p>
+                        </div>
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-android-checkmark-circle"></i> Checked-In</small></p>
+                        </div>
+                    </div>
+                </div>
+                <ion-option-button ng-if="user.usertype=='con'" class="button button-royal" ng-click="showCheck2()" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i class="icon ion-ios-upload"></i></div><div>Check</div> <div>out</div></small>
+                </ion-option-button>
+                <ion-option-button ng-if="user.usertype=='con'" class="button button-positive" style="padding: 15px;line-height: 1.5;">
+                    <small><div><i class="icon ion-android-done-all"></i></div><div>Complete</div> <div>task</div></small>
+                </ion-option-button>
+                <ion-option-button class="button button-balanced" ng-click="detailsM($event)" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+                </ion-option-button>
+            </ion-item>
+            <ion-item style="height: 90px;" ng-class="{active:filter.check1 == true}" ng-click="showLow()">
+                <div class="cardrightside">
+                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
+                </div>
+                <div class="card-sidepad" style="background-color: #ece505;"></div>
+                <div class="cardin">
+                    <div class="card-lbl">Hardware Installation</div>
+                    <p class="card-lblp">(Telstra, Melbourne)</p>
+                    <div class="row" style="margin-top:-5px;">
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-alert-circled"></i> Low</small></p>
+                        </div>
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-android-calendar"></i> 27 June 2016</small></p>
+                        </div>
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-android-checkmark-circle"></i> Checked-In</small></p>
+                        </div>
+                    </div>
+                </div>
+                <ion-option-button ng-if="user.usertype=='con'" class="button button-royal" ng-click="showCheck3()" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i class="icon ion-ios-upload"></i></div><div>Check</div> <div>out</div></small>
+                </ion-option-button>
+                <ion-option-button ng-if="user.usertype=='con'" class="button button-positive" style="padding: 15px;line-height: 1.5;">
+                    <small><div><i class="icon ion-android-done-all"></i></div><div>Complete</div> <div>task</div></small>
+                </ion-option-button>
+                <ion-option-button class="button button-balanced" ng-click="detailsL($event)" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+                </ion-option-button>
+            </ion-item>
+            <ion-item style="height: 90px;" ng-class="{active:filter.check1 == true}" ng-click="showLow()">
+                <div class="cardrightside">
+                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
+                </div>
+                <div class="card-sidepad" style="background-color: #ece505;"></div>
+                <div class="cardin">
+                    <div class="card-lbl">Hardware Installation</div>
+                    <p class="card-lblp">(Telstra, Melbourne)</p>
+                    <div class="row" style="margin-top:-5px;">
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-alert-circled"></i> Low</small></p>
+                        </div>
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-android-calendar"></i> 27 June 2016</small></p>
+                        </div>
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-android-checkmark-circle"></i> Checked-In</small></p>
+                        </div>
+                    </div>
+                </div>
+                <ion-option-button ng-if="user.usertype=='con'" class="button button-royal" ng-click="showCheck3()" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i class="icon ion-ios-upload"></i></div><div>Check</div> <div>out</div></small>
+                </ion-option-button>
+                <ion-option-button ng-if="user.usertype=='con'" class="button button-positive" style="padding: 15px;line-height: 1.5;">
+                    <small><div><i class="icon ion-android-done-all"></i></div><div>Complete</div> <div>task</div></small>
+                </ion-option-button>
+                <ion-option-button class="button button-balanced" ng-click="detailsL($event)" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+                </ion-option-button>
+            </ion-item>
+            <ion-item style="height: 90px;" ng-class="{active:filter.check == true}" ng-click="showHigh()" ng-if="user.usertype=='proc'">
+                <div class="cardrightside">
+                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
+                </div>
+                <div class="card-sidepad" style="background-color: #c10606;"></div>
+                <div class="cardin">
+                    <div class="card-lbl">Network Setup</div>
+                    <p class="card-lblp">(7-Eleven)</p>
+                    <div class="row" style="margin-top:-5px;">
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-alert-circled"></i> High</small></p>
+                        </div>
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-android-calendar"></i> 27 June 2016</small></p>
+                        </div>
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-android-checkmark-circle"></i> Checked-In</small></p>
+                        </div>
+                    </div>
+                </div>
+                <ion-option-button ng-if="user.usertype=='con'" class="button button-royal" ng-click="showCheck()" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i class="icon ion-ios-upload"></i></div><div>Check</div> <div>out</div></small>
+                </ion-option-button>
+                <ion-option-button ng-if="user.usertype=='con'" class="button button-positive" style="padding: 15px;line-height: 1.5;">
+                    <small><div><i class="icon ion-android-done-all"></i></div><div>Complete</div> <div>task</div></small>
+                </ion-option-button>
+                <ion-option-button class="button button-balanced" ng-click="detailsH($event)" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+                </ion-option-button>
+            </ion-item>
+            <ion-item style="height: 90px;" ng-class="{active:filter.direct == true}" ng-click="showModerate()" ng-if="user.usertype=='proc'">
+                <div class="cardrightside">
+                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
+                </div>
+                <div class="card-sidepad"></div>
+                <div class="cardin">
+                    <div class="card-lbl">AV-Installation</div>
+                    <p class="card-lblp">(Telstra, Melbourne)</p>
+                    <div class="row" style="margin-top:-5px;">
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-alert-circled"></i> Medium</small></p>
+                        </div>
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-android-calendar"></i> 27 June 2016</small></p>
+                        </div>
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-android-checkmark-circle"></i> Checked-In</small></p>
+                        </div>
+                    </div>
+                </div>
+                <ion-option-button ng-if="user.usertype=='con'" class="button button-royal" ng-click="showCheck2()" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i class="icon ion-ios-upload"></i></div><div>Check</div> <div>out</div></small>
+                </ion-option-button>
+                <ion-option-button ng-if="user.usertype=='con'" class="button button-positive" style="padding: 15px;line-height: 1.5;">
+                    <small><div><i class="icon ion-android-done-all"></i></div><div>Complete</div> <div>task</div></small>
+                </ion-option-button>
+                <ion-option-button class="button button-balanced" ng-click="detailsM($event)" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+                </ion-option-button>
+            </ion-item>
+        </ion-list>
+        <!--  <div style="text-align:center;"><small style="font-style:italic;"> <a> (Tap task to view details <img src="img/tap.svg" style="width: 5%;
+    margin-bottom: -5px;">)</a></small></div>
+        <div ng-repeat="group in groups">
+            <div class="card newcard animated fadeInLeft" ng-class="{active: isGroupShown(group)}" style="background-color: #efefef;">
+                <div class=" taskcardred" ng-click="gotoprog($event)" ng-class="{'animated bounceOutRight': model == true}">
+                    <div class="card-sidepad" style="background-color: red;"></div>
+                    <div class="cardin">
+                        <div class="card-lbl">Hardware Installation</div>
+                        <p class="card-lblp">Telstra</p>
+                        <p class="card-lblp" style="margin-top: -5px;">17 July 2016</p>
+                    </div>
+                </div>
+                <button ng-if="user.usertype == 'con'" class="btn-flat btn-done animated fadeInBounce" ng-click="showCheck()" style="margin-right: 15px;">DONE</button>
+            </div>
+            <div ng-repeat="group in groups">
+                <div class="card newcard animated fadeInLeft" ng-click="duha = !duha" style="background-color: #efefef">
+                    <div class=" taskcardgreen" ng-click="gotoprog($event)" ng-class="{'animated bounceOutRight': model == true}">
+                        <div class="card-sidepad"></div>
+                        <div class="cardin">
+                            <div class="card-lbl">Digital Ticket Testing</div>
+                            <p class="card-lblp">Telstra</p>
+                            <p class="card-lblp" style="margin-top: -5px;">27 June 2016</p>
+                        </div>
+                    </div>
+                    <button ng-if="user.usertype == 'con'" class="btn-flat btn-done animated fadeInBounce" ng-click="showCheck2()" style="margin-right: 15px;">DONE</button>
+                </div>
+            </div>
+            <div>
+                <div class="card newcard animated fadeInLeft" ng-click="tulo = !tulo" style="background-color: #efefef">
+                    <div class=" taskcardyellow" ng-click="gotoprog($event)" ng-class="{'animated bounceOutRight': model == true}">
+                        <div class="card-sidepad" style="background-color: #ece505;"></div>
+                        <div class="cardin">
+                            <div class="card-lbl">Hardware Installation</div>
+                            <p class="card-lblp">Telstra</p>
+                            <p class="card-lblp" style="margin-top: -5px;">17 July 2016</p>
+                        </div>
+                    </div>
+                    <button ng-if="user.usertype == 'con'" class="btn-flat btn-done animated fadeInBounce" ng-click="showCheck3()" style="margin-right: 15px;">DONE</button>
+                </div>
+            </div> -->
+    </ion-content>
+</ion-modal-view>

@@ -5,12 +5,12 @@ navigation history that also transitions its views in and out.
 -->
 <ion-tabs class="tabs-icon-top tabs-color-active-positive" style="background-color:#ffffff;">
     <!-- Dashboard Tab -->
-    <ion-tab title="Dashboard" icon-off="ion-ios-stopwatch-outline" icon-on="ion-ios-stopwatch" ng-if="user.usertype=='con'" href="#/tab/dash">
+    <ion-tab title="Dashboard" icon-off="ion-ios-stopwatch-outline" icon-on="ion-ios-stopwatch"  href="#/tab/dash">
         <ion-nav-view name="tab-dash"></ion-nav-view>
     </ion-tab>
-    <ion-tab title="Dashboard" icon-off="ion-ios-stopwatch-outline" icon-on="ion-ios-stopwatch" ng-if="user.usertype=='proc'" href="#/tab/admindash">
+    <!-- <ion-tab title="Dashboard" icon-off="ion-ios-stopwatch-outline" icon-on="ion-ios-stopwatch" ng-if="user.usertype=='proc'" href="#/tab/admindash">
         <ion-nav-view name="tab-admindash"></ion-nav-view>
-    </ion-tab>
+    </ion-tab> -->
     <!-- Task Tab -->
     <ion-tab title="Task" icon-off="ion-ios-paper-outline" icon-on="ion-ios-paper" ng-if="user.usertype=='con'" href="#/tab/tasks">
         <ion-nav-view name="tab-tasks"></ion-nav-view>
@@ -18,7 +18,7 @@ navigation history that also transitions its views in and out.
     <ion-tab title="Task" icon-off="ion-ios-paper-outline" icon-on="ion-ios-paper" ng-if="user.usertype=='proc'" href="#/tab/admintasks">
         <ion-nav-view name="tab-admintasks"></ion-nav-view>
     </ion-tab>
-    <ion-tab title="Create Task" icon-off="ion-ios-paper-outline" icon-on="ion-ios-paper" ng-if="user.usertype=='proc'" href="#/tab/createtask">
+    <ion-tab title="Create Task" icon-off="ion-ios-compose-outline" icon-on="ion-ios-compose" ng-if="user.usertype=='proc'" href="#/tab/createtask">
         <ion-nav-view name="tab-create-task"></ion-nav-view>
     </ion-tab>
     <!-- Report Tab -->

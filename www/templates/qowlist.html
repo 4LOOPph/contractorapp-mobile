@@ -1,0 +1,145 @@
+<ion-view view-title="QOW Details" name="vendor-info" style="margin-top: 35px;">
+    <ion-content class="padding" style="padding:15px;">
+        <div class="animated fadeInDown" style="background-color: rgba(4, 45, 38, 0.76);
+    margin: -15px;
+    margin-bottom: 5px;
+    padding: 20px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    color: #fff;">
+            <div class="newlabel" style="font-style:italic;">Lorem Impatsu </div>
+        </div>
+        <div style="padding:10px;">
+            <small><a>+639 999 9999</a><a style="float:right;" ng-click="gotToProf($event)">View Profile</a></small>
+            <br>
+            <small>Copmany</small>
+            <hr>
+        </div>
+        <h4 style="text-align:center;font-style:italic;">Quote of Work</h4>
+        <div class="new-label">Rate</div>
+        <div class="lineside"></div>
+        <div class="row">
+            <div class="col col-50">
+                <small>Completion(hours)</small>
+                <br>
+                <small>Total Base Rate:</small>
+                <br>
+                <small>Total After Hours Rate</small>
+                <br>
+                <small>Total Rate</small>
+            </div>
+            <div class="col col-50">
+                <small>: 6 hours</small>
+                <br>
+                <small>: $ 00.00</small>
+                <br>
+                <small>: $ 00.00</small>
+                <br>
+                <small>: $ 00.00</small></div>
+        </div>
+        <div class="new-label">Miscellaneous</div>
+        <div class="lineside"></div>
+        <div class="row">
+            <div class="col col-50">
+                <small>Parking Fee</small>
+            </div>
+            <div class="col col-33">
+                <small>: $ 00.00</small>
+            </div>
+            <div class="col col-10">
+                <a ng-class="{'ion-arrow-down-b': !drop, 'ion-arrow-up-b': drop}" ng-click="isa = !isa; drop = !drop"></a>
+            </div>
+        </div>
+        <div  ng-show="isa" style="    
+    background-color: #dcdcdc;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-top: -10px;
+    padding: 10px;"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small></div>
+        <div class="row" style="margin-top:-20px;">
+            <div class="col col-50">
+                <small>Travel Fee</small>
+            </div>
+            <div class="col col-33">
+                <small>: $ 00.00</small>
+            </div>
+            <div class="col col-10">
+                <a ng-class="{'ion-arrow-down-b': !drop2, 'ion-arrow-up-b': drop2}" ng-click="doha = !doha; drop2 = !drop2"></a>
+            </div>
+        </div>
+        <div ng-show="doha" style="
+    background-color: #dcdcdc;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-top: -10px;
+    padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        <div class="row" style="margin-top:-20px;">
+            <div class="col col-50">
+                <small>Total</small>
+            </div>
+            <div class="col col-33">
+                <small>: $ 00.00</small>
+            </div>
+        </div>
+        <div class="new-label">Materials</div>
+        <div class="lineside"></div>
+        <div class="row">
+            <div class="col col-50">
+                <small>2 Material A</small>
+            </div>
+            <div class="col col-33">
+                <small>: $ 00.00</small>
+            </div>
+            <div class="col col-10">
+                <a ng-class="{'ion-arrow-down-b': !drop3, 'ion-arrow-up-b': drop3}" ng-click="tulo = !tulo; drop3 = !drop3"></a>
+            </div>
+        </div>
+        <div ng-show="tulo" style="
+    background-color: #dcdcdc;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-top: -10px;
+    padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        <div class="row" style="margin-top:-20px;">
+            <div class="col col-50">
+                <small>2 Material A</small>
+                <br>
+                <small>3 Material B</small>
+                <br>
+                <small>4 Material C</small>
+                <br>
+                <small>Total</small>
+            </div>
+            <div class="col col-50">
+                <small>: $ 00.00</small>
+                <br>
+                <small>: $ 00.00</small>
+                <br>
+                <small>: $ 00.00</small>
+                <br>
+                <small>: $ 00.00</small>
+            </div>
+        </div>
+        <div style="padding-left:10px;padding-right:10px;">
+            <hr>
+        </div>
+        <h4 style="text-align:center;font-style:italic;color:green;">Quote of Work Total: $ 00.00</h4>
+        <div class="row" class="paddding-top">
+            <!-- <div class="col col-50">
+                <button ng-click="" class="button button-block button-stable">
+                    Back
+                </button>
+            </div> -->
+            <div class="col col-100">
+                <button ui-sref="" class="button button-block button-positive">
+                    Approve
+                </button>
+            </div>
+        </div>
+        <br>
+        <br>
+    </ion-content>
+</ion-view>

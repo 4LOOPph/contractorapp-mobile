@@ -1,76 +1,63 @@
-<ion-view view-title="Dashboard" style="background-color: #efefef;">
+<ion-view view-title="Dashboard">
     <ion-nav-buttons side="secondary">
-        <button class="button button-icon ion-ios-gear-outline"  ng-click="showPopover($event)"></button>
+        <button class="button button-icon ion-ios-gear-outline" ng-click="showPopover($event)"></button>
     </ion-nav-buttons>
-    <ion-content style="top: 55px;background-color: #efefef;">
-        <label class="new-label" style="margin-top:20px;"><i class="icon ion-ios-pie-outline"></i> TASK IN PROGRESS</label>
-        <div class="card newcard" style="margin-top: 10px;background-color: #efefef;margin-bottom: 20px;">
-            <!-- card start -->
-            <div class="taskcardgreen" ng-class="{active:filter.direct == true}"  ng-click="showModerate()">
-                <div class="card-sidepad"></div>
-                <div class="cardin">
-                    <div class="card-lbl">Digital Ticket Testing</div>
-                    <p class="card-lblp">Telstra</p>
-                    <p class="card-lblp" style="margin-top: -5px;">27 June 2016</p>
-                    <button class="btn-flat btn-done" ng-click="clickToCheckout()">DONE</button>
-                </div>
-            </div>
-            <div class="taskcardred" ng-class="{active:filter.check == true}" ng-click="showHigh()">
-                <div class="card-sidepad" style="background-color: red;"></div>
-                <div class="cardin">
-                    <div class="card-lbl">Network Setup</div>
-                    <p class="card-lblp">7-Eleven</p>
-                    <p class="card-lblp" style="margin-top: -5px;">7 July 2016</p>
-                    <button class="btn-flat btn-done" ng-click="clickToCheckout2()">DONE</button>
-                </div>
-            </div>
-            <div class=" taskcardyellow" ng-class="{active:filter.check1 == true}" ng-click="showLow()">
-                <div class="card-sidepad" style="background-color: yellow;"></div>
-                <div class="cardin">
-                    <div class="card-lbl">Hardware Installation</div>
-                    <p class="card-lblp">Telstra</p>
-                    <p class="card-lblp" style="margin-top: -5px;">17 July 2016</p>
-                    <button class="btn-flat btn-done" ng-click="clickToCheckout3()">DONE</button>
-                </div>
-            </div>
+    <ion-content style="margin-top:40px;">
+        <div class="item item-divider" style="font-size: 13px;">
+            RECENT TASK
+            <a ng-if="user.usertype=='proc'" ng-click="$parent.opentaskinprogressModal()" style="float: right;font-size: 13px;">VIEW ALL</a>
         </div>
-        <div ng-show="filter.direct == true">
-            <label class="new-label"><i class="icon ion-ios-pie-outline"></i> PRIORITY TASK</label>
-            <div class="card" style="margin-top: 10px;background-color: #efefef;">
-                <div class="carding">
-                    <label class="cardlabel">DIGITAL TICKET TESTING</label>
-                    <p style="color: rgb(115, 115, 115);">Install Network cabling</p>
-                    <div>
-                        <div class="cl1">Location
-                            <div class="cl2">:</div>
-                            <div class="cl3">Sydney CBD</div>
+        <ion-list show-delete="false" can-swipe="true">
+            <ion-item style="height: 90px;" class="animated fadeInLeft" ng-if="list.Task == 'progress'" ng-click="showActiveTask(list)" ng-repeat="list in tasklist" ng-class="{active: list.id == selectedTask.id}">
+                <div class="cardrightside">
+                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
+                </div>
+                <div class="card-sidepad" style="background-color: #c10606;" ng-if="list.Status === 'High'" ng-click="{active:filter.check == true}"></div>
+                <div class="card-sidepad" ng-if="list.Status === 'Medium'" ng-class="{active:filter.direct == true}"></div>
+                <div class="card-sidepad" style="background-color: #ece505;" ng-if="list.Status === 'Low'" ng-class="{active:filter.check1 == true}"></div>
+                <div class="cardin">
+                    <div class="card-lbl">{{list.Title}}</div>
+                    <p class="card-lblp">({{list.Description}})</p>
+                    <div class="row" style="margin-top:-5px;">
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-alert-circled"></i> {{list.Status}}</small></p>
                         </div>
-                        <div class="cl1">Deadline
-                            <div class="cl2">:</div>
-                            <div class="cl3">27 June 2016</div>
+                        <div class="col">
+                            <p><small><i style="color:#0f6ab5;" class="ion-android-calendar"></i> {{date | date:'longDate'}}</small></p>
                         </div>
-                        <div class="cl1">Client
-                            <div class="cl2">:</div>
-                            <div class="cl3">Telstra</div>
-                        </div>
-                        <div class="cl1">Status
-                            <div class="cl2">:</div>
-                            <div class="cl3" style="color:#0f6ab5;">In progress</div>
-                        </div>
-                        <div class="cl1">Priority
-                            <div class="cl2">:</div>
-                            <div class="cl3" style="color:green;">Moderate</div>
+                        <div class="col">
+                            <p><small ng-if="list.Check == 'in'"><i style="color:#0f6ab5;" class="ion-checkmark-circled"></i> Checked-In</small></p>
+                            <p><small ng-if="list.Check == 'out'"><i style="color:#0f6ab5;" class="ion-android-radio-button-off"></i> Checked-out</small></p>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div ng-if="user.usertype=='con'">
+                    <ion-option-button class="button button-positive" style="padding: 15px;line-height: 1.5;" ng-click="showCheck(list)">
+                        <small><div><i class="icon ion-android-done-all"></i></div><div>Complete</div> <div>task</div></small>
+                    </ion-option-button>
+                </div>
+                <ion-option-button class="button button-balanced" ng-click="deTails(list)" style="padding: 22px;line-height: 1.5;">
+                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+                </ion-option-button>
+                <span ng-if="user.usertype=='con'">
+                     <ion-option-button class="button button-royal" style="padding: 22px;line-height: 1.5;" ng-click="checkInOut(list)" ng-if="list.Check =='in'">
+                    <small><div><i class="icon ion-ios-upload"></i></div><div>Check</div> <div>Out</div></small>
+                </ion-option-button>
+                 <ion-option-button class="button button-royal" style="padding: 22px;line-height: 1.5;" ng-click="checkInOut(list)" ng-if="list.Check =='out'">
+                    <small><div><i class="icon ion-ios-download"></i></div><div>Check</div> <div>In</div></small>
+                </ion-option-button>
+                </span>
+            </ion-item>
+        </ion-list>
+        <br>
+        <div class="item item-divider" style="font-size: 13px;">
+            PRIORITY TASK
         </div>
-        <div ng-show="filter.check == true">
-            <label class="new-label"><i class="icon ion-ios-pie-outline"></i> PRIORITY TASK</label>
+        <div class="animated fadeInUp anim6">
             <div class="card" style="margin-top: 10px;background-color: #efefef;">
-                <div class="carding">
-                    <label class="cardlabel">NETWORK SETUP</label>
-                    <p style="color: rgb(115, 115, 115);">Eat Network cabling</p>
+                <div class="carding" ng-class="{'status-red': selectedTask.Status == 'High','status-green': selectedTask.Status == 'Medium','status-yellow': selectedTask.Status == 'Low'}">
+                    <label class="cardlabel">{{selectedTask.Title}}</label>
+                    <p style="color: rgb(115, 115, 115);">{{selectedTask.Description}}</p>
                     <div>
                         <div class="cl1">Location
                             <div class="cl2">:</div>
@@ -90,42 +77,14 @@
                         </div>
                         <div class="cl1">Priority
                             <div class="cl2">:</div>
-                            <div class="cl3" style="color:red;">High</div>
+                            <div class="cl3"><b ng-class="{'h': selectedTask.Status == 'High','m': selectedTask.Status == 'Medium','l': selectedTask.Status == 'Low'}">{{selectedTask.Status}}</b></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div ng-show="filter.check1 == true">
-            <label class="new-label"><i class="icon ion-ios-pie-outline"></i> PRIORITY TASK</label>
-            <div class="card" style="margin-top: 10px;background-color: #efefef;">
-                <div class="carding">
-                    <label class="cardlabel">HARDWARE INSTALLATION</label>
-                    <p style="color: rgb(115, 115, 115);">Install hardware</p>
-                    <div>
-                        <div class="cl1">Location
-                            <div class="cl2">:</div>
-                            <div class="cl3">Sydney CBD</div>
-                        </div>
-                        <div class="cl1">Deadline
-                            <div class="cl2">:</div>
-                            <div class="cl3">17 July 2016</div>
-                        </div>
-                        <div class="cl1">Client
-                            <div class="cl2">:</div>
-                            <div class="cl3">Telstra</div>
-                        </div>
-                        <div class="cl1">Status
-                            <div class="cl2">:</div>
-                            <div class="cl3" style="color:#0f6ab5;">In progress</div>
-                        </div>
-                        <div class="cl1">Priority
-                            <div class="cl2">:</div>
-                            <div class="cl3" style="color:yellow;">Low</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <br>
+        <br>
+        <br>
     </ion-content>
 </ion-view>
