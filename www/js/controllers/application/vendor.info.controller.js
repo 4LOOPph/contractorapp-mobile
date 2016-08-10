@@ -6,7 +6,7 @@
 
     VendorInfoCtrl.$inject = ['$scope', '$ionicModal', '$ionicPopup', '$timeout', 'WeekDays', 'States', 'Country', 'CityState', 'ionicTimePicker', '$state', '$ionicHistory', '$ionicViewSwitcher', 'localStorageService', '$filter'];
 
-    function VendorInfoCtrl($scope, $ionicModal, $ionicPopup, $timeout, WeekDays, States, Country, CityState, ionicTimePicker, $state, $ionicHistory, $ionicViewSwitcher, localStorageServic, $filter) {
+    function VendorInfoCtrl($scope, $ionicModal, $ionicPopup, $timeout, WeekDays, States, Country, CityState, ionicTimePicker, $state, $ionicHistory, $ionicViewSwitcher, localStorageService, $filter) {
 
         $scope.data = {};
         $scope.data.availabilityArr = [];

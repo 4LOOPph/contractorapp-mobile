@@ -6,7 +6,7 @@
 
     VendorQualificationCtrl.$inject = ['$scope', '$ionicModal', '$ionicPopup', '$timeout', '$state', '$ionicHistory', '$ionicViewSwitcher', 'localStorageService', '$filter'];
 
-    function VendorQualificationCtrl($scope, $ionicModal, $ionicPopup, $timeout, $state, $ionicHistory, $ionicViewSwitcher, localStorageServic, $filter) {
+    function VendorQualificationCtrl($scope, $ionicModal, $ionicPopup, $timeout, $state, $ionicHistory, $ionicViewSwitcher, localStorageService, $filter) {
         $scope.data = {};
         $scope.others = {};
 

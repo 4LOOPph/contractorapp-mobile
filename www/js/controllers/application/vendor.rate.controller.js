@@ -6,7 +6,7 @@
 
     VendorRateCtrl.$inject = ['$scope', '$ionicModal', '$ionicPopup', '$timeout', 'Banks', 'Currencies', 'Country', 'CityState','States', '$state', '$ionicHistory', '$ionicViewSwitcher', 'localStorageService', '$filter'];
 
-    function VendorRateCtrl($scope, $ionicModal, $ionicPopup, $timeout, Banks, Currencies, Country, CityState,States, $state, $ionicHistory, $ionicViewSwitcher, localStorageServic, $filter) {
+    function VendorRateCtrl($scope, $ionicModal, $ionicPopup, $timeout, Banks, Currencies, Country, CityState,States, $state, $ionicHistory, $ionicViewSwitcher, localStorageService, $filter) {
         console.log('VendorRateCtrl');
 
         $scope.data = {};
