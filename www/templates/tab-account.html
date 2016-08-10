@@ -1,118 +1,118 @@
 <ion-view view-title="Reporting" style="background-color: #efefef;">
-    <ion-nav-buttons side="secondary">
-        <button class="button button-icon ion-ios-gear-outline" ng-click="showPopover($event)"></button>
-    </ion-nav-buttons>
-    <ion-content style="margin-top:40px;">
-        <div class="item item-divider" style="font-size: 13px;">
-            MY RECENT REPORTS
-            <a ng-click="$parent.openrecentreportModal()" style="float: right;font-size: 13px;">VIEW ALL</a>
+  <ion-nav-buttons side="secondary">
+    <button class="button button-icon ion-ios-gear-outline" ng-click="showPopover($event)"></button>
+  </ion-nav-buttons>
+  <ion-content style="margin-top:40px;">
+    <div class="item item-divider" style="font-size: 13px;">
+      MY RECENT REPORTS
+      <a ng-click="$parent.openrecentreportModal()" style="float: right;font-size: 13px;">VIEW ALL</a>
+    </div>
+    <ion-list show-delete="false" can-swipe="true">
+      <ion-item style="height: 90px;" class="animated fadeInLeft" ng-click="reportdone2($event)">
+        <div class="cardrightside">
+          <div class="ion-arrow-left-c" style="margin-top: 33px;color: #c3c3c3;"></div>
         </div>
-        <ion-list show-delete="false" can-swipe="true">
-            <ion-item style="height: 90px;" class="animated fadeInLeft">
-                <div class="cardrightside">
-                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
-                </div>
-                <div class="card-sidepad" style="background-color: white;"></div>
-                <div class="cardin">
-                    <div style="margin-top: 10px;">
-                        <div class="card-lbl">Task:</div>
-                        <p class="card-lblp">Priority:</p>
-                        <p class="card-lblp" style="margin-top: -5px;">Date:</p>
-                    </div>
-                    <div style="margin-left: 65px;margin-top: 5px;">
-                        <div class="card-lbl">AV-Installation</div>
-                        <p class="card-lblp">Medium</p>
-                        <p class="card-lblp" style="margin-top: -5px;">27 June 2016</p>
-                    </div>
-                </div>
-                <ion-option-button class="button button-dark" ng-click="dreport($event)" style="padding: 15px;line-height: 1.5;padding-bottom: 35px;">
-                    <small><div><i  class="icon ion-android-download"></i></div><div>Download</div></small>
-                </ion-option-button>
-                <ion-option-button class="button button-balanced" ng-click="reportdone2($event)" style="padding: 22px;line-height: 1.5;">
-                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
-                </ion-option-button>
-            </ion-item>
-            <ion-item style="height: 90px;" class="animated fadeInLeft">
-                <div class="cardrightside">
-                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
-                </div>
-                <div class="card-sidepad" style="background-color: white;"></div>
-                <div class="cardin">
-                    <div style="margin-top: 10px;">
-                        <div class="card-lbl">Task:</div>
-                        <p class="card-lblp">Priority:</p>
-                        <p class="card-lblp" style="margin-top: -5px;">Date:</p>
-                    </div>
-                    <div style="margin-left: 65px;margin-top: 5px;">
-                        <div class="card-lbl">Hardware Installation</div>
-                        <p class="card-lblp">Low</p>
-                        <p class="card-lblp" style="margin-top: -5px;">27 June 2016</p>
-                    </div>
-                </div>
-                <ion-option-button class="button button-dark" ng-click="dreport($event)" style="padding: 15px;line-height: 1.5;padding-bottom: 35px;">
-                    <small><div><i class="icon ion-android-download"></i></div><div>Download</div></small>
-                </ion-option-button>
-                <ion-option-button class="button button-balanced" ng-click="reportdone($event)" style="padding: 22px;line-height: 1.5;">
-                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
-                </ion-option-button>
-            </ion-item>
-            <br>
-            <div class="item item-divider" style="font-size: 13px;">
-                MY REPORTS
-                <a ng-click="$parent.openmyreportModal()" style="float: right;font-size: 13px;">VIEW ALL</a>
-            </div>
-            <ion-item style="height: 90px;" class="animated fadeInLeft">
-                <div class="cardrightside">
-                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
-                </div>
-                <div class="card-sidepad" style="background-color: white;"></div>
-                <div class="cardin">
-                    <div style="margin-top: 10px;">
-                        <div class="card-lbl">Task:</div>
-                        <p class="card-lblp">Priority:</p>
-                        <p class="card-lblp" style="margin-top: -5px;">Date:</p>
-                    </div>
-                    <div style="margin-left: 65px;margin-top: 5px;">
-                        <div class="card-lbl">AV-Installation</div>
-                        <p class="card-lblp">Medium</p>
-                        <p class="card-lblp" style="margin-top: -5px;">27 June 2016</p>
-                    </div>
-                </div>
-                <ion-option-button class="button button-dark" ng-click="dreport($event)" style="padding: 15px;line-height: 1.5;padding-bottom: 35px;">
-                    <small><div><i  class="icon ion-android-download"></i></div><div>Download</div></small>
-                </ion-option-button>
-                <ion-option-button class="button button-balanced" ng-click="reportdone2($event)" style="padding: 22px;line-height: 1.5;">
-                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
-                </ion-option-button>
-            </ion-item>
-            <ion-item style="height: 90px;" class="animated fadeInLeft">
-                <div class="cardrightside">
-                    <div class="ion-ios-arrow-left" style="margin-top: 33px;color: #c3c3c3;"></div>
-                </div>
-                <div class="card-sidepad" style="background-color: white;"></div>
-                <div class="cardin">
-                    <div style="margin-top: 10px;">
-                        <div class="card-lbl">Task:</div>
-                        <p class="card-lblp">Priority:</p>
-                        <p class="card-lblp" style="margin-top: -5px;">Date:</p>
-                    </div>
-                    <div style="margin-left: 65px;margin-top: 5px;">
-                        <div class="card-lbl">Hardware Installation</div>
-                        <p class="card-lblp">Low</p>
-                        <p class="card-lblp" style="margin-top: -5px;">27 June 2016</p>
-                    </div>
-                </div>
-                <ion-option-button class="button button-dark" ng-click="dreport($event)" style="padding: 15px;line-height: 1.5;padding-bottom: 35px;">
-                    <small><div><i class="icon ion-android-download"></i></div><div>Download</div></small>
-                </ion-option-button>
-                <ion-option-button class="button button-balanced" ng-click="reportdone($event)" style="padding: 22px;line-height: 1.5;">
-                    <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
-                </ion-option-button>
-            </ion-item>
-        </ion-list>
+        <div class="card-sidepad" style="background-color: white;"></div>
+        <div class="cardin">
+          <div style="margin-top: 10px;">
+            <div class="card-lbl">Task:</div>
+            <p class="card-lblp">Priority:</p>
+            <p class="card-lblp" style="margin-top: -5px;">Date:</p>
+          </div>
+          <div style="margin-left: 65px;margin-top: 5px;">
+            <div class="card-lbl">AV-Installation</div>
+            <p class="card-lblp">Medium</p>
+            <p class="card-lblp" style="margin-top: -5px;">27 June 2016</p>
+          </div>
         </div>
-        <br>
-        <br>
-        <br>
-    </ion-content>
+        <ion-option-button class="button button-dark" ng-click="dreport($event)" style="padding: 15px;line-height: 1.5;padding-bottom: 35px;">
+          <small><div><i  class="icon ion-android-download"></i></div><div>Download</div></small>
+        </ion-option-button>
+        <ion-option-button class="button button-balanced" ng-click="reportdone2($event)" style="padding: 22px;line-height: 1.5;">
+          <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+        </ion-option-button>
+      </ion-item>
+      <ion-item style="height: 90px;" class="animated fadeInLeft" ng-click="reportdone($event)">
+        <div class="cardrightside">
+          <div class="ion-arrow-left-c" style="margin-top: 33px;color: #c3c3c3;"></div>
+        </div>
+        <div class="card-sidepad" style="background-color: white;"></div>
+        <div class="cardin">
+          <div style="margin-top: 10px;">
+            <div class="card-lbl">Task:</div>
+            <p class="card-lblp">Priority:</p>
+            <p class="card-lblp" style="margin-top: -5px;">Date:</p>
+          </div>
+          <div style="margin-left: 65px;margin-top: 5px;">
+            <div class="card-lbl">Hardware Installation</div>
+            <p class="card-lblp">Low</p>
+            <p class="card-lblp" style="margin-top: -5px;">27 June 2016</p>
+          </div>
+        </div>
+        <ion-option-button class="button button-dark" ng-click="dreport($event)" style="padding: 15px;line-height: 1.5;padding-bottom: 35px;">
+          <small><div><i class="icon ion-android-download"></i></div><div>Download</div></small>
+        </ion-option-button>
+        <ion-option-button class="button button-balanced" ng-click="reportdone($event)" style="padding: 22px;line-height: 1.5;">
+          <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+        </ion-option-button>
+      </ion-item>
+      <br>
+      <div class="item item-divider" style="font-size: 13px;">
+        MY REPORTS
+        <a ng-click="$parent.openmyreportModal()" style="float: right;font-size: 13px;">VIEW ALL</a>
+      </div>
+      <ion-item style="height: 90px;" class="animated fadeInLeft" ng-click="reportdone2($event)">
+        <div class="cardrightside">
+          <div class="ion-arrow-left-c" style="margin-top: 33px;color: #c3c3c3;"></div>
+        </div>
+        <div class="card-sidepad" style="background-color: white;"></div>
+        <div class="cardin">
+          <div style="margin-top: 10px;">
+            <div class="card-lbl">Task:</div>
+            <p class="card-lblp">Priority:</p>
+            <p class="card-lblp" style="margin-top: -5px;">Date:</p>
+          </div>
+          <div style="margin-left: 65px;margin-top: 5px;">
+            <div class="card-lbl">AV-Installation</div>
+            <p class="card-lblp">Medium</p>
+            <p class="card-lblp" style="margin-top: -5px;">27 June 2016</p>
+          </div>
+        </div>
+        <ion-option-button class="button button-dark" ng-click="dreport($event)" style="padding: 15px;line-height: 1.5;padding-bottom: 35px;">
+          <small><div><i  class="icon ion-android-download"></i></div><div>Download</div></small>
+        </ion-option-button>
+        <ion-option-button class="button button-balanced" ng-click="reportdone2($event)" style="padding: 22px;line-height: 1.5;">
+          <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+        </ion-option-button>
+      </ion-item>
+      <ion-item style="height: 90px;" class="animated fadeInLeft" ng-click="reportdone($event)">
+        <div class="cardrightside">
+          <div class="ion-arrow-left-c" style="margin-top: 33px;color: #c3c3c3;"></div>
+        </div>
+        <div class="card-sidepad" style="background-color: white;"></div>
+        <div class="cardin">
+          <div style="margin-top: 10px;">
+            <div class="card-lbl">Task:</div>
+            <p class="card-lblp">Priority:</p>
+            <p class="card-lblp" style="margin-top: -5px;">Date:</p>
+          </div>
+          <div style="margin-left: 65px;margin-top: 5px;">
+            <div class="card-lbl">Hardware Installation</div>
+            <p class="card-lblp">Low</p>
+            <p class="card-lblp" style="margin-top: -5px;">27 June 2016</p>
+          </div>
+        </div>
+        <ion-option-button class="button button-dark" ng-click="dreport($event)" style="padding: 15px;line-height: 1.5;padding-bottom: 35px;">
+          <small><div><i class="icon ion-android-download"></i></div><div>Download</div></small>
+        </ion-option-button>
+        <ion-option-button class="button button-balanced" ng-click="reportdone($event)" style="padding: 22px;line-height: 1.5;">
+          <small><div><i  class="icon ion-ios-information"></i></div><div>View</div> <div>Details</div></small>
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+    </div>
+    <br>
+    <br>
+    <br>
+  </ion-content>
 </ion-view>

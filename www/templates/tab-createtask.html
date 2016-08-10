@@ -3,7 +3,7 @@
         <button class="button button-icon ion-ios-gear-outline" ng-click="showPopover($event)"></button>
     </ion-nav-buttons>
     <ion-content class="padding form animated fadeInLeft">
-        <form name="taskForm" novalidate="" ng-submit="createTask(taskForm)"> 
+        <form name="taskForm" novalidate="" ng-submit="createTask(taskForm)">
             <div class="list padding-top">
                 <label class="new-label">TASK NAME</label>
             </div>
@@ -71,7 +71,7 @@
                         <input type="text" placeholder="Start Time" ng-click="openTime()" name="starttime" ng-model="start" required>
                         <span class="i-con ion-clock">
             </label>
-          
+
             </div>
         <div class="col col-50">
         <label class="item item-input item-icon-left"  ng-class="{ 'has-errors' : taskForm.endtime.$invalid}">
