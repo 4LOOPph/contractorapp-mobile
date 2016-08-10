@@ -199,31 +199,31 @@
                 all: function(state) {
                     if (state == 'ACT') {
                         console.log('state: ', state);
-                        return $http.get('./../mobile/data/act.json').success(function(data) {
+                        return $http.get('./mobile/data/act.json').success(function(data) {
                             return data;
                         });
                     } else if (state == 'NSW') {
-                        return $http.get('./../mobile/data/nsw.json').success(function(data) {
+                        return $http.get('./mobile/data/nsw.json').success(function(data) {
                             return data;
                         });
                     } else if (state == 'NT') {
-                        return $http.get('./../mobile/data/nt.json').success(function(data) {
+                        return $http.get('./mobile/data/nt.json').success(function(data) {
                             return data;
                         });
                     } else if (state == 'QLD') {
-                        return $http.get('./../mobile/data/qld.json').success(function(data) {
+                        return $http.get('./mobile/data/qld.json').success(function(data) {
                             return data;
                         });
                     } else if (state == 'SA') {
-                        return $http.get('./../mobile/data/sa.json').success(function(data) {
+                        return $http.get('./mobile/data/sa.json').success(function(data) {
                             return data;
                         });
                     } else if (state == 'VIC') {
-                        return $http.get('./../mobile/data/vic.json').success(function(data) {
+                        return $http.get('./mobile/data/vic.json').success(function(data) {
                             return data;
                         });
                     } else if (state == 'WA') {
-                        return $http.get('./../mobile/data/wa.json').success(function(data) {
+                        return $http.get('./mobile/data/wa.json').success(function(data) {
                             return data;
                         });
                     }
@@ -236,12 +236,12 @@
         .factory('Banks', ['$http', function($http) {
             return {
                 all: function() {
-                    return $http.get('./../mobile/data/bank.json').success(function(data) {
+                    return $http.get('./mobile/data/bank.json').success(function(data) {
                         return data;
                     });
                 },
                 get: function(bankId) {
-                    return $http.get('./../mobile/data/bank.json').success(function(data) {
+                    return $http.get('./mobile/data/bank.json').success(function(data) {
                         return data;
                     });
                 }
@@ -250,12 +250,12 @@
         .factory('Currencies', ['$http', function($http) {
             return {
                 all: function() {
-                    return $http.get('./../mobile/data/currency.json').success(function(data) {
+                    return $http.get('./mobile/data/currency.json').success(function(data) {
                         return data;
                     });
                 },
                 get: function(bankId) {
-                    return $http.get('./../mobile/data/bank.json').success(function(data) {
+                    return $http.get('./mobile/data/bank.json').success(function(data) {
                         return data;
                     });
                 }
