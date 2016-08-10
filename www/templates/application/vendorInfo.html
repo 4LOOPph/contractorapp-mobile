@@ -1,184 +1,185 @@
 <ion-view view-title="Vendor Information" class="vendor-info margin-top-35">
-    <ion-content class="padding has-tabs-bottom">
-        <div id="content">
-            <div id="profile-info">
-                <!--  <img id="profile-image" ng-model="myPicture" class="animated fadeInBounce" src="img/no-avatar.jpg" style="margin-top: 150px;"> -->
-                <ion-profile-picture ng-model="data.myPicture" />
-                <!-- <div class="ion-profile-picture no-picture ng-empty ng-valid" ng-model="myPicture">
-                    <input type="file" accept="image/*" capture="">
-                </div> -->
-            </div>
-            <!-- <ion-floating-button click="myEvent()" has-footer="false" button-color="#f8a421" icon="ion-ios-camera-outline" iconColor="#fff"></ion-floating-button> -->
+  <ion-content class="padding has-tabs-bottom">
+    <div id="content">
+      <div id="profile-info">
+        <!--  <img id="profile-image" ng-model="myPicture" class="animated fadeInBounce" src="img/no-avatar.jpg" style="margin-top: 150px;"> -->
+        <ion-profile-picture ng-model="data.myPicture" />
+        <!-- <div class="ion-profile-picture no-picture ng-empty ng-valid" ng-model="myPicture">
+            <input type="file" accept="image/*" capture="">
+        </div> -->
+      </div>
+      <!-- <ion-floating-button click="myEvent()" has-footer="false" button-color="#f8a421" icon="ion-ios-camera-outline" iconColor="#fff"></ion-floating-button> -->
+    </div>
+    <form name="taskForm" novalidate="" on-valid-submit="vendorinf(taskForm)">
+      <div class="padding-10">
+        <div class="list list-inset">
+          <label class="item item-input item-icon-left item-icon-right validated">
+            <span class="i-con ion-ios-person-outline"></span>
+            <input type="text" name="lname" ng-model="data.lname" placeholder="Last Name" required="required">
+            <i class="icon ion-alert-circled error"></i>
+          </label>
+          <label class="item item-input item-icon-left item-icon-right validated">
+            <span class="i-con"></span>
+            <input type="text" name="fname" ng-model="data.fname" placeholder="First Name" required="required">
+            <i class="icon ion-alert-circled error"></i>
+          </label>
         </div>
-        <form name="taskForm" novalidate="" on-valid-submit="vendorinf(taskForm)">
-            <div class="padding-10">
-                <div class="list list-inset">
-                    <label class="item item-input item-icon-left item-icon-right validated">
-                        <span class="i-con ion-ios-person-outline"></span>
-                        <input type="text" name="lname" ng-model="data.lname" placeholder="Last Name" required="required">
-                        <i class="icon ion-alert-circled error"></i>
-                    </label>
-                    <label class="item item-input item-icon-left item-icon-right validated">
-                        <span class="i-con"></span>
-                        <input type="text" name="fname" ng-model="data.fname" placeholder="First Name" required="required">
-                        <i class="icon ion-alert-circled error"></i>
-                    </label>
-                </div>
-                <div class="list padding-top">
-                    <label class="new-label" style="margin-left: 0px;">COMPANY
-                        <small style="font-style: italic;font-size: 11px;">(Specify if applicable)</small>
-                    </label>
-                </div>
-                <div class="list list-inset" style="margin-top: -10px;">
-                    <label class="item item-input item-icon-left">
-                        <span class="i-con ion-ios-briefcase-outline"></span>
-                        <input type="text" name="cname" ng-model="data.CompanyName" placeholder="Company Name">
-                    </label>
-                </div>
-                <div class="list padding-top">
-                    <label class="new-label" style="margin-left: 0px;">ADDRESS</label>
-                </div>
-                <div class="list list-inset" style="margin-top:-10px">
-                    <label class="item item-input item-select item-icon-right validated" style="height: 48px;">
-                        <select ng-model="data.country" ng-options="week.code as week.name for week in countries" ng-change="getCountryState(data.country)">
-                            <option value="" disabled selected hidden>Country...</option>
-                        </select>
-                    </label>
-                    <label class="item item-input item-select item-icon-right validated" style="height: 48px;">
-                        <select ng-model="data.state" ng-options="week.code as week.name for week in states" ng-change="getCityState(data.state)">
-                            <option value="" disabled selected hidden>State...</option>
-                        </select>
-                    </label>
-                    <label class="item item-input item-select" style="height: 48px;">
-                        <span class="i-con"></span>
-                        <input ion-autocomplete type="text" readonly="readonly" class="ion-autocomplete" autocomplete="off" max-selected-items="1" placeholder="Cities..." items-method-value-key="items" item-value-key="id" item-view-value-key="name" ng-model="data.city" items-method="callbackMethod(query)" items-clicked-method="itemsClicked(callback)" />
-                    </label>
-                    <label class="item item-input item-icon-left item-icon-right">
-                        <span class="i-con ion-ios-home-outline"></span>
-                        <input type="text" placeholder="Specific Address" name="address" ng-model="data.address">
-                    </label>
-                    <label class="item item-input item-icon-left">
-                        <span class="i-con"></span>
-                        <input type="text" placeholder="Post Code" ng-model="data.postal_code">
-                    </label>
-                </div>
-                <div class="list list-inset">
-                    <label class="item item-input item-icon-left item-icon-right validated">
-                        <span class="i-con ion-ios-briefcase-outline"></span>
-                        <input type="number" name="abn" ng-model="data.abn" placeholder="ABN" required="required">
-                        <i class="icon ion-alert-circled error"></i>
-                    </label>
-                </div>
-                <div class="list padding-top">
-                    <label class="new-label"></label>
-                </div>
-                <div class="list list-inset" style="margin-top: -51px;">
-                    <label class="item item-input item-icon-left item-icon-right validated">
-                        <span class="i-con ion-ios-telephone-outline"></span>
-                        <input type="number" placeholder="Contact Number" name="phone" ng-model="data.phone" required="required">
-                        <i class="icon ion-alert-circled error"></i>
-                    </label>
-                </div>
-                <div class="list list-inset">
-                    <label class="item item-input bordbot item-icon-left item-icon-right validated">
-                        <span class="i-con ion-ios-email-outline"></span>
-                        <input type="email" placeholder="Email Address" name="email" ng-model="data.email" required="required">
-                        <i class="icon ion-alert-circled error"></i>
-                    </label>
-                </div>
-                <div class="list padding-top">
-                    <label class="new-label margin-left-0">SECONDARY CONTACT PERSON</label>
-                </div>
-                <div class="list list-inset" style="margin-top: -10px;">
-                    <label class="item item-input item-icon-left">
-                        <span class="i-con ion-ios-person-outline"></span>
-                        <input type="text" placeholder="Last Name" ng-model="data.secondarycontact">
-                    </label>
-                    <label class="item item-input item-icon-left">
-                        <span class="i-con"></span>
-                        <input type="text" placeholder="First Name" ng-model="data.secondaryfcontact">
-                    </label>
-                </div>
-                <div class="list list-inset">
-                    <label class="item item-input item-icon-left">
-                        <span class="i-con ion-ios-telephone-outline"></span>
-                        <input type="number" placeholder="Contact Number" ng-model="data.phone2" clean="true">
-                    </label>
-                </div>
-                <div class="list list-inset">
-                    <label class="item item-input item-icon-left">
-                        <span class="i-con ion-ios-email-outline"></span>
-                        <input type="email" placeholder="Email Address" ng-model="data.email2">
-                    </label>
-                </div>
-                <div class="list padding-top">
-                    <label class="new-label" style="margin-left: 0px;">AREA OF COVERAGE
-                        <small style="font-style: italic;font-size: 11px;">(Please Specify your area of coverage)</small>
-                    </label>
-                </div>
-                <div class="list list-inset margin-top-10" ng-repeat="item in data.coverageArr">
-                    <label class="item item-input item-icon-left">
-                        <span class="i-con ion-ios-location-outline"></span>
-                        <input type="text" ng-model="item.area" placeholder="City i.e Sydney CBD">
-                    </label>
-                </div>
-                <div class="list list-inset">
-                    <label class="item item-input item-icon-left">
-                        <span class="i-con ion-ios-location-outline"></span>
-                        <input type="text" ng-model="area.coverage" placeholder="City i.e Sydney CBD">
-                    </label>
-                </div>
-                <a class="button add-button margin-top-15" ng-click="addArea(area.coverage)" ng-disabled="!area.coverage">
-                    <span class="ion-plus"> Add New Area</span>
-                </a>
-                <div class="list padding-top margin-top-50">
-                    <label class="new-label margin-left-0">AVAILABILITY</label>
-                </div>
-                <div class="list" ng-repeat="item in data.availabilityArr">
-                    <label class="item item-input item-select curr bortop bordbot" style="width: 32%;margin-top:-25px;margin-left: 0px;margin-right: 0px;">
-                        <select class="padding-10" ng-model="item.availability" ng-options="week.id as week.name for week in weekdays">
-                        </select>
-                    </label>
-                    <label class="item item-input item-icon-left tstart">
-                        <input type="text" placeholder="Start" ng-click="openTime3(item)" ng-model="item.start" class="padding-right-5 padding-left-10" style="margin-left: -16px;">
-                    </label>
-                    <label class="item item-input item-icon-left tend">
-                        <input type="text" placeholder="End" ng-click="openTime4(item)" ng-model="item.end" class="padding-right-5 padding-left-10" style="margin-left: -16px;">
-                        <span class="i-con ion-clock"></span>
-                    </label>
-                </div>
-                <div class="list">
-                    <label class="item item-input item-select curr bortop bordbot" style="width: 32%;margin-top:-10px;margin-left: 0px;margin-right: 0px;">
-                        <select class="padding-10" ng-model="avail.availability" ng-options="week.id as week.name for week in weekdays">
-                        </select>
-                    </label>
-                    <label class="item item-input item-icon-left tstart">
-                        <input type="text" placeholder="Start" ng-click="openTime()" ng-model="avail.start" class="padding-right-5 padding-left-10" style="margin-left: -16px;font-size: 13px;">
-                    </label>
-                    <label class="item item-input item-icon-left tend">
-                        <input type="text" placeholder="End" ng-click="openTime2()" ng-model="avail.end" class="padding-right-5 padding-left-10" style="margin-left: -16px;font-size: 13px;">
-                        <span class="i-con ion-clock"></span>
-                    </label>
-                </div>
-                <a class="button add-button" ng-click="addSched(avail)" ng-disabled="avail.availability && avail.start && avail.end?false:true">
-                    <span class="ion-plus"> New Schedule</span>
-                </a>
-            </div>
-            <div class="row" class="paddding-top">
-                <div class="col col-50">
-                    <a ng-click="showCancel()" class="button button-block button-stable">
-                        Cancel
-                    </a>
-                </div>
-                <div class="col col-50">
-                    <button class="button button-block button-positive" type="submit">
-                        Next
-                    </button>
-                </div>
-            </div>
-            <p class="cop" style="margin-bottom: 70px;">Already have an account?
-                <a ng-click="sign($even)" class="p-log">Login</a>
-            </p>
-        </form>
-    </ion-content>
+        <div class="list padding-top">
+          <label class="new-label" style="margin-left: 0px;">COMPANY
+            <small style="font-style: italic;font-size: 11px;">(Specify if applicable)</small>
+          </label>
+        </div>
+        <div class="list list-inset" style="margin-top: -10px;">
+          <label class="item item-input item-icon-left">
+            <span class="i-con ion-ios-briefcase-outline"></span>
+            <input type="text" name="cname" ng-model="data.CompanyName" placeholder="Company Name">
+          </label>
+        </div>
+        <div class="list padding-top">
+          <label class="new-label" style="margin-left: 0px;">ADDRESS</label>
+        </div>
+        <div class="list list-inset" style="margin-top:-10px">
+          <label class="item item-input item-select item-icon-right validated" style="height: 48px;">
+            <span class="i-con ion-ios-home-outline"></span>
+            <select ng-model="data.country" ng-options="week.code as week.name for week in countries" ng-change="getCountryState(data.country)" style="background-color: transparent;">
+              <option value="" disabled selected hidden>Country...</option>
+            </select>
+          </label>
+          <label class="item item-input item-select item-icon-right validated" style="height: 48px;">
+            <select ng-model="data.state" ng-options="week.code as week.name for week in states" ng-change="getCityState(data.state)">
+              <option value="" disabled selected hidden>State...</option>
+            </select>
+          </label>
+          <label class="item item-input item-select" style="height: 48px;">
+            <span class="i-con"></span>
+            <input ion-autocomplete type="text" readonly="readonly" class="ion-autocomplete" autocomplete="off" max-selected-items="1" placeholder="Cities..." items-method-value-key="items" item-value-key="id" item-view-value-key="name" ng-model="data.city" items-method="callbackMethod(query)" items-clicked-method="itemsClicked(callback)" />
+          </label>
+          <label class="item item-input item-icon-left item-icon-right">
+            <span class="i-con"></span>
+            <input type="text" placeholder="Specific Address" name="address" ng-model="data.address">
+          </label>
+          <label class="item item-input item-icon-left">
+            <span class="i-con"></span>
+            <input type="text" placeholder="Post Code" ng-model="data.postal_code">
+          </label>
+        </div>
+        <div class="list list-inset">
+          <label class="item item-input item-icon-left item-icon-right validated">
+            <span class="i-con ion-ios-briefcase-outline"></span>
+            <input type="number" name="abn" ng-model="data.abn" placeholder="ABN" required="required">
+            <i class="icon ion-alert-circled error"></i>
+          </label>
+        </div>
+        <div class="list padding-top">
+          <label class="new-label"></label>
+        </div>
+        <div class="list list-inset" style="margin-top: -51px;">
+          <label class="item item-input item-icon-left item-icon-right validated">
+            <span class="i-con ion-ios-telephone-outline"></span>
+            <input type="number" placeholder="Contact Number" name="phone" ng-model="data.phone" required="required">
+            <i class="icon ion-alert-circled error"></i>
+          </label>
+        </div>
+        <div class="list list-inset">
+          <label class="item item-input bordbot item-icon-left item-icon-right validated">
+            <span class="i-con ion-ios-email-outline"></span>
+            <input type="email" placeholder="Email Address" name="email" ng-model="data.email" required="required">
+            <i class="icon ion-alert-circled error"></i>
+          </label>
+        </div>
+        <div class="list padding-top">
+          <label class="new-label margin-left-0">SECONDARY CONTACT PERSON</label>
+        </div>
+        <div class="list list-inset" style="margin-top: -10px;">
+          <label class="item item-input item-icon-left">
+            <span class="i-con ion-ios-person-outline"></span>
+            <input type="text" placeholder="Last Name" ng-model="data.secondarycontact">
+          </label>
+          <label class="item item-input item-icon-left">
+            <span class="i-con"></span>
+            <input type="text" placeholder="First Name" ng-model="data.secondaryfcontact">
+          </label>
+        </div>
+        <div class="list list-inset">
+          <label class="item item-input item-icon-left">
+            <span class="i-con ion-ios-telephone-outline"></span>
+            <input type="number" placeholder="Contact Number" ng-model="data.phone2" clean="true">
+          </label>
+        </div>
+        <div class="list list-inset">
+          <label class="item item-input item-icon-left">
+            <span class="i-con ion-ios-email-outline"></span>
+            <input type="email" placeholder="Email Address" ng-model="data.email2">
+          </label>
+        </div>
+        <div class="list padding-top">
+          <label class="new-label" style="margin-left: 0px;">AREA OF COVERAGE
+            <small style="font-style: italic;font-size: 11px;">(Please Specify your area of coverage)</small>
+          </label>
+        </div>
+        <div class="list list-inset margin-top-10" ng-repeat="item in data.coverageArr">
+          <label class="item item-input item-icon-left">
+            <span class="i-con ion-ios-location-outline"></span>
+            <input type="text" ng-model="item.area" placeholder="City i.e Sydney CBD">
+          </label>
+        </div>
+        <div class="list list-inset">
+          <label class="item item-input item-icon-left">
+            <span class="i-con ion-ios-location-outline"></span>
+            <input type="text" ng-model="area.coverage" placeholder="City i.e Sydney CBD">
+          </label>
+        </div>
+        <a class="button add-button margin-top-15" ng-click="addArea(area.coverage)" ng-disabled="!area.coverage">
+          <span class="ion-plus"> Add New Area</span>
+        </a>
+        <div class="list padding-top margin-top-50">
+          <label class="new-label margin-left-0">AVAILABILITY</label>
+        </div>
+        <div class="list" ng-repeat="item in data.availabilityArr">
+          <label class="item item-input item-select curr bortop bordbot" style="width: 32%;margin-top:-25px;margin-left: 0px;margin-right: 0px;">
+            <select class="padding-10" ng-model="item.availability" ng-options="week.id as week.name for week in weekdays">
+            </select>
+          </label>
+          <label class="item item-input item-icon-left tstart">
+            <input type="text" placeholder="Start" ng-click="openTime3(item)" ng-model="item.start" class="padding-right-5 padding-left-10" style="margin-left: -16px;">
+          </label>
+          <label class="item item-input item-icon-left tend">
+            <input type="text" placeholder="End" ng-click="openTime4(item)" ng-model="item.end" class="padding-right-5 padding-left-10" style="margin-left: -16px;">
+            <span class="i-con ion-clock"></span>
+          </label>
+        </div>
+        <div class="list">
+          <label class="item item-input item-select curr bortop bordbot" style="width: 32%;margin-top:-10px;margin-left: 0px;margin-right: 0px;">
+            <select class="padding-10" ng-model="avail.availability" ng-options="week.id as week.name for week in weekdays">
+            </select>
+          </label>
+          <label class="item item-input item-icon-left tstart">
+            <input type="text" placeholder="Start" ng-click="openTime()" ng-model="avail.start" class="padding-right-5 padding-left-10" style="margin-left: -16px;font-size: 13px;">
+          </label>
+          <label class="item item-input item-icon-left tend">
+            <input type="text" placeholder="End" ng-click="openTime2()" ng-model="avail.end" class="padding-right-5 padding-left-10" style="margin-left: -16px;font-size: 13px;">
+            <span class="i-con ion-clock"></span>
+          </label>
+        </div>
+        <a class="button add-button" ng-click="addSched(avail)" ng-disabled="avail.availability && avail.start && avail.end?false:true">
+          <span class="ion-plus"> New Schedule</span>
+        </a>
+      </div>
+      <div class="row" class="paddding-top">
+        <div class="col col-50">
+          <a ng-click="showCancel()" class="button button-block button-stable">
+            Cancel
+          </a>
+        </div>
+        <div class="col col-50">
+          <button class="button button-block button-positive" type="submit">
+            Next
+          </button>
+        </div>
+      </div>
+      <p class="cop" style="margin-bottom: 70px;">Already have an account?
+        <a ng-click="sign($even)" class="p-log">Login</a>
+      </p>
+    </form>
+  </ion-content>
 </ion-view>

@@ -98,12 +98,12 @@
                 abbr: 'THU'
             }, {
                 id: 6,
-                name: 'Saturday',
-                abbr: 'SAT'
+                name: 'Friday',
+                abbr: 'FRI'
             }, {
                 id: 7,
-                name: 'Sunday',
-                abbr: 'SUN'
+                name: 'Saturday',
+                abbr: 'SAT'
             }];
 
             return {
